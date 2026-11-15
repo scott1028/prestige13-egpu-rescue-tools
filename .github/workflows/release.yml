@@ -1,0 +1,28 @@
+# Build dist/egpu-tray.exe and publish it as a GitHub release asset.
+# Trigger: push a tag such as v1.0.0.
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build egpu-tray.exe
+        shell: cmd
+        run: tools\egpu-tray\build.cmd
+
+      - name: Publish release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: gh release create $env:TAG dist/egpu-tray.exe --title $env:TAG --generate-notes
