@@ -39,7 +39,7 @@ tools\egpu-connect\egpu-connect.cmd
 
 ## 跑起來會看到什麼
 
-照畫面指示拔掉 eGPU，等約 5 秒插回同一個 port。下面節錄自 `tools/egpu-connect/logs/` 裡的一次紀錄：
+照畫面指示拔掉 eGPU，等約 5 秒插回同一個 port。下面節錄自一次實際執行的紀錄：
 
 ```text
 [1/4] 檢查 Remote Desktop Device Redirector Bus
