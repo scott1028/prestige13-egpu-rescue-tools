@@ -1,0 +1,692 @@
+2025-11-08 21:16:43 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-11-08 21:16:47 removed(FAILING) TBT-UpSwitch n=7
+2025-11-08 21:16:47 removed(FAILING) Router@P3 n=1
+2025-11-08 21:19:34 removed(missing) Router@P3 n=1
+2025-11-08 21:19:37 removed(missing) Router@P1 n=1
+2025-11-08 21:19:58 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2025-11-08 21:19:58 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2025-11-08 21:31:52 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-11-08 21:31:53 removed(FAILING) TBT-UpSwitch n=7
+2025-11-08 21:31:53 removed(FAILING) Router@P1 n=1
+2025-11-08 21:54:58 removed(missing) TBT-UpSwitch n=7
+2025-11-08 21:55:00 removed(missing) Router@P1 n=1
+2025-11-08 21:55:10 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-11-08 21:55:11 removed(FAILING) TBT-UpSwitch n=7
+2025-11-08 21:55:11 removed(FAILING) ASUS-USB n=7
+2025-11-08 21:55:11 removed(FAILING) Router@P1 n=1
+2025-11-08 21:55:40 removed(missing) ASUS-USB n=7
+2025-11-08 21:56:09 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462&REV_10\3&11583659&1&38 and PCI\VEN_8086&DEV_A84F&SUBSYS_00000000
+2025-11-08 21:56:26 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2025-11-08 21:56:26 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2025-11-08 21:56:45 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2025-11-08 21:56:45 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2025-11-08 21:57:01 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2025-11-08 21:57:01 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2025-11-08 21:57:16 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2025-11-08 21:57:16 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2025-11-08 21:59:46 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-11-08 21:59:48 removed(FAILING) TBT-UpSwitch n=7
+2025-11-08 21:59:48 removed(FAILING) Router@P3 n=1
+2025-11-08 22:04:58 removed(missing) Router@P3 n=1
+2025-12-26 10:27:44 removed(missing) TBT-UpSwitch n=7
+2025-12-26 10:27:45 removed(missing) Router@P3 n=1
+2025-12-26 10:43:21 removed(missing) TBT-UpSwitch n=8
+2025-12-26 10:43:24 removed(missing) Router@P3 n=1
+2025-12-26 11:08:03 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-12-26 11:08:06 removed(FAILING) TBT-UpSwitch n=7
+2025-12-26 11:08:06 removed(FAILING) Router@P3 n=1
+2025-12-26 11:09:15 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2025-12-26 11:09:15 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2025-12-26 11:09:35 rebalance FAIL dev=GPU-Audio phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2025-12-26 11:09:35 rebalance FAIL dev=GPU-Audio phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2025-12-26 11:09:35 removed(missing) TBT-UpSwitch n=7
+2025-12-26 11:09:36 removed(missing) Router@P1 n=1
+2025-12-26 11:09:40 rebalance OK   dev=GPU root=TRP1
+2025-12-26 11:14:27 rebalance OK   dev=GPU root=TRP1
+2025-12-27 09:15:55 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-12-27 09:15:57 removed(FAILING) TBT-UpSwitch n=7
+2025-12-27 09:15:57 removed(FAILING) Router@P3 n=1
+2025-12-27 10:40:47 removed(missing) ASUS-USB n=18
+2025-12-28 13:19:45 removed(missing) ASUS-USB n=18
+2025-12-28 13:52:04 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-12-28 13:52:06 removed(FAILING) TBT-UpSwitch n=7
+2025-12-28 13:52:06 removed(FAILING) Router@P3 n=1
+2025-12-28 14:02:40 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-12-28 14:02:43 removed(FAILING) TBT-UpSwitch n=7
+2025-12-28 14:02:43 removed(FAILING) Router@P3 n=1
+2025-12-28 14:17:10 removed(missing) ASUS-USB n=18
+2025-12-28 16:23:56 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2025-12-28 16:23:58 removed(FAILING) TBT-UpSwitch n=7
+2025-12-28 16:23:58 removed(FAILING) Router@P3 n=1
+2026-01-04 11:37:14 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-01-04 11:37:14 removed(missing) TBT-UpSwitch n=10
+2026-01-04 11:37:17 removed(missing) Router@P3 n=1
+2026-01-04 17:29:06 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-04 17:29:08 removed(FAILING) TBT-UpSwitch n=7
+2026-01-04 17:29:08 removed(FAILING) Router@P3 n=1
+2026-01-04 17:29:46 removed(missing) Router@P3 n=1
+2026-01-04 17:29:57 rebalance OK   dev=GPU root=TRP1
+2026-01-04 19:57:33 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-01-04 19:57:34 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-01-04 19:57:34 removed(missing) TBT-UpSwitch n=10
+2026-01-04 19:57:35 removed(missing) Router@P3 n=1
+2026-01-04 19:58:18 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-01-04 19:58:18 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-01-04 19:58:18 removed(missing) TBT-UpSwitch n=7
+2026-01-04 19:58:18 removed(missing) Router@P1 n=1
+2026-01-04 19:58:46 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-01-04 19:58:46 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-01-04 19:59:03 removed(missing) TBT-UpSwitch n=8
+2026-01-04 19:59:04 removed(missing) Router@P1 n=1
+2026-01-04 19:59:28 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-01-04 19:59:28 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-01-04 19:59:41 rebalance FAIL dev=GPU phase=0 fail=? conflictType=0 veto=? vetoDev=? root=TBT-DnSwitch
+2026-01-04 19:59:41 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-01-04 19:59:41 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-01-04 19:59:41 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-01-04 20:00:35 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-04 20:00:36 removed(FAILING) TBT-UpSwitch n=7
+2026-01-04 20:00:36 removed(FAILING) Router@P1 n=1
+2026-01-04 20:01:33 removed(missing) Router@P1 n=1
+2026-01-04 20:01:57 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-01-04 20:01:57 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-01-04 20:03:46 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-04 20:03:48 removed(FAILING) TBT-UpSwitch n=7
+2026-01-04 20:03:48 removed(FAILING) Router@P3 n=1
+2026-01-04 20:04:48 rebalance OK   dev=GPU root=TRP1
+2026-01-04 20:07:03 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-01-04 20:07:06 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-01-04 20:07:06 removed(missing) TBT-UpSwitch n=10
+2026-01-04 20:07:08 removed(missing) Router@P3 n=1
+2026-01-04 20:07:33 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-01-04 20:07:33 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-01-04 20:07:38 removed(missing) TBT-UpSwitch n=8
+2026-01-04 20:07:41 removed(missing) Router@P1 n=1
+2026-01-04 20:07:52 rebalance OK   dev=GPU root=TRP1
+2026-01-04 20:48:41 removed(FAILING) GPU-Audio n=2
+2026-01-04 20:48:41 removed(missing) GPU-Audio n=3
+2026-01-08 00:37:15 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-08 00:37:18 removed(FAILING) TBT-UpSwitch n=7
+2026-01-08 00:37:18 removed(FAILING) Router@P1 n=1
+2026-01-08 00:42:33 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-08 00:42:36 removed(FAILING) TBT-UpSwitch n=7
+2026-01-08 00:42:36 removed(FAILING) Router@P1 n=1
+2026-01-08 00:47:51 removed(missing) ASUS-USB n=18
+2026-01-11 16:24:52 REBOOT-REQUIRED usb\vid_8087&pid_0037\5&23fbc2b3&0&6 code=0 status=0x0
+2026-01-11 16:25:05 REBOOT-REQUIRED acpi\ovti5675\0 code=0 status=0x0
+2026-01-11 16:25:09 REBOOT-REQUIRED acpi\int3472\a code=0 status=0x0
+2026-01-11 16:25:18 REBOOT-REQUIRED pci\ven_8086&dev_645d&subsys_145f1462&re code=0 status=0x0
+2026-01-11 16:33:40 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-11 16:33:41 removed(FAILING) TBT-UpSwitch n=7
+2026-01-11 16:33:42 removed(FAILING) Router@P1 n=1
+2026-01-11 16:33:42 removed(FAILING) ASUS-USB n=7
+2026-01-11 17:37:14 rebalance OK   dev=GPU root=TRP0
+2026-01-11 20:10:11 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-11 20:10:14 removed(FAILING) TBT-UpSwitch n=7
+2026-01-11 20:10:14 removed(FAILING) Router@P1 n=1
+2026-01-11 20:11:45 rebalance OK   dev=GPU root=TRP0
+2026-01-30 23:54:14 REBOOT-REQUIRED pci\ven_8086&dev_643e&subsys_14641462&re code=0 status=0x0
+2026-01-30 23:59:20 REBOOT-REQUIRED pci\ven_8086&dev_643e&subsys_14641462&re code=0 status=0x0
+2026-01-31 01:21:40 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-31 01:21:42 removed(FAILING) TBT-UpSwitch n=7
+2026-01-31 01:21:42 removed(FAILING) Router@P3 n=1
+2026-01-31 18:44:06 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-01-31 18:44:07 removed(FAILING) TBT-UpSwitch n=7
+2026-01-31 18:44:07 removed(FAILING) Router@P3 n=1
+2026-02-12 11:47:03 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-02-12 11:47:04 removed(FAILING) TBT-UpSwitch n=7
+2026-02-12 11:47:04 removed(FAILING) Router@P3 n=1
+2026-02-12 11:47:36 rebalance OK   dev=GPU root=TRP1
+2026-03-08 23:13:00 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-03-08 23:13:02 removed(FAILING) TBT-UpSwitch n=7
+2026-03-08 23:13:02 removed(FAILING) Router@P3 n=1
+2026-03-09 00:27:48 removed(missing) Router@P3 n=1
+2026-03-09 00:28:09 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-03-09 00:28:09 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-03-09 00:34:43 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-03-09 00:36:47 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-03-09 00:36:48 removed(FAILING) TBT-UpSwitch n=7
+2026-03-09 00:36:48 removed(FAILING) Router@P1 n=1
+2026-03-09 00:38:14 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-03-09 00:38:15 removed(FAILING) TBT-UpSwitch n=7
+2026-03-09 00:38:15 removed(FAILING) Router@P1 n=1
+2026-03-09 00:42:18 removed(missing) Router@P1 n=1
+2026-03-09 00:45:26 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-03-09 00:45:28 removed(FAILING) TBT-UpSwitch n=7
+2026-03-09 00:45:28 removed(FAILING) Router@P3 n=1
+2026-03-09 00:46:17 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84F&SUBSYS_00000000&REV_10\3&11583659&1&39 and PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462
+2026-03-09 00:46:35 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-03-09 00:46:35 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-03-09 00:50:04 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-03-09 00:51:21 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-03-09 00:51:22 removed(FAILING) TBT-UpSwitch n=7
+2026-03-09 00:51:23 removed(FAILING) Router@P1 n=1
+2026-03-09 00:51:57 rebalance OK   dev=GPU root=TRP0
+2026-03-09 09:05:38 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-03-09 09:05:39 removed(FAILING) TBT-UpSwitch n=7
+2026-03-09 09:05:40 removed(FAILING) Router@P3 n=1
+2026-03-09 09:08:08 removed(missing) Router@P3 n=1
+2026-03-09 09:08:32 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-03-09 09:08:32 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-03-09 09:10:20 removed(missing) TBT-UpSwitch n=8
+2026-03-09 09:10:21 removed(missing) Router@P1 n=1
+2026-03-09 09:10:30 rebalance OK   dev=GPU root=TRP1
+2026-03-09 13:44:41 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-03-09 13:44:42 removed(FAILING) TBT-UpSwitch n=7
+2026-03-09 13:44:42 removed(FAILING) Router@P3 n=1
+2026-03-09 13:45:30 rebalance OK   dev=GPU root=TRP1
+2026-03-09 13:53:34 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-03-09 13:53:34 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-03-09 13:53:34 removed(missing) TBT-UpSwitch n=10
+2026-03-09 13:53:37 removed(missing) Router@P3 n=1
+2026-03-09 13:54:00 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-03-09 13:54:00 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-03-09 13:54:00 removed(missing) TBT-UpSwitch n=7
+2026-03-09 13:54:01 removed(missing) Router@P1 n=1
+2026-03-09 19:09:56 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-03-09 19:09:58 removed(FAILING) TBT-UpSwitch n=7
+2026-03-09 19:09:58 removed(FAILING) Router@P3 n=1
+2026-03-09 19:10:19 rebalance OK   dev=GPU root=TRP1
+2026-03-09 19:19:09 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-03-09 19:19:12 removed(missing) TBT-UpSwitch n=10
+2026-03-09 19:19:14 removed(missing) Router@P3 n=1
+2026-03-09 19:19:35 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-03-09 19:19:35 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-03-09 19:19:35 removed(missing) TBT-UpSwitch n=7
+2026-03-09 19:19:35 removed(missing) Router@P1 n=1
+2026-04-07 20:37:46 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-07 20:37:56 removed(FAILING) TBT-UpSwitch n=7
+2026-04-07 20:37:56 removed(FAILING) Router@P3 n=1
+2026-04-07 21:09:07 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-07 21:09:10 removed(FAILING) TBT-UpSwitch n=7
+2026-04-07 21:09:10 removed(FAILING) Router@P3 n=1
+2026-04-07 21:09:55 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-07 21:09:55 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-07 21:10:27 removed(missing) Router@P1 n=1
+2026-04-07 21:10:27 removed(missing) TBT-UpSwitch n=8
+2026-04-07 21:10:38 rebalance OK   dev=GPU root=TRP1
+2026-04-16 22:00:56 REBOOT-REQUIRED usb\vid_3625&pid_010b&mi_02\8&1a8778e6&0 code=14 status=0x0
+2026-04-16 22:01:09 REBOOT-REQUIRED usb\vid_3625&pid_010b&mi_00\8&1a8778e6&0 code=14 status=0x0
+2026-04-16 22:11:02 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-16 22:11:04 removed(FAILING) TBT-UpSwitch n=7
+2026-04-16 22:11:04 removed(FAILING) Router@P3 n=1
+2026-04-16 22:11:22 rebalance OK   dev=GPU root=TRP1
+2026-04-16 22:14:42 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-16 22:14:44 removed(FAILING) TBT-UpSwitch n=7
+2026-04-16 22:14:44 removed(FAILING) Router@P3 n=1
+2026-04-16 22:15:45 removed(missing) ASUS-USB n=7
+2026-04-16 22:15:49 removed(missing) Router@P3 n=1
+2026-04-16 22:15:55 rebalance OK   dev=GPU root=TRP1
+2026-04-16 22:20:58 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-16 22:21:01 removed(FAILING) TBT-UpSwitch n=7
+2026-04-16 22:21:01 removed(FAILING) Router@P3 n=1
+2026-04-16 22:21:41 rebalance OK   dev=GPU root=TRP1
+2026-04-16 23:35:01 removed(missing) Router@P3 n=1
+2026-04-16 23:35:02 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-04-16 23:35:02 removed(missing) TBT-UpSwitch n=10
+2026-04-16 23:39:04 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-04-16 23:39:04 removed(missing) TBT-UpSwitch n=10
+2026-04-16 23:39:07 removed(missing) Router@P3 n=1
+2026-04-16 23:45:21 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-16 23:45:23 removed(FAILING) TBT-UpSwitch n=7
+2026-04-16 23:45:23 removed(FAILING) Router@P1 n=1
+2026-04-16 23:45:58 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462&REV_10\3&11583659&1&38 and PCI\VEN_8086&DEV_A84F&SUBSYS_00000000
+2026-04-16 23:46:19 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-16 23:46:19 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-16 23:46:19 removed(missing) TBT-DnSwitch n=7
+2026-04-16 23:46:20 removed(missing) Router@P3 n=1
+2026-04-17 00:48:22 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 00:48:23 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 00:48:23 removed(FAILING) Router@P3 n=1
+2026-04-17 00:50:27 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 00:50:29 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 00:50:29 removed(FAILING) Router@P3 n=1
+2026-04-17 00:52:26 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84F&SUBSYS_00000000&REV_10\3&11583659&1&39 and PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462
+2026-04-17 00:52:43 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-17 00:52:43 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-17 00:58:30 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-04-17 00:59:56 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 00:59:58 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 00:59:58 removed(FAILING) Router@P1 n=1
+2026-04-17 01:20:36 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 01:20:37 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 01:20:37 removed(FAILING) Router@P1 n=1
+2026-04-17 01:21:57 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 01:21:58 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 01:21:58 removed(FAILING) Router@P1 n=1
+2026-04-17 01:22:59 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462&REV_10\3&11583659&1&38 and PCI\VEN_8086&DEV_A84F&SUBSYS_00000000
+2026-04-17 01:23:18 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-17 01:23:18 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-17 01:23:44 removed(missing) ASUS-USB n=7
+2026-04-17 01:23:55 removed(missing) ASUS-USB n=7
+2026-04-17 06:42:05 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 06:42:07 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 06:42:07 removed(FAILING) Router@P3 n=1
+2026-04-17 06:45:33 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-17 06:45:33 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-17 06:48:43 removed(missing) Router@P1 n=1
+2026-04-17 06:48:43 removed(missing) TBT-UpSwitch n=8
+2026-04-17 06:52:10 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 06:52:12 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 06:52:12 removed(FAILING) Router@P3 n=1
+2026-04-17 06:52:54 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84F&SUBSYS_00000000&REV_10\3&11583659&1&39 and PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462
+2026-04-17 06:53:12 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-17 06:53:12 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-17 06:53:43 removed(missing) Router@P1 n=1
+2026-04-17 06:53:43 removed(missing) TBT-DnSwitch n=8
+2026-04-17 06:54:56 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 06:54:57 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 06:54:57 removed(FAILING) Router@P3 n=1
+2026-04-17 06:57:13 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-17 06:57:13 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-17 06:57:32 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-17 06:57:32 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-17 07:02:43 REBOOT-REQUIRED GPU code=14 status=0x0
+2026-04-17 07:03:54 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 07:03:55 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 07:03:55 removed(FAILING) Router@P1 n=1
+2026-04-17 07:04:10 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462&REV_10\3&11583659&1&38 and PCI\VEN_8086&DEV_A84F&SUBSYS_00000000
+2026-04-17 07:04:25 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-17 07:04:25 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-17 07:05:41 removed(missing) TBT-DnSwitch n=8
+2026-04-17 07:05:45 removed(missing) Router@P3 n=1
+2026-04-17 07:14:15 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 07:14:17 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 07:14:17 removed(FAILING) Router@P1 n=1
+2026-04-17 07:14:49 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-17 07:14:49 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-17 07:16:18 removed(missing) TBT-UpSwitch n=8
+2026-04-17 07:16:21 removed(missing) Router@P3 n=1
+2026-04-17 22:28:50 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-17 22:28:52 removed(FAILING) TBT-UpSwitch n=7
+2026-04-17 22:28:52 removed(FAILING) Router@P3 n=1
+2026-04-23 18:48:02 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-23 18:48:04 removed(FAILING) TBT-UpSwitch n=7
+2026-04-23 18:48:04 removed(FAILING) Router@P3 n=1
+2026-04-23 18:48:38 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84F&SUBSYS_00000000&REV_10\3&11583659&1&39 and PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462
+2026-04-23 18:48:57 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-23 18:48:57 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-23 18:48:57 removed(missing) TBT-DnSwitch n=7
+2026-04-23 18:48:57 removed(missing) Router@P1 n=1
+2026-04-23 18:49:00 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84F&SUBSYS_00000000&REV_10\3&11583659&1&39 and PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462
+2026-04-23 18:49:23 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-23 18:49:23 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-23 18:54:30 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-04-23 18:55:45 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-23 18:55:46 removed(FAILING) TBT-UpSwitch n=7
+2026-04-23 18:55:47 removed(FAILING) Router@P1 n=1
+2026-04-23 18:56:04 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462&REV_10\3&11583659&1&38 and PCI\VEN_8086&DEV_A84F&SUBSYS_00000000
+2026-04-23 18:56:22 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-23 18:56:22 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-23 18:58:33 removed(missing) TBT-DnSwitch n=8
+2026-04-23 18:58:36 removed(missing) Router@P3 n=1
+2026-04-23 18:59:34 removed(missing) Router@P1 n=1
+2026-04-23 21:23:30 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-23 21:23:31 removed(FAILING) TBT-UpSwitch n=7
+2026-04-23 21:23:31 removed(FAILING) Router@P3 n=1
+2026-04-23 21:23:43 DM/809 Duplicate device instance reported by PCI\VEN_8086&DEV_A84F&SUBSYS_00000000&REV_10\3&11583659&1&39 and PCI\VEN_8086&DEV_A84E&SUBSYS_145F1462
+2026-04-23 21:24:01 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-23 21:24:01 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-23 21:25:20 removed(missing) TBT-DnSwitch n=8
+2026-04-23 21:25:22 removed(missing) Router@P1 n=1
+2026-04-23 21:26:19 removed(missing) Router@P3 n=1
+2026-04-24 21:53:15 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-24 21:53:16 removed(FAILING) TBT-UpSwitch n=7
+2026-04-24 21:53:16 removed(FAILING) Router@P3 n=1
+2026-04-24 21:54:52 removed(missing) Router@P3 n=1
+2026-04-24 21:55:11 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-24 21:55:11 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-24 22:02:43 REBOOT-REQUIRED GPU code=14 status=0x0
+2026-04-24 22:04:27 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-04-24 22:04:29 removed(FAILING) TBT-UpSwitch n=7
+2026-04-24 22:04:29 removed(FAILING) Router@P1 n=1
+2026-04-24 22:11:28 removed(missing) Router@P1 n=1
+2026-04-24 22:11:53 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-24 22:11:53 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-24 22:13:10 removed(missing) TBT-UpSwitch n=8
+2026-04-24 22:13:29 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-04-24 22:13:29 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-04-24 22:13:29 removed(missing) TBT-UpSwitch n=7
+2026-04-24 22:13:30 removed(missing) Router@P3 n=1
+2026-05-02 22:09:08 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-05-02 22:09:10 removed(FAILING) TBT-UpSwitch n=7
+2026-05-02 22:09:10 removed(FAILING) Router@P3 n=1
+2026-05-03 15:09:34 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-05-03 15:09:34 removed(missing) TBT-UpSwitch n=10
+2026-05-03 15:09:36 removed(missing) Router@P3 n=1
+2026-05-24 11:38:18 removed(missing) Router@P3 n=1
+2026-05-24 11:38:20 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-05-24 11:38:21 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-05-24 11:38:21 removed(missing) ASUS-USB n=7
+2026-05-24 11:38:21 removed(missing) TBT-UpSwitch n=10
+2026-05-24 11:46:33 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-05-24 11:46:33 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-05-24 11:46:33 removed(missing) TBT-UpSwitch n=10
+2026-05-24 11:46:34 removed(missing) Router@P3 n=1
+2026-06-11 16:09:55 === BOOT ===
+2026-06-11 16:19:08 --- shutdown ---
+2026-06-11 22:19:16 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-06-11 22:19:18 removed(FAILING) TBT-UpSwitch n=7
+2026-06-11 22:19:18 removed(FAILING) Router@P3 n=1
+2026-06-11 22:20:15 rebalance OK   dev=GPU root=TRP1
+2026-06-11 22:45:09 rebalance FAIL dev=GPU phase=0 fail=? conflictType=0 veto=? vetoDev=? root=TBT-DnSwitch
+2026-06-11 22:45:09 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-06-11 22:45:09 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-06-11 23:28:11 DM/1000 Device USB\VID_0B05&PID_1BC1&MI_00\7&30b14d41&0&0000 could not be query removed as the removal was vetoed. |  | Veto Type: 5 | Vetoed By: HI
+2026-06-11 23:28:11 REBOOT-REQUIRED ASUS-USB code=0 status=0x0
+2026-06-11 23:43:25 --- shutdown ---
+2026-06-11 23:44:26 === BOOT ===
+2026-06-11 23:54:08 --- shutdown ---
+2026-06-11 23:54:25 === BOOT ===
+2026-06-11 23:58:02 --- shutdown ---
+2026-06-12 00:19:28 === BOOT ===
+2026-06-12 00:58:03 --- shutdown ---
+2026-06-12 00:58:21 === BOOT ===
+2026-06-12 00:59:55 --- shutdown ---
+2026-06-12 01:00:12 === BOOT ===
+2026-06-12 01:03:18 --- shutdown ---
+2026-06-19 17:16:46 === BOOT ===
+2026-06-19 17:17:02 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-06-19 17:17:05 removed(FAILING) TBT-UpSwitch n=7
+2026-06-19 17:17:05 removed(FAILING) Router@P1 n=1
+2026-06-19 17:18:00 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-06-19 17:18:00 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-06-19 17:18:23 removed(missing) TBT-UpSwitch n=8
+2026-06-19 17:18:26 removed(missing) Router@P3 n=1
+2026-06-19 17:18:29 rebalance OK   dev=GPU root=TRP0
+2026-06-19 17:18:36 DM/1000 Device USB\VID_0B05&PID_1BC1&MI_00\7&94e9383&0&0000 could not be query removed as the removal was vetoed. |  | Veto Type: 5 | Vetoed By: HID
+2026-06-19 17:18:36 REBOOT-REQUIRED ASUS-USB code=0 status=0x0
+2026-06-19 17:29:27 rebalance FAIL dev=GPU phase=0 fail=? conflictType=0 veto=? vetoDev=? root=TBT-DnSwitch
+2026-06-19 17:29:27 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-06-19 17:29:27 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-06-19 17:30:08 --- shutdown ---
+2026-06-19 17:30:26 === BOOT ===
+2026-06-19 17:30:42 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-06-19 17:30:45 removed(FAILING) TBT-UpSwitch n=7
+2026-06-19 17:30:45 removed(FAILING) Router@P1 n=1
+2026-06-19 17:31:16 rebalance OK   dev=GPU root=TRP0
+2026-06-19 17:42:57 removed(missing) ASUS-USB n=7
+2026-06-19 18:42:18 --- shutdown ---
+2026-06-27 07:22:51 === BOOT ===
+2026-06-27 07:23:10 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-06-27 07:23:13 removed(FAILING) TBT-UpSwitch n=7
+2026-06-27 07:23:13 removed(FAILING) Router@P3 n=1
+2026-06-27 07:24:53 removed(missing) Router@P3 n=1
+2026-06-27 07:24:59 rebalance OK   dev=GPU root=TRP1
+2026-06-27 07:28:13 REBOOT-REQUIRED swd\driverenum\{5aff9434-8cf0-4fba-aa68- code=0 status=0x0
+2026-06-27 07:40:35 --- shutdown ---
+2026-06-27 07:47:51 === BOOT ===
+2026-06-27 08:13:32 --- shutdown ---
+2026-06-27 08:17:09 === BOOT ===
+2026-06-27 08:18:47 --- shutdown ---
+2026-06-27 08:19:07 === BOOT ===
+2026-06-27 09:32:02 --- shutdown ---
+2026-07-05 08:45:28 === BOOT ===
+2026-07-05 10:05:43 --- shutdown ---
+2026-07-05 14:55:02 === BOOT ===
+2026-07-05 14:57:52 --- shutdown ---
+2026-07-05 14:58:36 === BOOT ===
+2026-07-05 15:44:36 --- shutdown ---
+2026-07-22 14:51:34 === BOOT ===
+2026-07-22 17:25:28 --- shutdown ---
+2026-07-22 17:26:14 === BOOT ===
+2026-07-22 17:27:02 --- shutdown ---
+2026-07-22 17:31:15 === BOOT ===
+2026-07-22 18:04:15 --- shutdown ---
+2026-07-22 20:05:05 === BOOT ===
+2026-07-22 20:29:44 --- shutdown ---
+2026-07-30 12:34:22 === BOOT ===
+2026-07-30 13:03:23 --- shutdown ---
+2026-07-30 19:44:34 === BOOT ===
+2026-07-30 22:28:14 --- shutdown ---
+2026-07-30 22:28:34 === BOOT ===
+2026-07-30 22:57:54 --- shutdown ---
+2026-07-30 22:59:15 === BOOT ===
+2026-07-30 23:01:17 --- shutdown ---
+2026-07-30 23:03:20 === BOOT ===
+2026-07-31 00:02:50 --- shutdown ---
+2026-07-31 21:13:40 === BOOT ===
+2026-07-31 23:21:09 --- shutdown ---
+2026-08-01 08:17:40 === BOOT ===
+2026-08-01 10:15:35 --- shutdown ---
+2026-08-02 09:37:27 === BOOT ===
+2026-08-02 09:44:24 --- shutdown ---
+2026-08-03 23:23:48 === BOOT ===
+2026-08-03 23:47:44 --- shutdown ---
+2026-08-03 23:54:22 === BOOT ===
+2026-08-04 02:38:47 --- shutdown ---
+2026-08-04 08:13:30 === BOOT ===
+2026-08-04 21:20:11 --- shutdown ---
+2026-08-06 19:16:54 === BOOT ===
+2026-08-06 23:09:36 --- shutdown ---
+2026-08-07 07:42:28 === BOOT ===
+2026-08-07 16:44:46 --- shutdown ---
+2026-08-08 08:58:54 === BOOT ===
+2026-08-08 11:57:44 --- shutdown ---
+2026-08-08 22:17:25 === BOOT ===
+2026-08-08 22:32:17 --- shutdown ---
+2026-08-08 22:32:39 === BOOT ===
+2026-08-09 00:14:52 --- shutdown ---
+2026-08-09 10:42:44 === BOOT ===
+2026-08-09 18:37:05 --- shutdown ---
+2026-08-10 23:03:52 === BOOT ===
+2026-08-10 23:04:04 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-08-10 23:04:07 removed(FAILING) TBT-UpSwitch n=7
+2026-08-10 23:04:07 removed(FAILING) Router@P1 n=1
+2026-08-10 23:05:10 rebalance OK   dev=GPU root=TRP0
+2026-08-10 23:12:07 rebalance FAIL dev=GPU phase=0 fail=? conflictType=0 veto=? vetoDev=? root=TBT-DnSwitch
+2026-08-10 23:12:07 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-08-10 23:12:07 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-08-10 23:12:59 --- shutdown ---
+2026-08-10 23:13:18 === BOOT ===
+2026-08-10 23:13:30 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-08-10 23:13:33 removed(FAILING) TBT-UpSwitch n=7
+2026-08-10 23:13:33 removed(FAILING) Router@P1 n=1
+2026-08-10 23:14:08 rebalance OK   dev=GPU root=TRP0
+2026-08-10 23:36:36 --- shutdown ---
+2026-08-10 23:36:57 === BOOT ===
+2026-08-10 23:37:12 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-08-10 23:37:15 removed(FAILING) TBT-UpSwitch n=7
+2026-08-10 23:37:15 removed(FAILING) Router@P1 n=1
+2026-08-10 23:37:49 rebalance OK   dev=GPU root=TRP0
+2026-08-10 23:48:38 --- shutdown ---
+2026-08-12 08:55:01 === BOOT ===
+2026-08-12 09:05:15 REBOOT-REQUIRED intelaudio\dsp_ctlr_dev_a828&ven_8086&de code=0 status=0x0
+2026-08-12 09:05:20 REBOOT-REQUIRED pci\ven_8086&dev_a828&subsys_14641462&re code=0 status=0x0
+2026-08-12 09:05:28 --- shutdown ---
+2026-08-12 09:09:19 === BOOT ===
+2026-08-12 10:16:36 --- shutdown ---
+2026-08-12 10:16:53 === BOOT ===
+2026-08-12 10:17:40 --- shutdown ---
+2026-08-12 10:17:55 === BOOT ===
+2026-08-12 23:19:01 --- shutdown ---
+2026-08-13 18:45:21 === BOOT ===
+2026-08-14 01:39:04 --- shutdown ---
+2026-08-14 19:29:58 === BOOT ===
+2026-08-14 21:15:46 --- shutdown ---
+2026-08-18 21:10:01 === BOOT ===
+2026-08-18 21:26:35 --- shutdown ---
+2026-08-20 16:41:55 === BOOT ===
+2026-08-20 16:45:12 --- shutdown ---
+2026-08-25 08:57:54 === BOOT ===
+2026-08-25 09:23:16 --- shutdown ---
+2026-08-28 08:50:25 === BOOT ===
+2026-08-28 15:47:24 --- shutdown ---
+2026-08-28 15:48:20 === BOOT ===
+2026-08-28 15:50:21 --- shutdown ---
+2026-08-28 15:53:55 === BOOT ===
+2026-08-28 15:58:53 --- shutdown ---
+2026-09-04 16:33:15 === BOOT ===
+2026-09-04 17:04:55 --- shutdown ---
+2026-09-05 00:36:30 === BOOT ===
+2026-09-05 00:42:29 --- shutdown ---
+2026-09-05 01:07:39 === BOOT ===
+2026-09-05 01:08:29 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 01:08:31 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 01:08:31 removed(FAILING) Router@P1 n=1
+2026-09-05 01:09:47 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-09-05 01:09:47 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-09-05 01:10:25 removed(missing) TBT-UpSwitch n=8
+2026-09-05 01:10:26 removed(missing) Router@P3 n=1
+2026-09-05 01:10:31 rebalance OK   dev=GPU root=TRP0
+2026-09-05 01:18:52 removed(missing) ASUS-USB n=7
+2026-09-05 01:24:46 rebalance FAIL dev=GPU phase=0 fail=? conflictType=0 veto=? vetoDev=? root=TBT-DnSwitch
+2026-09-05 01:24:46 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-09-05 01:24:46 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-09-05 01:25:20 --- shutdown ---
+2026-09-05 01:25:47 === BOOT ===
+2026-09-05 01:26:02 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 01:26:05 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 01:26:05 removed(FAILING) Router@P1 n=1
+2026-09-05 01:27:55 rebalance OK   dev=GPU root=TRP0
+2026-09-05 01:31:30 --- shutdown ---
+2026-09-05 01:32:06 === BOOT ===
+2026-09-05 01:32:21 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 01:32:24 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 01:32:24 removed(FAILING) Router@P1 n=1
+2026-09-05 01:34:20 rebalance OK   dev=GPU root=TRP0
+2026-09-05 01:46:37 --- shutdown ---
+2026-09-05 01:46:55 === BOOT ===
+2026-09-05 01:47:09 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 01:47:12 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 01:47:12 removed(FAILING) Router@P1 n=1
+2026-09-05 01:52:38 --- shutdown ---
+2026-09-05 01:52:57 === BOOT ===
+2026-09-05 01:53:11 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 01:53:14 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 01:53:14 removed(FAILING) Router@P1 n=1
+2026-09-05 01:53:54 --- shutdown ---
+2026-09-05 02:00:44 === BOOT ===
+2026-09-05 02:00:59 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 02:01:02 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 02:01:02 removed(FAILING) Router@P1 n=1
+2026-09-05 02:13:28 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 02:13:30 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 02:13:30 removed(FAILING) Router@P1 n=1
+2026-09-05 02:16:51 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 02:16:53 DM/1000 Device PCI\VEN_8086&DEV_A833&SUBSYS_145F1462&REV_10&USB4_MS_CM\3&11583659&1&6A could not be query removed as the removal was vetoed. |  | Ve
+2026-09-05 02:16:53 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 02:16:53 removed(FAILING) Router@P1 n=1
+2026-09-05 02:16:53 REBOOT-REQUIRED pci\ven_8086&dev_a833&subsys_145f1462&re code=0 status=0x0
+2026-09-05 02:26:17 --- shutdown ---
+2026-09-05 08:13:38 === BOOT ===
+2026-09-05 08:13:52 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 08:13:55 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 08:13:55 removed(FAILING) Router@P1 n=1
+2026-09-05 08:27:02 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 08:27:04 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 08:27:04 removed(FAILING) Router@P1 n=1
+2026-09-05 08:34:19 DM/1000 Device USB\VID_0B05&PID_1BC1\6&325ed451&3&2 could not be query removed as the removal was vetoed. |  | Veto Type: 5 | Vetoed By: HID\VID_0B0
+2026-09-05 08:34:19 REBOOT-REQUIRED ASUS-USB code=0 status=0x0
+2026-09-05 08:39:59 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 08:40:00 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 08:40:00 removed(FAILING) Router@P1 n=1
+2026-09-05 08:40:25 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 08:40:27 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 08:40:27 removed(FAILING) Router@P1 n=1
+2026-09-05 08:40:49 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 08:40:51 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 08:40:51 removed(FAILING) Router@P1 n=1
+2026-09-05 08:43:38 --- shutdown ---
+2026-09-05 08:44:16 === BOOT ===
+2026-09-05 08:44:30 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 08:44:33 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 08:44:33 removed(FAILING) Router@P1 n=1
+2026-09-05 08:46:09 rebalance OK   dev=GPU root=TRP0
+2026-09-05 08:51:54 --- shutdown ---
+2026-09-05 08:52:10 === BOOT ===
+2026-09-05 08:52:25 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 08:52:27 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 08:52:28 removed(FAILING) Router@P1 n=1
+2026-09-05 08:53:12 rebalance OK   dev=GPU root=TRP0
+2026-09-05 08:54:28 removed(missing) ASUS-USB n=7
+2026-09-05 09:03:10 --- shutdown ---
+2026-09-05 09:03:34 === BOOT ===
+2026-09-05 09:03:48 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 09:03:51 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 09:03:51 removed(FAILING) Router@P1 n=1
+2026-09-05 09:04:23 rebalance OK   dev=GPU root=TRP0
+2026-09-05 09:05:59 --- shutdown ---
+2026-09-05 09:06:15 === BOOT ===
+2026-09-05 09:06:30 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-09-05 09:06:32 removed(FAILING) TBT-UpSwitch n=7
+2026-09-05 09:06:32 removed(FAILING) Router@P1 n=1
+2026-09-05 09:07:09 rebalance OK   dev=GPU root=TRP0
+2026-09-05 10:00:58 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-09-05 10:00:58 DM/1000 Device PCI\VEN_10DE&DEV_2C18&SUBSYS_225B1043&REV_A1\5EC18BAFDA2DB04800 could not be query removed as the removal was vetoed. |  | Veto Type:
+2026-09-05 10:00:58 removed(missing) TBT-UpSwitch n=10
+2026-09-05 10:00:59 removed(missing) Router@P1 n=1
+2026-09-05 10:01:06 rebalance OK   dev=GPU root=TRP0
+2026-09-05 10:01:43 --- shutdown ---
+2026-09-17 20:39:04 === BOOT ===
+2026-09-17 22:44:59 --- shutdown ---
+2026-09-17 22:45:19 === BOOT ===
+2026-09-17 22:46:30 --- shutdown ---
+2026-09-17 22:46:47 === BOOT ===
+2026-09-17 22:47:54 --- shutdown ---
+2026-09-27 13:27:15 === BOOT ===
+2026-09-27 13:31:16 --- shutdown ---
+2026-09-27 13:31:36 === BOOT ===
+2026-09-27 14:25:23 --- shutdown ---
+2026-09-27 14:25:42 === BOOT ===
+2026-09-27 14:26:43 --- shutdown ---
+2026-09-27 14:27:03 === BOOT ===
+2026-09-27 14:30:41 --- shutdown ---
+2026-10-17 10:39:24 === BOOT ===
+2026-10-17 12:05:04 --- shutdown ---
+2026-10-17 12:05:23 === BOOT ===
+2026-10-17 12:06:14 --- shutdown ---
+2026-10-17 12:06:35 === BOOT ===
+2026-10-17 12:14:13 --- shutdown ---
+2026-10-18 20:43:19 === BOOT ===
+2026-10-18 20:45:14 --- shutdown ---
+2026-10-23 16:17:12 === BOOT ===
+2026-10-23 16:25:19 --- shutdown ---
+2026-10-28 18:57:05 === BOOT ===
+2026-10-28 19:05:40 --- shutdown ---
+2026-11-03 21:26:50 === BOOT ===
+2026-11-03 21:27:59 removed(missing) ASUS-USB n=7
+2026-11-03 21:28:28 removed(missing) ASUS-USB n=7
+2026-11-03 21:29:45 rebalance OK   dev=GPU root=acpi\pnp0a08\0
+2026-11-03 21:29:47 removed(FAILING) TBT-UpSwitch n=7
+2026-11-03 21:29:47 removed(FAILING) Router@P3 n=1
+2026-11-03 21:30:34 rebalance FAIL dev=GPU phase=0 fail=6 conflictType=0 veto=4 vetoDev=? root=acpi\pnp0a08\0
+2026-11-03 21:30:34 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-11-03 21:31:04 removed(missing) TBT-UpSwitch n=8
+2026-11-03 21:31:07 removed(missing) Router@P1 n=1
+2026-11-03 21:31:10 rebalance OK   dev=GPU root=TRP1
+2026-11-03 21:47:52 rebalance FAIL dev=GPU phase=0 fail=? conflictType=0 veto=? vetoDev=? root=TBT-DnSwitch
+2026-11-03 21:47:52 rebalance FAIL dev=GPU phase=1 fail=6 conflictType=0 veto=1 vetoDev=? root=htree\root\0
+2026-11-03 21:47:52 REBOOT-REQUIRED GPU code=12 status=0xC0000018
+2026-11-03 21:48:27 --- shutdown ---
+2026-11-03 21:49:00 === BOOT ===
+2026-11-03 22:20:39 --- shutdown ---
+2026-11-03 22:34:35 === BOOT ===
+2026-11-03 22:51:03 --- shutdown ---
+2026-11-03 22:51:20 === BOOT ===
+2026-11-03 22:52:24 --- shutdown ---
+2026-11-03 22:52:42 === BOOT ===
+2026-11-03 22:54:59 --- shutdown ---
+2026-11-14 08:08:50 === BOOT ===
+2026-11-14 08:55:12 --- shutdown ---
+2026-11-14 08:55:31 === BOOT ===
+2026-11-14 08:56:26 --- shutdown ---
+2026-11-14 08:56:43 === BOOT ===
+2026-11-14 08:58:20 === BOOT ===
+2026-11-14 08:58:24 !!! CRASH/unclean reboot
+2026-11-14 09:02:13 === BOOT ===
+2026-11-14 09:02:20 !!! CRASH/unclean reboot
+2026-11-14 13:19:06 === BOOT ===
+2026-11-14 13:19:16 !!! CRASH/unclean reboot
+2026-11-14 14:42:36 --- shutdown ---
+2026-11-14 14:42:52 === BOOT ===
+2026-11-14 14:43:42 --- shutdown ---
+2026-11-14 14:48:15 === BOOT ===
+2026-11-14 15:16:20 --- shutdown ---
+2026-11-14 19:21:58 === BOOT ===
+2026-11-15 00:41:57 --- shutdown ---
+2026-11-15 01:10:44 === BOOT ===
+2026-11-15 01:17:01 --- shutdown ---
+2026-11-15 09:14:23 === BOOT ===
+2026-11-15 15:55:52 --- shutdown ---
+2026-11-15 15:56:24 === BOOT ===
