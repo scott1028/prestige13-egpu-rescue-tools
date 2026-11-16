@@ -1,0 +1,292 @@
+#!/usr/bin/env python3
+"""Switch how KDE uses the GC34X eGPU (RTX 5090). Runs in place, no install.
+
+Usage: egpu-mode                  open the GUI
+       egpu-mode status           print the current state
+       egpu-mode set intel|egpu   choose the compositing GPU for the next login
+"""
+import os
+import re
+import shlex
+import signal
+import subprocess
+import sys
+from pathlib import Path
+
+CONF_DIR = Path.home() / ".config/egpu-mode"
+PENDING_FILE = CONF_DIR / "pending"
+REVERTED_FILE = CONF_DIR / "reverted"
+# Mode C exists only as these two files. Mode A deletes them.
+ENV_HOOK = Path.home() / ".config/plasma-workspace/env/egpu-mode.sh"
+AUTOSTART = Path.home() / ".config/autostart/egpu-mode-confirm.desktop"
+
+ENV_HOOK_TEXT = """\
+# Written by egpu-mode for mode C. Sourced by startplasma before KWin starts.
+# Delete this file to go back to Intel compositing. Must stay POSIX sh.
+egpu_conf="$HOME/.config/egpu-mode"
+unset KWIN_DRM_DEVICES
+systemctl --user unset-environment KWIN_DRM_DEVICES 2>/dev/null
+
+if [ -e "$egpu_conf/pending" ]; then
+    # The last mode C login never reached the desktop: go back to Intel.
+    rm -f "$egpu_conf/pending" "$HOME/.config/autostart/egpu-mode-confirm.desktop" \\
+        "$HOME/.config/plasma-workspace/env/egpu-mode.sh"
+    touch "$egpu_conf/reverted"
+else
+    egpu_card=
+    igpu_card=
+    for egpu_dev in /sys/class/drm/card*/device; do
+        egpu_name=${egpu_dev%/device}
+        egpu_name=${egpu_name##*/}
+        # Skip connector dirs such as card1-HDMI-A-2.
+        case $egpu_name in *-*) continue ;; esac
+        case "$(cat "$egpu_dev/vendor"):$(cat "$egpu_dev/device")" in
+            0x10de:0x2c18) egpu_card=/dev/dri/$egpu_name ;;
+            0x8086:*) igpu_card=/dev/dri/$egpu_name ;;
+        esac
+    done
+    if [ -n "$egpu_card" ] && [ -n "$igpu_card" ]; then
+        # KWin uses the first device as its primary GPU.
+        export KWIN_DRM_DEVICES="$egpu_card:$igpu_card"
+        mkdir -p "$egpu_conf"
+        touch "$egpu_conf/pending"
+    fi
+fi
+unset egpu_conf egpu_card igpu_card egpu_dev egpu_name
+"""
+
+# Runs only after a successful login, so a leftover pending file means failure.
+AUTOSTART_TEXT = f"""\
+[Desktop Entry]
+Type=Application
+Name=eGPU mode confirm
+Comment=Written by egpu-mode: marks the last mode C login as successful
+Exec=rm -f {PENDING_FILE}
+NoDisplay=true
+X-KDE-autostart-phase=2
+"""
+
+MODE_NAMES = {"intel": "A. Intel 合成", "egpu": "C. 5090 合成"}
+
+# Same variables switcherooctl uses for the NVIDIA GPU.
+OFFLOAD_ENV = {
+    "__NV_PRIME_RENDER_OFFLOAD": "1",
+    "__GLX_VENDOR_LIBRARY_NAME": "nvidia",
+    "__VK_LAYER_NV_optimus": "NVIDIA_only",
+    "VK_LOADER_DRIVERS_SELECT": "*nvidia*",
+}
+
+OPTION_NOTES = {
+    "intel": (
+        "• 桌面由 Intel 內顯合成，5090 把畫面讀過去，再從 HDMI 輸出。\n"
+        "• 生效：登出再登入。不用重開機。\n"
+        "• 2560x2880@100Hz 約 74 fps，不穩定；60Hz 比較穩。\n"
+        "• 會刪掉 C 寫入的兩個檔案，系統回到沒用過這個程式的狀態。"
+    ),
+    "launch": (
+        "• 輸入指令（例如 steam、blender），這個程式改用 5090 算圖，桌面不變。\n"
+        "• 生效：馬上生效，不用登出。只影響從這裡開的程式。\n"
+        "• 主要給 A 模式用。C 模式下 Chrome、終端機等程式本來就用 5090。\n"
+        "• CUDA / AI 程式在兩種模式都直接用 5090，不必用這個按鈕。"
+    ),
+    "egpu": (
+        "• 桌面和程式改由 5090 算圖、合成，畫面不必每張經過 TB4。實測 100Hz 穩定 100 fps。\n"
+        "• 生效：eGPU 接著的狀態下登出再登入，或接著 eGPU 開機。不用重開機。\n"
+        "• 沒接 eGPU 登入時，會自動用 Intel。\n"
+        "• 會寫入兩個檔案：~/.config/plasma-workspace/env/egpu-mode.sh\n"
+        "  和 ~/.config/autostart/egpu-mode-confirm.desktop。\n"
+        "• 保護機制：如果登入後跳回登入畫面，再登入一次就會自動切回 A。\n"
+        "• 黑畫面救援：按 Ctrl+Alt+F3 登入文字終端機，執行\n"
+        "  rm ~/.config/plasma-workspace/env/egpu-mode.sh && sudo systemctl restart sddm"
+    ),
+}
+
+COMMON_NOTES = (
+    "注意事項（三種方式都一樣）\n"
+    "• 拔 eGPU 前一律先關機。熱拔會讓整個桌面卡死，只能重開機。\n"
+    "• 插上 eGPU 之後，要登出再登入一次，KWin 才接得上 5090。\n"
+    "• 登出後在登入畫面等 30 秒再登入。\n"
+    "  10 秒內再登入會沿用舊的 session，曾讓程式卡住、開不起來。\n"
+    "• 切換不用重開機。只有改 /etc/modprobe.d/egpu-gc34x.conf 才需要重開機。"
+)
+
+
+def read_text(args):
+    try:
+        return subprocess.run(args, capture_output=True, text=True, timeout=10).stdout
+    except (OSError, subprocess.TimeoutExpired):
+        return ""
+
+
+def set_mode(mode):
+    PENDING_FILE.unlink(missing_ok=True)
+    REVERTED_FILE.unlink(missing_ok=True)
+    if mode == "egpu":
+        for path, text in ((ENV_HOOK, ENV_HOOK_TEXT), (AUTOSTART, AUTOSTART_TEXT)):
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(text)
+    else:
+        ENV_HOOK.unlink(missing_ok=True)
+        AUTOSTART.unlink(missing_ok=True)
+        # Drop a value the systemd user manager may keep from a mode C session.
+        read_text(["systemctl", "--user", "unset-environment", "KWIN_DRM_DEVICES"])
+
+
+def get_status():
+    is_egpu_attached = any(
+        (dev / "vendor").read_text().strip() == "0x10de"
+        and (dev / "device").read_text().strip() == "0x2c18"
+        for dev in Path("/sys/class/drm").glob("card*/device")
+        if "-" not in dev.parent.name
+    )
+    match = re.search(r"OpenGL renderer string: (.*)",
+                      read_text(["qdbus6", "org.kde.KWin", "/KWin", "supportInformation"]))
+    # KWin shows up in nvidia-smi only when it has an EGL context on the 5090.
+    return {
+        "is_egpu_attached": is_egpu_attached,
+        "renderer": match.group(1).strip() if match else "",
+        "has_kwin_egpu_context": is_egpu_attached and "kwin_wayland" in read_text(["nvidia-smi"]),
+        "next_mode": "egpu" if ENV_HOOK.exists() else "intel",
+        "is_reverted": REVERTED_FILE.exists(),
+    }
+
+
+def format_status(status):
+    renderer = status["renderer"]
+    if not renderer:
+        # No KWin on the session bus, e.g. run from a text console.
+        running = "未知（讀不到 KWin 的資訊）"
+    else:
+        running_mode = "egpu" if "NVIDIA" in renderer else "intel"
+        running = f"{MODE_NAMES[running_mode]}（{renderer}）"
+    lines = [
+        f"5090：{'已接上' if status['is_egpu_attached'] else '沒接上'}",
+        f"現在的桌面合成：{running}",
+        f"下次登入的模式：{MODE_NAMES[status['next_mode']]}",
+    ]
+    if renderer and status["is_egpu_attached"] and not status["has_kwin_egpu_context"]:
+        lines.append("⚠ 5090 已接上，但 KWin 還沒接上它，畫面改由 CPU 搬，"
+                     "100Hz 只剩 50 fps。請登出再登入。")
+    if status["is_reverted"]:
+        lines.append("⚠ 上次用 C 登入沒有成功，已自動切回 A。")
+    return "\n".join(lines)
+
+
+def launch_on_egpu(command):
+    env = dict(os.environ)
+    appdir = env.get("APPDIR")
+    if appdir and __file__.startswith(appdir):
+        # Running from the AppImage: drop its variables (e.g. SSL_CERT_FILE),
+        # which point into a mount that goes away when this program exits.
+        env = {key: value for key, value in env.items()
+               if key not in ("APPIMAGE", "APPDIR", "ARGV0", "OWD", "APPIMAGE_COMMAND")
+               and not value.startswith(appdir)}
+    subprocess.Popen(shlex.split(command), env={**env, **OFFLOAD_ENV},
+                     start_new_session=True,
+                     stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def logout():
+    subprocess.run(["qdbus6", "org.kde.Shutdown", "/Shutdown", "org.kde.Shutdown.logout"])
+
+
+def prompt_logout():
+    subprocess.run(["qdbus6", "org.kde.LogoutPrompt", "/LogoutPrompt",
+                    "org.kde.LogoutPrompt.promptLogout"])
+
+
+def run_gui():
+    from PyQt6.QtWidgets import (QApplication, QGroupBox, QHBoxLayout, QInputDialog,
+                                 QLabel, QMessageBox, QPushButton, QVBoxLayout, QWidget)
+
+    # Auto-reap apps started by button B so they don't linger as zombies.
+    signal.signal(signal.SIGCHLD, signal.SIG_IGN)
+    app = QApplication(sys.argv)
+    window = QWidget()
+    window.setWindowTitle("eGPU 模式")
+    layout = QVBoxLayout(window)
+
+    # Labels keep their own \n breaks; word wrap made Qt cut off the last line.
+    status_label = QLabel()
+    status_box = QGroupBox("目前狀態")
+    QVBoxLayout(status_box).addWidget(status_label)
+    layout.addWidget(status_box)
+
+    def refresh():
+        status_label.setText(format_status(get_status()))
+
+    def handle_mode_click(mode):
+        set_mode(mode)
+        text = (f"下次登入會使用「{MODE_NAMES[mode]}」。\n要登出再登入才會生效，不用重開機。\n"
+                "登出後在登入畫面等 30 秒再登入。")
+        if mode == "egpu" and not get_status()["is_egpu_attached"]:
+            text += "\n\n目前沒接 5090，登入後會自動用 Intel。"
+        box = QMessageBox(QMessageBox.Icon.Information, "已切換", text + "\n\n現在登出嗎？",
+                          parent=window)
+        logout_button = box.addButton("現在登出", QMessageBox.ButtonRole.AcceptRole)
+        box.addButton("稍後", QMessageBox.ButtonRole.RejectRole)
+        box.exec()
+        if box.clickedButton() == logout_button:
+            logout()
+        refresh()
+
+    def handle_launch_click():
+        if not get_status()["is_egpu_attached"]:
+            QMessageBox.warning(window, "5090 沒接上", "請先接上 eGPU。")
+            return
+        command, is_accepted = QInputDialog.getText(
+            window, "用 5090 開啟程式", "輸入指令（例如 steam、blender）：")
+        if not is_accepted or not command.strip():
+            return
+        try:
+            launch_on_egpu(command)
+        except (OSError, ValueError) as error:
+            QMessageBox.warning(window, "無法啟動", str(error))
+            return
+        QMessageBox.information(window, "已啟動", f"已用 5090 啟動：{command}\n不用登出。")
+
+    options = [
+        ("A. Intel 合成（預設）", "intel", lambda: handle_mode_click("intel")),
+        ("B. 用 5090 開啟程式…", "launch", handle_launch_click),
+        ("C. 5090 合成桌面（建議）", "egpu", lambda: handle_mode_click("egpu")),
+    ]
+    for title, key, handler in options:
+        group = QGroupBox()
+        group_layout = QVBoxLayout(group)
+        button = QPushButton(title)
+        button.clicked.connect(handler)
+        notes = QLabel(OPTION_NOTES[key])
+        group_layout.addWidget(button)
+        group_layout.addWidget(notes)
+        layout.addWidget(group)
+
+    layout.addWidget(QLabel(COMMON_NOTES))
+
+    bottom = QHBoxLayout()
+    for title, handler in (("重新整理", refresh), ("登出", prompt_logout), ("關閉", window.close)):
+        button = QPushButton(title)
+        button.clicked.connect(handler)
+        bottom.addWidget(button)
+    layout.addLayout(bottom)
+
+    refresh()
+    window.show()
+    sys.exit(app.exec())
+
+
+def main():
+    args = sys.argv[1:]
+    if not args:
+        run_gui()
+    elif args == ["status"]:
+        print(format_status(get_status()))
+    elif len(args) == 2 and args[0] == "set" and args[1] in MODE_NAMES:
+        set_mode(args[1])
+        print(f"下次登入會使用「{MODE_NAMES[args[1]]}」。登出再登入後生效。")
+    else:
+        print(__doc__)
+        sys.exit(2)
+
+
+if __name__ == "__main__":
+    main()

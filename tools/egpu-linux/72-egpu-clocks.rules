@@ -1,0 +1,3 @@
+# ASUS ROG XG Mobile GC34X (RTX 5090 Laptop): lock clocks once the nvidia driver binds.
+# nvidia-smi needs the driver up, so run it from a service, not inside the udev event.
+ACTION=="bind", SUBSYSTEM=="pci", DRIVER=="nvidia", ENV{PCI_ID}=="10DE:2C18", RUN+="/usr/bin/systemctl --no-block start egpu-clocks.service"

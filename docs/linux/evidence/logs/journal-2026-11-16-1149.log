@@ -1,0 +1,230 @@
+11月 16 11:49:34.597700 host kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+11月 16 11:49:34.610455 host kernel: pci 0000:55:00.0: BAR 1 [mem 0x8e300000-0x8e300fff]
+11月 16 11:49:34.622650 host kernel: pcieport 0000:00:07.0: AER: enabled with IRQ 126
+11月 16 11:49:34.622708 host kernel: pcieport 0000:00:07.0: pciehp: Slot #6 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:34.622819 host kernel: pcieport 0000:00:07.1: AER: enabled with IRQ 127
+11月 16 11:49:34.622874 host kernel: pcieport 0000:00:07.1: pciehp: Slot #7 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:34.622989 host kernel: pcieport 0000:00:1c.0: AER: enabled with IRQ 128
+11月 16 11:49:34.623120 host kernel: pcieport 0000:00:1c.4: AER: enabled with IRQ 129
+11月 16 11:49:34.623172 host kernel: pcieport 0000:02:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:34.623229 host kernel: pcieport 0000:02:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:34.623288 host kernel: pcieport 0000:02:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:34.627791 host kernel: ACPI: bus type thunderbolt registered
+11月 16 11:49:34.628999 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Link Down
+11月 16 11:49:34.629055 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Card not present
+11月 16 11:49:34.630085 host kernel: typec port0: bound usb4_port1 (ops connector_ops [thunderbolt])
+11月 16 11:49:34.630672 host kernel: typec port1: bound usb4_port3 (ops connector_ops [thunderbolt])
+11月 16 11:49:34.631381 host kernel: thunderbolt 0-1: new device found, vendor=0x31 device=0x704d
+11月 16 11:49:34.631445 host kernel: thunderbolt 0-1: ASUS GC34X
+11月 16 11:49:34.631502 host kernel: thunderbolt 0-0:1.1: new retimer found, vendor=0x8087 device=0xd9c
+11月 16 11:49:36.013809 host systemd[1]: Started nvidia-powerd.service - nvidia-powerd service.
+11月 16 11:49:36.033658 host nvidia-powerd[968]: nvidia-powerd version:2.0 (build 1)
+11月 16 11:49:36.153558 host kernel: nvidia: loading out-of-tree module taints kernel.
+11月 16 11:49:36.225139 host kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 508
+11月 16 11:49:36.230166 host kernel: NVRM: No NVIDIA GPU found.
+11月 16 11:49:36.230264 host kernel: nvidia-nvlink: Unregistered Nvlink Core, major device number 508
+11月 16 11:49:36.282219 host nvidia-powerd[968]: ERROR! Allocate Root client failed 0x26
+11月 16 11:49:36.285870 host systemd[1]: nvidia-powerd.service: Deactivated successfully.
+11月 16 11:49:36.526116 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Card present
+11月 16 11:49:36.526304 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Link Up
+11月 16 11:49:36.621014 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.622321 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.622635 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.622943 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.624316 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.624625 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.624905 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.626192 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.626513 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.627177 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.628458 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.628709 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.629230 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.630238 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.630457 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.630649 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.631379 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.631562 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.631744 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.632386 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.632546 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.632681 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.633229 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.633361 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.633507 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.634013 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.634129 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.634235 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 11:49:36.634682 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 11:49:36.634786 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.634882 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.634992 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.635085 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.635346 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 11:49:36.641780 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x00000000-0x7ffffffff 64bit pref]
+11月 16 11:49:36.655338 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: can't assign; no space
+11月 16 11:49:36.655533 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: failed to assign
+11月 16 11:49:36.657477 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: can't assign; no space
+11月 16 11:49:36.657638 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: failed to assign
+11月 16 11:49:36.661809 host kernel: pcieport 0000:02:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:36.662151 host kernel: pcieport 0000:02:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:36.662498 host kernel: pcieport 0000:02:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:36.723417 host egpu-bar1[1777]: 0000:02:00.0: LnkSta=7043
+11月 16 11:49:36.793324 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x00000000-0x0fffffff 64bit pref]
+11月 16 11:49:36.806550 host egpu-bar1[1818]: 0000:03:00.0: BAR1 set to 256 MB, rescanned below 0000:00:07.0
+11月 16 11:49:36.808382 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x2810000000-0x281fffffff 64bit pref]: assigned
+11月 16 11:49:36.815212 host kernel: pcieport 0000:02:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:36.815548 host kernel: pcieport 0000:02:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:36.815863 host kernel: pcieport 0000:02:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 11:49:36.909580 host egpu-cstate[1890]: limit: deep C-states disable=1
+11月 16 11:49:36.977119 host kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 508
+11月 16 11:49:36.981148 host kernel: nvidia 0000:03:00.0: enabling device (0000 -> 0003)
+11月 16 11:49:36.981434 host kernel: nvidia 0000:03:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+11月 16 11:49:36.994119 host kernel: NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  595.99.02  Release Build  (dvs-builder@U22-I3-AF05-06-2)  Wed Aug 26 05:20:50 UTC 2026
+11月 16 11:49:37.004109 host kernel: nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for x86_64  595.99.02  Release Build  (dvs-builder@U22-I3-AF05-06-2)  Wed Aug 26 05:08:45 UTC 2026
+11月 16 11:49:37.007139 host kernel: [drm] [nvidia-drm] [GPU ID 0x00000300] Loading driver
+11月 16 11:49:37.686931 host systemd-logind[989]: New session '1' of user 'sddm' with class 'greeter' and type 'wayland'.
+11月 16 11:49:37.700020 host systemd[1]: Starting user@107.service - User Manager for UID 107...
+11月 16 11:49:37.719206 host systemd-logind[989]: New session '2' of user 'sddm' with class 'manager-early' and type 'unspecified'.
+11月 16 11:49:37.863457 host systemd[1]: Started user@107.service - User Manager for UID 107.
+11月 16 11:49:37.872563 host sddm-helper-start-wayland[2200]: Starting Wayland process "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1" "sddm"
+11月 16 11:49:37.872998 host sddm-helper-start-wayland[2200]: started succesfully "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1"
+11月 16 11:49:38.396364 host dbus-daemon[959]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.38' (uid=107 pid=2201 comm="/usr/bin/kwin_wayland --drm --no-lockscreen --no-g" label="unconfined")
+11月 16 11:49:38.667171 host kernel: [drm] Initialized nvidia-drm 0.0.0 for 0000:03:00.0 on minor 1
+11月 16 11:49:38.764163 host kernel: nvidia 0000:03:00.0: [drm] fb1: nvidia-drmdrmfb frame buffer device
+11月 16 11:49:38.810279 host systemd[1]: Starting nvidia-persistenced.service - NVIDIA Persistence Daemon...
+11月 16 11:49:38.823445 host sddm-helper-start-wayland[2200]: "kwin_core: Failed to open /dev/input/event17 device (No such device)\nkwin_core: Failed to open /dev/input/event15 device (No such device)\n"
+11月 16 11:49:38.823895 host nvidia-persistenced[2311]: Verbose syslog connection opened
+11月 16 11:49:38.823924 host nvidia-persistenced[2311]: Now running with user ID 112 and group ID 116
+11月 16 11:49:38.823946 host nvidia-persistenced[2311]: Started (2311)
+11月 16 11:49:38.825522 host nvidia-persistenced[2311]: device 0000:03:00.0 - registered
+11月 16 11:49:38.825558 host nvidia-persistenced[2311]: Local RPC services initialized
+11月 16 11:49:38.825911 host sddm-helper-start-wayland[2200]: "kwin_core: Failed to open /dev/input/event18 device (No such device)\n"
+11月 16 11:49:38.826146 host systemd[1]: Started nvidia-persistenced.service - NVIDIA Persistence Daemon.
+11月 16 11:49:38.826460 host sddm-helper-start-wayland[2200]: "kwin_core: Failed to open /dev/input/event16 device (No such device)\n"
+11月 16 11:49:38.925004 host egpu-cstate[2346]: restore: deep C-states disable=0
+11月 16 11:49:38.983737 host egpu-cstate[2385]: limit: deep C-states disable=1
+11月 16 11:49:39.002552 host systemd[1]: Starting egpu-clocks.service - Lock GC34X eGPU memory clock so its PCIe link stays at Gen3...
+11月 16 11:49:39.047485 host nvidia-persistenced[2311]: device 0000:03:00.0 - persistence mode enabled.
+11月 16 11:49:39.047558 host nvidia-persistenced[2311]: device 0000:03:00.0 - NUMA memory onlined.
+11月 16 11:49:39.049338 host egpu-clocks[2411]: Enabled persistence mode via daemon for GPU 00000000:03:00.0.
+11月 16 11:49:39.049338 host egpu-clocks[2411]: All done.
+11月 16 11:49:39.078985 host egpu-clocks[2441]: Memory clocks set to "(memClkMin 9001, memClkMax 14001)" for GPU 00000000:03:00.0
+11月 16 11:49:39.078985 host egpu-clocks[2441]: All done.
+11月 16 11:49:39.106918 host egpu-clocks[2475]: P0, 3, 14001 MHz
+11月 16 11:49:39.107806 host systemd[1]: egpu-clocks.service: Deactivated successfully.
+11月 16 11:49:39.108029 host systemd[1]: Finished egpu-clocks.service - Lock GC34X eGPU memory clock so its PCIe link stays at Gen3.
+11月 16 11:49:39.973184 host sddm-helper-start-wayland[2200]: "kwin_core: Failed to open /dev/dri/renderD129 device (No such device)\nkwin_wayland_drm: Failed to open drm device /dev/dri/renderD129\n"
+11月 16 11:49:39.973208 host sddm-helper-start-wayland[2200]: "kwin_wayland_drm: Received unexpected add udev event for: \"/dev/dri/card1\"\n"
+11月 16 11:49:39.973214 host sddm-helper-start-wayland[2200]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 11:49:40.192294 host sddm-helper-start-wayland[2200]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 11:49:40.333687 host sddm-helper-start-wayland[2200]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 11:49:40.474042 host sddm-helper-start-wayland[2200]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 11:49:40.753306 host sddm-helper-start-wayland[2200]: Stopping... "kwin_wayland"
+11月 16 11:49:42.714236 host systemd-logind[989]: Removed session 1.
+11月 16 11:49:42.766875 host systemd-logind[989]: New session '3' of user 'sddm' with class 'greeter' and type 'wayland'.
+11月 16 11:49:42.799824 host sddm-helper-start-wayland[2676]: Starting Wayland process "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1" "sddm"
+11月 16 11:49:42.802126 host sddm-helper-start-wayland[2676]: started succesfully "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1"
+11月 16 11:49:43.043649 host sddm-helper-start-wayland[2676]: "kwin_core: Failed to open /dev/dri/renderD129 device (No such device)\nkwin_wayland_drm: Failed to open drm device /dev/dri/renderD129\n"
+11月 16 11:49:43.044098 host sddm-helper-start-wayland[2676]: "kwin_core: Failed to open /dev/dri/renderD128 device (No such device)\nkwin_wayland_drm: Failed to open drm device /dev/dri/renderD128\n"
+11月 16 11:49:52.335458 host systemd-logind[989]: New session '4' of user 'user' with class 'user' and type 'wayland'.
+11月 16 11:49:52.369772 host systemd[1]: Starting user@1000.service - User Manager for UID 1000...
+11月 16 11:49:52.394071 host systemd-logind[989]: New session '5' of user 'user' with class 'manager' and type 'unspecified'.
+11月 16 11:49:52.420938 host sddm-helper-start-wayland[2676]: Stopping... "kwin_wayland"
+11月 16 11:49:52.469772 host sddm-helper-start-wayland[2676]: "kwin_scene_opengl: Could not delete render time query because no context is current\n"
+11月 16 11:49:52.472159 host sddm-helper-start-wayland[2676]: "kwin_scene_opengl: Could not delete render time query because no context is current\nkwin_scene_opengl: Could not delete render time query because no context is current\n"
+11月 16 11:49:52.556338 host systemd[1]: Started user@1000.service - User Manager for UID 1000.
+11月 16 11:49:52.853137 host systemd-logind[989]: Removed session 3.
+11月 16 11:49:52.971094 host systemd[3017]: Starting plasma-kwin_wayland.service - KDE Wayland Compositor...
+11月 16 11:49:52.987286 host systemd[3017]: Starting xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries...
+11月 16 11:49:53.003844 host dbus-daemon[3053]: [session uid=1000 pid=3053 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.13' (uid=1000 pid=3312 comm="/usr/libexec/xdg-desktop-portal-rewrite-launchers" label="unconfined")
+11月 16 11:49:53.010970 host systemd[3017]: Started plasma-kwin_wayland.service - KDE Wayland Compositor.
+11月 16 11:49:53.031043 host systemd[3017]: Finished xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries.
+11月 16 11:49:53.034885 host dbus-daemon[3053]: [session uid=1000 pid=3053 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.16' (uid=1000 pid=3336 comm="/usr/bin/kcminit_startup" label="unconfined")
+11月 16 11:49:53.091437 host kwin_wayland_wrapper[3323]: No backend specified, automatically choosing drm
+11月 16 11:49:54.133301 host kwin_wayland_wrapper[3387]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+11月 16 11:49:54.133301 host kwin_wayland_wrapper[3387]: > Warning:          Unsupported maximum keycode 708, clipping.
+11月 16 11:49:54.133301 host kwin_wayland_wrapper[3387]: >                   X11 cannot support keycodes above 255.
+11月 16 11:49:54.133474 host kwin_wayland_wrapper[3387]: > Warning:          Virtual modifier Hyper multiply defined
+11月 16 11:49:54.133474 host kwin_wayland_wrapper[3387]: >                   Using 0, ignoring 0
+11月 16 11:49:54.133474 host kwin_wayland_wrapper[3387]: > Warning:          Virtual modifier ScrollLock multiply defined
+11月 16 11:49:54.133474 host kwin_wayland_wrapper[3387]: >                   Using 0, ignoring 0
+11月 16 11:49:54.134008 host kwin_wayland_wrapper[3387]: Errors from xkbcomp are not fatal to the X server
+11月 16 11:49:54.946807 host dbus-daemon[959]: [system] Activating service name='org.kde.powerdevil.discretegpuhelper' requested by ':1.77' (uid=1000 pid=3521 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev" label="unconfined") (using servicehelper)
+11月 16 11:49:54.954985 host org.kde.powerdevil.discretegpuhelper[3572]: Detected locale "C" with character encoding "ANSI_X3.4-1968", which is not UTF-8.
+11月 16 11:49:54.961413 host dbus-daemon[959]: [system] Successfully activated service 'org.kde.powerdevil.discretegpuhelper'
+11月 16 11:49:55.126880 host systemd[3017]: Starting app-egpu\x2dmode\x2dconfirm@autostart.service - eGPU mode confirm...
+11月 16 11:49:55.129024 host systemd[3017]: Starting app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings...
+11月 16 11:49:55.144749 host systemd[3017]: Starting xdg-desktop-portal.service - Portal service...
+11月 16 11:49:55.145407 host systemd[3017]: Started app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings.
+11月 16 11:49:55.145432 host systemd[3017]: Started app-egpu\x2dmode\x2dconfirm@autostart.service - eGPU mode confirm.
+11月 16 11:49:55.168846 host dbus-daemon[3053]: [session uid=1000 pid=3053 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.52' (uid=1000 pid=3645 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:49:55.194771 host /usr/libexec/xdg-desktop-portal[3645]: Choosing gtk.portal for org.freedesktop.impl.portal.Lockdown as a last-resort fallback
+11月 16 11:49:55.195235 host dbus-daemon[3053]: [session uid=1000 pid=3053 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.52' (uid=1000 pid=3645 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:49:55.197169 host systemd[3017]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+11月 16 11:49:55.265042 host systemd[3017]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+11月 16 11:49:55.266285 host dbus-daemon[3053]: [session uid=1000 pid=3053 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.kde' unit='plasma-xdg-desktop-portal-kde.service' requested by ':1.52' (uid=1000 pid=3645 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:49:55.267819 host systemd[3017]: Starting plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE...
+11月 16 11:49:55.403004 host kwin_wayland_wrapper[3727]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+11月 16 11:49:55.403004 host kwin_wayland_wrapper[3727]: > Warning:          Unsupported maximum keycode 708, clipping.
+11月 16 11:49:55.403004 host kwin_wayland_wrapper[3727]: >                   X11 cannot support keycodes above 255.
+11月 16 11:49:55.403345 host kwin_wayland_wrapper[3727]: > Warning:          Virtual modifier Hyper multiply defined
+11月 16 11:49:55.403345 host kwin_wayland_wrapper[3727]: >                   Using 0, ignoring 0
+11月 16 11:49:55.403345 host kwin_wayland_wrapper[3727]: > Warning:          Virtual modifier ScrollLock multiply defined
+11月 16 11:49:55.403345 host kwin_wayland_wrapper[3727]: >                   Using 0, ignoring 0
+11月 16 11:49:55.403672 host kwin_wayland_wrapper[3727]: Errors from xkbcomp are not fatal to the X server
+11月 16 11:49:55.814369 host systemd[3017]: Started plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE.
+11月 16 11:49:55.841766 host systemd[3017]: Started xdg-desktop-portal.service - Portal service.
+11月 16 11:49:55.843008 host kwin_wayland_wrapper[3323]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Unable to open /proc/3323/root")
+11月 16 11:49:55.845191 host xdg-desktop-portal-kde[3716]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:49:55.845355 host xdg-desktop-portal-kde[3716]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:49:55.848620 host xdg-desktop-portal-kde[3716]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:49:55.848644 host xdg-desktop-portal-kde[3716]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:49:55.850287 host xdg-desktop-portal-kde[3716]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+11月 16 11:49:55.850493 host kwin_wayland_wrapper[3323]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Unable to open /proc/3323/root")
+11月 16 11:49:55.850722 host xdg-desktop-portal-kde[3716]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:49:55.850778 host xdg-desktop-portal-kde[3716]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:50:02.884793 host xdg-desktop-portal-kde[3716]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:50:02.925662 host systemd[1]: Stopping user@107.service - User Manager for UID 107...
+11月 16 11:50:02.974728 host systemd-logind[989]: Removed session 2.
+11月 16 11:50:02.975674 host systemd[1]: Stopped user@107.service - User Manager for UID 107.
+11月 16 11:53:52.921439 host systemd[3017]: Started app-nvidia\x2dsettings@c6aff6a8903f4a91bfab3d96f6d92335.service - NVIDIA X Server Settings.
+11月 16 11:53:53.026009 host dbus-daemon[3053]: [session uid=1000 pid=3053 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.81' (uid=1000 pid=7106 comm="/usr/bin/nvidia-settings" label="unconfined")
+11月 16 11:53:53.059259 host nvidia-settings[7106]: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+11月 16 11:53:53.101919 host nvidia-settings[7106]: PRIME: No offloading required. Abort
+11月 16 11:53:53.101929 host nvidia-settings[7106]: PRIME: is it supported? no
+11月 16 11:54:07.456511 host dbus-daemon[3053]: [session uid=1000 pid=3053 pidfd=5] Activating via systemd: service name='org.kde.spectacle' unit='app-org.kde.spectacle.service' requested by ':1.18' (uid=1000 pid=3323 comm="/usr/bin/kwin_wayland --wayland-fd 7 --socket wayl" label="unconfined")
+11月 16 11:57:56.109655 host kwin_wayland_wrapper[3323]: kwin_tabbox: Could not load window switcher package "org.kde.breeze.desktop" . Falling back to default
+11月 16 11:57:56.285992 host kwin_wayland_wrapper[3323]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Unable to open /proc/3323/root")
+11月 16 11:58:12.570274 host systemd[3017]: Started app-\x2fhome\x2fuser\x2fworkspace\x2fwork\x2fprestige13\x2degpu\x2drescue\x2dlinux\x2fegpu\x2dlinux\x2fegpu\x2dmode@b8e437663df6418eb2efb6f7c1bd6657.service - ~/work/prestige13-egpu-rescue-linux/egpu-linux/egpu-mode.
+11月 16 11:58:35.842754 host systemd[3017]: app-\x2fhome\x2fuser\x2fworkspace\x2fwork\x2fprestige13\x2degpu\x2drescue\x2dlinux\x2fegpu\x2dlinux\x2fegpu\x2dmode@b8e437663df6418eb2efb6f7c1bd6657.service: Consumed 795ms CPU time over 23.272s wall clock time, 65.1M memory peak.
+11月 16 11:58:43.286782 host systemd[3017]: app-nvidia\x2dsettings@c6aff6a8903f4a91bfab3d96f6d92335.service: Consumed 5.359s CPU time over 4min 50.365s wall clock time, 81M memory peak.
+11月 16 12:00:00.568948 host xdg-desktop-portal-kde[3716]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 12:01:32.826912 host systemd[3017]: Stopping plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE...
+11月 16 12:01:32.826985 host systemd[3017]: Stopping xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+11月 16 12:01:32.827044 host systemd[3017]: Stopping xdg-desktop-portal.service - Portal service...
+11月 16 12:01:32.827085 host systemd[3017]: xdg-document-portal.service: Failed to kill control group /user.slice/user-1000.slice/user@1000.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+11月 16 12:01:32.828344 host systemd[3017]: Stopped xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+11月 16 12:01:32.836883 host systemd[3017]: Stopped xdg-desktop-portal.service - Portal service.
+11月 16 12:01:32.864042 host systemd[3017]: Stopped plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE.
+11月 16 12:01:32.869113 host nvidia-persistenced[2311]: Received signal 15
+11月 16 12:01:32.869184 host systemd[1]: Stopping nvidia-persistenced.service - NVIDIA Persistence Daemon...
+11月 16 12:01:32.869846 host nvidia-persistenced[2311]: Socket closed.
+11月 16 12:01:32.942794 host nvidia-persistenced[2311]: device 0000:03:00.0 - persistence mode disabled.
+11月 16 12:01:32.942903 host nvidia-persistenced[2311]: device 0000:03:00.0 - NUMA memory offlined.
+11月 16 12:01:32.942957 host nvidia-persistenced[2311]: PID file unlocked.
+11月 16 12:01:32.942961 host nvidia-persistenced[2311]: PID file closed.
+11月 16 12:01:32.942983 host nvidia-persistenced[2311]: The daemon no longer has permission to remove its runtime data directory /var/run/nvidia-persistenced
+11月 16 12:01:32.942985 host nvidia-persistenced[2311]: Shutdown (2311)
+11月 16 12:01:32.956412 host systemd[1]: nvidia-persistenced.service: Deactivated successfully.
+11月 16 12:01:32.956521 host systemd[1]: Stopped nvidia-persistenced.service - NVIDIA Persistence Daemon.
+11月 16 12:01:33.015161 host systemd[1]: Stopping user@1000.service - User Manager for UID 1000...
+11月 16 12:01:33.015396 host systemd-logind[989]: Removed session 4.
+11月 16 12:01:33.067485 host kwin_wayland_wrapper[3323]: kwin_screencast: PipeWire remote error:  connection error
+11月 16 12:01:33.387056 host systemd[3017]: Stopping plasma-kwin_wayland.service - KDE Wayland Compositor...
+11月 16 12:01:33.687134 host systemd[3017]: Stopped plasma-kwin_wayland.service - KDE Wayland Compositor.
+11月 16 12:01:33.687152 host systemd[3017]: plasma-kwin_wayland.service: Consumed 44.022s CPU time over 11min 40.715s wall clock time, 218.5M memory peak.
+11月 16 12:01:33.729651 host systemd-logind[989]: Removed session 5.
+11月 16 12:01:33.731809 host systemd[1]: user@1000.service: Deactivated successfully.
+11月 16 12:01:33.732422 host systemd[1]: Stopped user@1000.service - User Manager for UID 1000.
+11月 16 12:01:33.732756 host systemd[1]: user@1000.service: Consumed 6min 7.095s CPU time over 11min 41.362s wall clock time, 4.9G memory peak.

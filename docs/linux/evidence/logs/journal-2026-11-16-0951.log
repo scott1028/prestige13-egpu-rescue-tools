@@ -1,0 +1,975 @@
+11月 16 09:51:42.150338 host kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+11月 16 09:51:42.162258 host kernel: pci 0000:55:00.0: BAR 1 [mem 0x8e300000-0x8e300fff]
+11月 16 09:51:42.168564 host kernel: pcieport 0000:00:07.0: AER: enabled with IRQ 126
+11月 16 09:51:42.168624 host kernel: pcieport 0000:00:07.0: pciehp: Slot #6 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:51:42.168746 host kernel: pcieport 0000:00:07.1: AER: enabled with IRQ 127
+11月 16 09:51:42.168806 host kernel: pcieport 0000:00:07.1: pciehp: Slot #7 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:51:42.168932 host kernel: pcieport 0000:00:1c.0: AER: enabled with IRQ 128
+11月 16 09:51:42.169059 host kernel: pcieport 0000:00:1c.4: AER: enabled with IRQ 129
+11月 16 09:51:42.174412 host kernel: ACPI: bus type thunderbolt registered
+11月 16 09:51:42.176691 host kernel: typec port0: bound usb4_port1 (ops connector_ops [thunderbolt])
+11月 16 09:51:42.177246 host kernel: typec port1: bound usb4_port3 (ops connector_ops [thunderbolt])
+11月 16 09:51:43.526276 host systemd[1]: Started nvidia-powerd.service - nvidia-powerd service.
+11月 16 09:51:43.539364 host nvidia-powerd[969]: nvidia-powerd version:2.0 (build 1)
+11月 16 09:51:43.668854 host kernel: nvidia: loading out-of-tree module taints kernel.
+11月 16 09:51:43.709090 host kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 508
+11月 16 09:51:43.713856 host kernel: NVRM: No NVIDIA GPU found.
+11月 16 09:51:43.714983 host kernel: nvidia-nvlink: Unregistered Nvlink Core, major device number 508
+11月 16 09:51:43.760214 host nvidia-powerd[969]: ERROR! Allocate Root client failed 0x26
+11月 16 09:51:43.761238 host systemd[1]: nvidia-powerd.service: Deactivated successfully.
+11月 16 09:53:09.242962 host kernel: thunderbolt 0-1: new device found, vendor=0x31 device=0x704d
+11月 16 09:53:09.243938 host kernel: thunderbolt 0-1: ASUS GC34X
+11月 16 09:53:09.505859 host kernel: thunderbolt 0-0:1.1: new retimer found, vendor=0x8087 device=0xd9c
+11月 16 09:53:10.164907 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Card present
+11月 16 09:53:10.165567 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Link Up
+11月 16 09:53:10.255672 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.256952 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.257239 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.257527 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0 (no details found
+11月 16 09:53:10.257798 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.258937 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.259218 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.259483 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.261046 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.261383 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.261661 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.262908 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.263674 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.264057 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.265363 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.265690 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.265957 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.267091 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.267367 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.267679 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.268645 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.268856 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.269073 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.269850 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.270030 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.270197 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:53:10.270932 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:53:10.271130 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.271306 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.271483 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.271652 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.271802 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.271967 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.272108 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.272244 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.272371 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.272497 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.272626 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.272750 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.272870 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.272985 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.273111 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.273253 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.273544 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.273667 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:53:10.278439 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x00000000-0x7ffffffff 64bit pref]
+11月 16 09:53:10.300324 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: can't assign; no space
+11月 16 09:53:10.300440 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: failed to assign
+11月 16 09:53:10.301750 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: can't assign; no space
+11月 16 09:53:10.301879 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: failed to assign
+11月 16 09:53:10.304127 host kernel: pcieport 0000:02:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:53:10.304352 host kernel: pcieport 0000:02:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:53:10.304579 host kernel: pcieport 0000:02:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:53:10.352343 host egpu-bar1[2635]: 0000:02:00.0: LnkSta=7043
+11月 16 09:53:10.428982 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x00000000-0x0fffffff 64bit pref]
+11月 16 09:53:10.434281 host egpu-bar1[2650]: 0000:03:00.0: BAR1 set to 256 MB, rescanned below 0000:00:07.0
+11月 16 09:53:10.439093 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x2810000000-0x281fffffff 64bit pref]: assigned
+11月 16 09:53:10.450115 host kernel: pcieport 0000:02:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:53:10.450269 host kernel: pcieport 0000:02:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:53:10.450398 host kernel: pcieport 0000:02:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:53:10.494882 host kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 508
+11月 16 09:53:10.498866 host kernel: nvidia 0000:03:00.0: enabling device (0000 -> 0002)
+11月 16 09:53:10.499089 host kernel: nvidia 0000:03:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+11月 16 09:53:10.508885 host kernel: NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  595.99.02  Release Build  (dvs-builder@U22-I3-AF05-06-2)  Wed Aug 26 05:20:50 UTC 2026
+11月 16 09:53:10.518851 host kernel: nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for x86_64  595.99.02  Release Build  (dvs-builder@U22-I3-AF05-06-2)  Wed Aug 26 05:08:45 UTC 2026
+11月 16 09:53:10.521842 host kernel: [drm] [nvidia-drm] [GPU ID 0x00000300] Loading driver
+11月 16 09:53:12.921872 host kernel: [drm] Initialized nvidia-drm 0.0.0 for 0000:03:00.0 on minor 1
+11月 16 09:53:13.088399 host kernel: nvidia 0000:03:00.0: [drm] fb1: nvidia-drmdrmfb frame buffer device
+11月 16 09:53:13.149220 host systemd[1]: Starting nvidia-persistenced.service - NVIDIA Persistence Daemon...
+11月 16 09:53:13.156247 host nvidia-persistenced[2707]: Verbose syslog connection opened
+11月 16 09:53:13.156298 host nvidia-persistenced[2707]: Now running with user ID 112 and group ID 116
+11月 16 09:53:13.156328 host nvidia-persistenced[2707]: Started (2707)
+11月 16 09:53:13.158518 host nvidia-persistenced[2707]: device 0000:03:00.0 - registered
+11月 16 09:53:13.158565 host nvidia-persistenced[2707]: Local RPC services initialized
+11月 16 09:53:13.159711 host systemd[1]: Started nvidia-persistenced.service - NVIDIA Persistence Daemon.
+11月 16 09:53:13.222401 host sddm-helper-start-wayland[2313]: "kwin_core: Failed to open /dev/dri/renderD129 device (No such device)\nkwin_wayland_drm: Failed to open drm device /dev/dri/renderD129\n"
+11月 16 09:53:13.222453 host sddm-helper-start-wayland[2313]: "kwin_wayland_drm: Received unexpected add udev event for: \"/dev/dri/card1\"\n"
+11月 16 09:53:13.288191 host sddm-helper-start-wayland[2313]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 09:53:13.391885 host sddm-helper-start-wayland[2313]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 09:53:13.494568 host sddm-helper-start-wayland[2313]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 09:53:13.592140 host sddm-helper-start-wayland[2313]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 09:53:20.467515 host systemd[2917]: Starting app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings...
+11月 16 09:53:20.484023 host systemd[2917]: Started app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings.
+11月 16 09:53:20.604444 host systemd[2917]: app-nvidia\x2dsettings\x2dautostart@autostart.service: Main process exited, code=exited, status=1/FAILURE
+11月 16 09:53:20.604536 host systemd[2917]: app-nvidia\x2dsettings\x2dautostart@autostart.service: Failed with result 'exit-code'.
+11月 16 09:53:27.563973 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:53:27.564443 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:53:27.564705 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:53:27.565016 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:53:27.565251 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:53:27.565465 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:53:27.565678 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:53:33.564857 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:53:33.565235 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:53:33.565510 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:53:33.565755 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:53:33.565974 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:53:33.566208 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:53:33.566428 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:53:33.566639 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:53:33.566759 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:53:33.567058 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:53:33.567241 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:53:33.567493 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:53:33.567642 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:53:33.567757 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:53:34.564873 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:53:34.565122 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:53:34.565297 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:53:34.565446 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:53:34.565592 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:53:34.565745 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:53:34.565897 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:53:34.566035 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:53:34.566158 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:53:34.566311 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:53:34.566441 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:53:34.566584 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:53:34.566725 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:53:34.566881 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:53:36.565856 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:53:36.566076 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:53:36.566225 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:53:36.566351 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:53:36.566470 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:53:36.566585 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:53:36.566700 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:53:46.773898 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:53:46.774195 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:53:46.774404 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:53:46.774562 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:53:46.774715 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:53:46.774877 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:53:46.775028 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:54:01.969996 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:54:01.970980 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:54:01.971696 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:54:01.972365 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:54:01.972996 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:54:01.973590 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:54:01.974169 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:54:05.163883 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:54:05.164665 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:54:05.165160 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:54:05.165575 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:54:05.166187 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:54:05.166589 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:54:05.166988 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:54:05.763879 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:54:05.764664 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:54:05.765225 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:54:05.765715 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:54:05.766187 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:54:05.766649 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:54:05.767138 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:54:15.570897 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:54:15.571511 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:54:15.571849 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:54:15.572148 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:54:15.572427 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:54:15.572656 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:54:15.572902 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:54:17.363893 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:54:17.364376 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:54:17.364751 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:54:17.365106 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:54:17.365442 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:54:17.365756 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:54:17.366099 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:54:21.162865 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:54:21.163240 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:54:21.163401 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:54:21.163529 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:54:21.163660 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:54:21.163794 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:54:21.163953 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:54:32.964908 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:54:32.966437 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:54:32.967380 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:54:32.968173 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:54:32.968920 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:54:32.969632 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:54:32.970366 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:54:35.784874 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:54:35.785551 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:54:35.785928 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:54:35.786242 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:54:35.786483 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:54:35.786880 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:54:35.787208 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:55:15.963907 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:55:15.964286 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:55:15.964464 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:55:15.964592 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:55:15.964714 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:55:15.964850 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:55:15.964977 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:55:19.352242 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:55:19.352763 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:55:19.353078 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:55:19.353314 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:55:19.353519 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:55:19.353723 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:55:19.353954 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:55:21.950855 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:55:21.951122 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:55:21.951274 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:55:21.951410 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:55:21.951529 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:55:21.951648 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:55:21.951776 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:56:00.555864 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:56:00.556139 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:56:00.556262 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:56:00.556351 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:56:00.556433 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:56:00.556512 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:56:00.556592 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:00:47.800966 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 10:00:47.801511 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 10:00:47.801825 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 10:00:47.802176 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 10:00:47.802410 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 10:00:47.802637 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 10:00:47.802868 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:03:43.373119 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 10:03:43.373754 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 10:03:43.374109 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 10:03:43.374363 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 10:03:43.374616 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 10:03:43.374864 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 10:03:43.375114 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:03:45.593997 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 10:03:45.594727 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 10:03:45.595077 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 10:03:45.595352 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 10:03:45.595595 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 10:03:45.595868 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 10:03:45.596130 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:03:46.774999 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 10:03:46.775579 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 10:03:46.775867 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 10:03:46.776095 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 10:03:46.776326 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 10:03:46.776543 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 10:03:46.776752 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:03:47.974991 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 10:03:47.975833 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 10:03:47.976202 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 10:03:47.976477 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 10:03:47.976758 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 10:03:47.977023 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 10:03:47.977300 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:03:48.772906 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 10:03:48.773691 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 10:03:48.774051 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 10:03:48.774342 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 10:03:48.774615 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 10:03:48.774976 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 10:03:48.775302 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:03:49.575030 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Fatal) error message received from 0000:03:00.0
+11月 16 10:03:49.575661 host kernel: nvidia 0000:03:00.0: AER: PCIe Bus Error: severity=Uncorrectable (Fatal), type=Inaccessible, (Unregistered Agent ID)
+11月 16 10:03:49.575977 host kernel: nvidia 0000:03:00.0: AER:   Error of this Agent is reported first
+11月 16 10:03:49.576227 host kernel: snd_hda_intel 0000:03:00.1: AER: PCIe Bus Error: severity=Uncorrectable (Fatal), type=Inaccessible, (Unregistered Agent ID)
+11月 16 10:03:49.576452 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 10:03:49.576662 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 10:03:49.803913 host kernel: pcieport 0000:02:00.0: AER: Downstream Port link has been reset (0)
+11月 16 10:03:49.804736 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:03:49.805097 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 10:03:49.805456 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 10:03:50.163999 host kernel: pcieport 0000:02:00.0: AER: Downstream Port link has been reset (0)
+11月 16 10:03:50.164853 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 10:03:50.363169 host kernel: NVRM: GPU at PCI:0000:03:00: GPU-<uuid>
+11月 16 10:03:50.363393 host kernel: NVRM: GPU Board Serial Number: 0
+11月 16 10:03:50.363464 host kernel: NVRM: Xid (PCI:0000:03:00): 79, GPU has fallen off the bus.
+11月 16 10:03:50.363497 host kernel: NVRM: GPU 0000:03:00.0: GPU has fallen off the bus.
+11月 16 10:03:50.363528 host kernel: NVRM: GPU 0000:03:00.0: GPU serial number is 0.
+11月 16 10:03:50.363551 host kernel: NVRM: krcRcAndNotifyAllChannels_IMPL: RC all channels for critical error 79.
+11月 16 10:03:50.363580 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 10:03:50.363601 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 10:03:50.363624 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 10:03:50.363641 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 10:03:50.363667 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 10:03:50.363689 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 10:03:50.363706 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 10:03:50.363721 host kernel: NVRM: prbEncStartAlloc: Can't allocate memory for protocol buffers.
+11月 16 10:03:50.363754 host kernel: NVRM: A GPU crash dump has been created. If possible, please run
+                                            NVRM: nvidia-bug-report.sh as root to collect this data before
+                                            NVRM: the NVIDIA kernel module is unloaded.
+11月 16 10:03:50.366318 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: status == NV_OK @ journal.c:2239
+11月 16 10:03:50.366343 host kernel: NVRM: Xid (PCI:0000:03:00): 154, GPU recovery action changed from 0x0 (None) to 0x1 (GPU Reset Required)
+11月 16 10:03:55.604520 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:03:56.605130 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:03:57.605715 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:03:58.606367 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:03:59.607003 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:00.607721 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:01.608369 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:02.609050 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:03.609687 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:04.610332 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:05.610949 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:06.611625 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:07.612137 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:08.612758 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:09.613275 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:10.613952 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:11.614543 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:12.615181 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:13.615729 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:14.616318 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:15.616897 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:16.617435 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:17.618036 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:18.618646 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:19.619308 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:20.619967 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:21.620596 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:22.621247 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:23.621886 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:24.622473 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:25.623139 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:26.623574 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:27.623846 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:28.624470 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:29.625066 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:30.625659 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:31.626323 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:32.626920 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:33.627615 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:34.628314 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:35.628922 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:36.629532 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:37.630147 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:38.630764 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:39.631378 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:40.631865 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:41.632557 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:42.633179 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:43.633750 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:44.634404 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:45.634992 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:46.635608 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:47.636226 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:48.636800 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:49.637404 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:50.637874 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:51.638487 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:52.639179 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:53.639798 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:54.640448 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:55.641014 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:56.641609 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:57.642239 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:58.642868 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:04:59.643467 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:00.644070 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:01.644676 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:02.645258 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:03.645701 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:04.646315 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:05.646821 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:06.647397 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:07.647906 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:08.648486 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:09.649073 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:10.649688 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:11.650356 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:12.651027 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:13.651492 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:14.651959 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:15.652578 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:16.653212 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:17.653898 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:18.654486 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:19.655106 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:20.655715 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:21.656362 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:22.656966 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:23.657602 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:24.658263 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:25.658883 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:26.659567 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:27.660229 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:28.660889 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:29.661500 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:30.662092 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:31.662700 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:32.663284 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:33.663938 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:34.664575 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:35.665401 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:36.665876 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:37.666489 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:38.667052 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:39.667699 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:40.668292 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:41.668818 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:42.669321 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:43.669913 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:44.670546 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:45.671255 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:46.671887 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:47.672500 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:48.673112 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:49.673771 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:50.674497 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:51.675139 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:52.675812 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:53.676411 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:54.677095 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:55.677603 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:56.678248 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:57.678887 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:58.679494 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:05:59.680073 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:00.680655 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:01.681335 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:02.681997 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:03.682602 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:04.683244 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:05.683834 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:06.684421 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:07.685068 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:08.685706 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:09.686322 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:10.686856 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:11.687464 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:12.688054 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:13.688644 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:14.689279 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:15.689687 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:16.690342 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:17.690903 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:18.691529 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:19.692149 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:20.692792 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:21.693413 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:22.694087 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:23.694718 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:24.695327 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:25.695962 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:26.696564 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:27.697125 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:28.697629 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:29.698118 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:30.698634 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:31.699210 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:32.699860 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:33.700489 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:34.701091 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:35.701664 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:36.702227 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:37.702775 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:38.703366 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:39.704038 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:40.704649 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:41.705271 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:42.705960 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:43.706581 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:44.707214 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:45.707820 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:46.708433 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:47.709053 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:48.709704 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:49.710253 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:50.710874 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:51.711384 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:52.711982 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:53.712469 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:54.713029 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:55.713594 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:56.714206 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:57.714703 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:58.715192 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:06:59.715697 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:00.716269 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:01.716790 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:02.717444 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:03.718007 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:04.718588 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:05.719193 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:06.719891 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:07.720346 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:08.720930 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:09.721615 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:10.722174 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:11.722753 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:12.723282 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:13.723894 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:14.724493 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:15.725115 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:16.725597 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:17.726352 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:18.726879 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:19.727394 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:20.727885 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:21.728520 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:22.729075 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:23.729594 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:24.729982 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:25.730630 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:26.731151 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:27.731723 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:28.732309 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:29.732922 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:30.733475 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:31.734014 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:32.734705 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:33.734969 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:34.735051 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:35.735329 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:36.735875 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:37.736409 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:38.784329 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:39.784674 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:40.784780 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:41.785460 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:42.785569 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:43.785703 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:44.785958 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:45.786136 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:46.786746 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:47.786995 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:48.787570 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:49.788004 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:50.788367 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:51.789062 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:52.789658 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:53.790242 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:54.790611 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:55.791263 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:56.791602 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:57.792245 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:58.792756 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:07:59.793284 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:00.794110 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:01.794792 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:02.795347 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:03.795603 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:04.796264 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:05.796830 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:06.797356 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:07.797937 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:08.798187 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:09.798769 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:10.799188 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:11.799714 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:12.800220 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:13.800653 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:14.801264 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:15.801880 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:16.802465 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:17.803035 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:18.803372 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:19.803536 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:20.803798 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:21.804019 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:22.804472 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:23.804845 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:24.805403 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:25.805830 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:26.806463 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:27.807068 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:28.807649 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:29.808193 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:30.808814 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:31.809301 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:32.809868 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:33.810278 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:34.810327 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:35.810799 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:36.812416 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:37.812810 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:38.813398 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:39.813920 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:40.814336 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:41.814937 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:42.815613 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:43.816159 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:44.816794 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:45.817212 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:46.817495 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:47.818066 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:48.818355 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:49.818869 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:50.819599 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:51.820109 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:52.820721 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:53.821328 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:54.821726 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:55.822375 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:56.822608 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:57.822946 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:58.823264 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:08:59.823559 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:00.823773 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:01.824165 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:02.824288 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:03.824891 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:04.825040 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:05.825105 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:06.826309 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:07.826784 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:08.827302 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:09.827834 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:10.827994 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:11.828317 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:12.828902 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:13.829327 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:14.829712 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:15.830276 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:16.830881 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:17.831512 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:18.831980 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:19.832383 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:20.832792 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:21.833444 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:22.834071 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:23.834605 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:24.835228 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:25.835637 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:26.836271 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:27.836803 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:28.837385 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:29.837964 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:30.838639 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:31.838971 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:32.839489 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:33.839915 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:34.840317 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:35.840611 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:36.841228 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:37.841591 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:38.842178 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:39.842709 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:40.843302 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:41.843911 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:42.844504 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:43.845041 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:44.845717 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:45.846199 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:46.846638 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:47.847076 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:48.847651 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:49.848177 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:50.848518 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:51.849238 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:52.849683 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:53.850285 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:54.851139 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:55.851657 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:56.852313 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:57.852976 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:58.853695 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:09:59.854462 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:00.855015 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:01.855551 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:02.855869 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:03.856406 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:04.856758 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:05.857246 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:06.857780 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:07.858263 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:08.858879 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:09.859486 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:10.859947 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:11.860143 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:12.860559 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:13.861105 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:14.861703 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:15.862259 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:16.862671 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:17.863343 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:18.863699 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:19.864229 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:20.864672 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:21.864917 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:22.865012 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:23.865438 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:24.866126 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:25.866663 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:26.867229 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:27.867594 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:28.868197 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:29.868679 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:30.868881 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:31.869512 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:32.869767 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:33.870455 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:34.871879 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:35.872715 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:36.873227 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:37.873684 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:38.874365 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:39.874953 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:40.875523 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:41.876015 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:42.876624 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:43.877106 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:44.877244 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:45.877865 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:46.878321 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:47.878640 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:48.878994 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:49.879417 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:50.879827 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:51.880452 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:52.880876 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:53.881385 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:54.881359 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:55.881779 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:56.882325 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:57.882585 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:58.883178 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:10:59.883721 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:00.884296 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:01.885057 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:02.885693 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:03.886315 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:04.886498 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:05.886758 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:06.887420 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:07.887886 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:08.888287 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:09.888905 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:10.889557 host kwin_wayland_wrapper[3323]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 10:11:11.296242 host kernel: thunderbolt 0-0:1.1: retimer disconnected
+11月 16 10:11:11.301911 host kernel: thunderbolt 0-1: device disconnected
+11月 16 10:11:11.315924 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Link Down
+11月 16 10:11:11.318364 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Card not present
+11月 16 10:11:11.337431 host kernel: NVRM: rm_power_source_change_event: rm_power_source_change_event: Failed to handle Power Source change event, status=0xf
+11月 16 10:11:11.798441 host kernel: [drm] [nvidia-drm] [GPU ID 0x00000300] Removing device
+11月 16 10:11:11.799861 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84000000, scope 0x2, GFID 0
+11月 16 10:11:11.799996 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x4080081, scope 0x2, GFID 0
+11月 16 10:11:11.800021 host kernel: [drm] [nvidia-drm] [GPU ID 0x00000300] Unloading driver
+11月 16 10:11:11.811845 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.811885 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.811903 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.811918 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.811924 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.811941 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.811967 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef0403; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.811992 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef4903; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812003 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812016 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812032 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812053 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef0402; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812069 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef4902; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812076 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812087 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812095 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812113 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef0401; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812128 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef4901; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812136 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812149 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812158 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812175 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef0400; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812191 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef4900; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812202 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812211 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812218 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812238 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeefa0b5; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812244 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812252 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812260 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812277 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef9097; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812284 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812290 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812298 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812317 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef502d; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812325 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812334 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812341 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812358 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef3901; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812365 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812372 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812381 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812400 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef0100; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812409 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812421 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812428 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812437 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812444 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812451 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812461 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812468 host kernel: NVRM: GPU0 kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812478 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812491 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.812503 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812514 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.812522 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.812530 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Current device is not valid [NV_ERR_INVALID_DEVICE] (0x00000026) returned from rmDeviceGpuLocksAcquire(pGpu, GPUS_LOCK_FLAGS_NONE, RM_LOCK_MODULES_MEM_PMA) @ virtual_mem.c:115
+11月 16 10:11:11.812537 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812545 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.812553 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812561 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.812568 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.812576 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812585 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812593 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812601 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.812609 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.812617 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.812626 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.812870 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef0404; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812881 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84000000, scope 0x2, GFID 0
+11月 16 10:11:11.812899 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef8500; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812908 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812916 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812924 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.812943 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef0101; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812961 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef8501; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.812970 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.812977 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.812985 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:1382
+11月 16 10:11:11.813002 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xbeef0102; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.813863 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xcef00000; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.813874 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.813882 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.813899 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xcef80001; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.813907 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.813913 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.813930 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00016; hObject=0xcef80000; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.813937 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 10:11:11.813945 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 10:11:11.813953 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.813961 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.813966 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.813973 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.813980 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.813988 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.813997 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814002 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814010 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814018 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814027 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814036 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814044 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814052 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814058 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814066 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814074 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814081 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814090 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814095 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814103 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814110 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814118 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814127 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814136 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814146 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814153 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814160 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814168 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814178 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814183 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814189 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814197 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814205 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814214 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814219 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814227 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814233 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814239 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814248 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814255 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814262 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814268 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814276 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814285 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814290 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814296 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814303 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814310 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814319 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814327 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814335 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814340 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814346 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814353 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814360 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x4080081, scope 0x2, GFID 0
+11月 16 10:11:11.814370 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814378 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814383 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814392 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814399 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814404 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x4080081, scope 0x2, GFID 0
+11月 16 10:11:11.814412 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814418 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814425 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814432 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814439 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814444 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814451 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814458 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814466 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814475 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814484 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814493 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814499 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814506 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814514 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814522 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814530 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814537 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814545 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814552 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814560 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814568 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814575 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814582 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814589 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814596 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814603 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814609 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814617 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814628 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814842 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814850 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814861 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814868 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814876 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.814883 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814892 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.814900 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.814908 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.814914 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.815842 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.815855 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.815863 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.815871 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.815881 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.815888 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.815895 host kernel: NVRM: dmaFreeMapping_GM107: error updating VA space.
+11月 16 10:11:11.815903 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84004020, scope 0x2, GFID 0
+11月 16 10:11:11.815911 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: NULL != pMemBlock @ gpu_vaspace.c:1639
+11月 16 10:11:11.815918 host kernel: NVRM: GPU0 virtmemDestruct_IMPL: VirtualMemory memmgrFree failed, client: c1d00016, hVASpace: beef0300, gpu: 0
+11月 16 10:11:11.815927 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x4080081, scope 0x2, GFID 0
+11月 16 10:11:11.818871 host kernel: NVRM: GPU0 rpcRmApiFree_GSP: GspRmFree failed: hClient=0xc1d00012; hObject=0xfade0004; paramsStatus=0x00000000; status=0x0000000f
+11月 16 10:11:11.818884 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ mem.c:178
+11月 16 10:11:11.818895 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84000000, scope 0x2, GFID 0
+11月 16 10:11:11.818909 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84000000, scope 0x2, GFID 0
+11月 16 10:11:11.818917 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84000000, scope 0x2, GFID 0
+11月 16 10:11:11.818925 host kernel: NVRM: kgmmuInvalidateTlb_GM107: TLB invalidation failed waiting for prior invalidate (status=0x0000000f), vaspaceFlags 0x84000000, scope 0x2, GFID 0
+11月 16 10:11:14.844141 host kernel: [drm:nv_drm_atomic_commit [nvidia_drm]] *ERROR* [nvidia-drm] [GPU ID 0x00000300] Flip event timeout on head 0
+11月 16 10:11:14.844341 host kernel: nvidia-modeset: ERROR: GPU:0: Failed to query display engine channel state: 0x0000ca7e:0:0:0x0000000f
+11月 16 10:11:14.844371 host kernel: nvidia-modeset: ERROR: GPU:0: Failed to query display engine channel state: 0x0000ca7e:2:0:0x0000000f
+11月 16 10:11:14.844405 host kernel: nvidia-modeset: ERROR: GPU:0: Failed to query display engine channel state: 0x0000ca7e:4:0:0x0000000f
+11月 16 10:11:14.844436 host kernel: nvidia-modeset: ERROR: GPU:0: Failed to query display engine channel state: 0x0000ca7e:6:0:0x0000000f
+                                                            Module libnvidia-egl-wayland.so.1 from deb egl-wayland-1:1.1.21-1.amd64

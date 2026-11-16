@@ -1,4 +1,5 @@
-# Build dist/egpu-tray.exe and publish it as a GitHub release asset.
+# Build dist/egpu-tray.exe (Windows) and dist/egpu-mode-x86_64.AppImage (Linux),
+# then publish both as assets of one GitHub release.
 # Trigger: push a tag such as v1.0.0.
 name: release
 
@@ -11,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  release:
+  windows:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,9 +21,50 @@ jobs:
         shell: cmd
         run: tools\egpu-tray\build.cmd
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: egpu-tray
+          path: dist/egpu-tray.exe
+          if-no-files-found: error
+
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build egpu-mode-x86_64.AppImage
+        run: tools/egpu-linux/appimage/build-appimage.sh dist
+
+      # The runner has no eGPU, KDE or FUSE: this only checks that the bundled Python starts.
+      - name: Smoke test
+        env:
+          APPIMAGE_EXTRACT_AND_RUN: '1'
+        run: dist/egpu-mode-x86_64.AppImage status
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: egpu-mode-appimage
+          path: dist/egpu-mode-x86_64.AppImage
+          if-no-files-found: error
+
+  release:
+    needs: [windows, linux]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
       - name: Publish release
-        shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
-        run: gh release create $env:TAG dist/egpu-tray.exe --title $env:TAG --generate-notes
+        run: >-
+          gh release create "$TAG"
+          dist/egpu-tray.exe dist/egpu-mode-x86_64.AppImage
+          --repo "$GITHUB_REPOSITORY" --title "$TAG" --generate-notes

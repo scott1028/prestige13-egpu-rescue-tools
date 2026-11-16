@@ -1,0 +1,12 @@
+#!/bin/bash
+# Keep the GC34X eGPU out of low P-states so its PCIe link stays at Gen3.
+# In P8/P5 the link drops to Gen1/Gen2 (~0.8/1.6 GB/s), but cross-GPU frame copies for
+# the 2560x2880 output need ~1.8 GB/s at 60 Hz and ~3 GB/s at 100 Hz.
+# Run by egpu-clocks.service, started from /etc/udev/rules.d/72-egpu-clocks.rules on nvidia bind.
+set -eu
+
+# Without persistence mode, the driver tears the GPU down when its last client exits,
+# which drops the clock lock.
+nvidia-smi -pm 1
+nvidia-smi -lmc 9001,14001
+logger -t egpu-clocks "$(nvidia-smi --query-gpu=pstate,pcie.link.gen.current,clocks.mem --format=csv,noheader)"

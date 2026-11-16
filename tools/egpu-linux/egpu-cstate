@@ -1,0 +1,20 @@
+#!/bin/bash
+# Keep CPUs out of deep idle states while the GC34X eGPU is attached.
+# Deep C-state exit (C3_ACPI ~1 ms) makes the GPU's DMA reads over Thunderbolt hit
+# PCIe completion timeouts (CmpltTO): stuck white pixels, then Xid 79 (fallen off the bus).
+# Called by /etc/udev/rules.d/71-egpu-cstate.rules: "limit" on add, "restore" on remove.
+set -eu
+
+case "${1:-}" in
+  limit) disable=1 ;;
+  restore) disable=0 ;;
+  *) echo "usage: $0 limit|restore" >&2; exit 1 ;;
+esac
+
+for state in /sys/devices/system/cpu/cpu*/cpuidle/state*; do
+  # C2_ACPI (127 us) and deeper; keep POLL and C1
+  if [ "$(cat "$state/latency")" -ge 100 ]; then
+    echo "$disable" > "$state/disable"
+  fi
+done
+logger -t egpu-cstate "$1: deep C-states disable=$disable"

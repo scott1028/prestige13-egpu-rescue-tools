@@ -1,0 +1,6 @@
+[Unit]
+Description=Lock GC34X eGPU memory clock so its PCIe link stays at Gen3
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/egpu-clocks

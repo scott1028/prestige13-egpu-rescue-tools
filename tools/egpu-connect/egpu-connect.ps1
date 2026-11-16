@@ -8,7 +8,7 @@
   2. Temporarily stop MSI Center S and audio services that veto PCI resource rebalance.
   3. Guide an eGPU replug and wait until the GPU works.
   4. Restore the stopped services and MSI apps.
-  Analysis: docs/egpu-intermittent-detection-report.md
+  Analysis: docs/windows/egpu-intermittent-detection-report.md
 
 .PARAMETER DryRun
   Show current state and planned actions only. Changes nothing, needs no admin.

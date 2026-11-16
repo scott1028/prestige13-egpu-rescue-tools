@@ -1,0 +1,5 @@
+# ASUS ROG XG Mobile GC34X (RTX 5090 Laptop): deep CPU C-states cause PCIe completion
+# timeouts on the eGPU. Limit idle depth while it is attached. See /usr/local/sbin/egpu-cstate.
+# PCI_ID comes from the uevent, so it also matches on remove (sysfs ATTRs are gone by then).
+SUBSYSTEM=="pci", ENV{PCI_ID}=="10DE:2C18", ACTION=="add", RUN+="/usr/local/sbin/egpu-cstate limit"
+SUBSYSTEM=="pci", ENV{PCI_ID}=="10DE:2C18", ACTION=="remove", RUN+="/usr/local/sbin/egpu-cstate restore"

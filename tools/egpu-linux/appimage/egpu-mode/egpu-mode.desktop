@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=egpu-mode
+Comment=Choose which GPU composites the KDE desktop for the GC34X eGPU
+Exec=egpu-mode
+Icon=egpu-mode
+Terminal=false
+Categories=Settings;HardwareSettings;

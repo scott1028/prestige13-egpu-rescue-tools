@@ -1,0 +1,459 @@
+11月 16 09:28:03.771455 host kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+11月 16 09:28:03.815066 host kernel: pci 0000:55:00.0: BAR 1 [mem 0x8e300000-0x8e300fff]
+11月 16 09:28:03.828408 host kernel: pcieport 0000:00:07.0: AER: enabled with IRQ 126
+11月 16 09:28:03.828477 host kernel: pcieport 0000:00:07.0: pciehp: Slot #6 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:03.828620 host kernel: pcieport 0000:00:07.1: AER: enabled with IRQ 127
+11月 16 09:28:03.828687 host kernel: pcieport 0000:00:07.1: pciehp: Slot #7 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:03.828831 host kernel: pcieport 0000:00:1c.0: AER: enabled with IRQ 128
+11月 16 09:28:03.828965 host kernel: pcieport 0000:00:1c.4: AER: enabled with IRQ 129
+11月 16 09:28:03.829019 host kernel: pcieport 0000:02:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:03.829072 host kernel: pcieport 0000:02:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:03.829124 host kernel: pcieport 0000:02:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:03.834067 host kernel: ACPI: bus type thunderbolt registered
+11月 16 09:28:03.835478 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Link Down
+11月 16 09:28:03.835546 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Card not present
+11月 16 09:28:03.836691 host kernel: typec port0: bound usb4_port1 (ops connector_ops [thunderbolt])
+11月 16 09:28:03.837334 host kernel: typec port1: bound usb4_port3 (ops connector_ops [thunderbolt])
+11月 16 09:28:03.838098 host kernel: thunderbolt 0-1: new device found, vendor=0x31 device=0x704d
+11月 16 09:28:03.838159 host kernel: thunderbolt 0-1: ASUS GC34X
+11月 16 09:28:03.838328 host kernel: thunderbolt 0-0:1.1: new retimer found, vendor=0x8087 device=0xd9c
+11月 16 09:28:05.370978 host systemd[1]: Started nvidia-powerd.service - nvidia-powerd service.
+11月 16 09:28:05.381117 host nvidia-powerd[995]: nvidia-powerd version:2.0 (build 1)
+11月 16 09:28:05.490357 host kernel: nvidia: loading out-of-tree module taints kernel.
+11月 16 09:28:05.542265 host kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 508
+11月 16 09:28:05.547106 host kernel: NVRM: No NVIDIA GPU found.
+11月 16 09:28:05.547182 host kernel: nvidia-nvlink: Unregistered Nvlink Core, major device number 508
+11月 16 09:28:05.599947 host nvidia-powerd[995]: ERROR! Allocate Root client failed 0x26
+11月 16 09:28:05.604848 host systemd[1]: nvidia-powerd.service: Deactivated successfully.
+11月 16 09:28:05.934230 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Card present
+11月 16 09:28:05.934572 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Link Up
+11月 16 09:28:06.024839 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.025574 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.025741 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.025915 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.026650 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.026825 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.026995 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.027725 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.027897 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.028235 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.028929 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.029098 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.029447 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.030128 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.030294 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.030462 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.031150 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.031311 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.031483 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.032166 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.032327 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.032492 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.033207 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.033372 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.033527 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.034159 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.034325 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.034485 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:00:07.0
+11月 16 09:28:06.035054 host kernel: pcieport 0000:00:07.0: AER:   TLP Header: 0x34000000 0x00000052 0x00000000 0x00000000
+11月 16 09:28:06.035188 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.035307 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.035435 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.035557 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.035670 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.035786 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.035904 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.036014 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.036127 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.036379 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.036492 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.040007 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x00000000-0x7ffffffff 64bit pref]
+11月 16 09:28:06.052949 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: can't assign; no space
+11月 16 09:28:06.053018 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: failed to assign
+11月 16 09:28:06.053657 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: can't assign; no space
+11月 16 09:28:06.053717 host kernel: pci 0000:03:00.0: BAR 1 [mem size 0x800000000 64bit pref]: failed to assign
+11月 16 09:28:06.055258 host kernel: pcieport 0000:02:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:06.055386 host kernel: pcieport 0000:02:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:06.055517 host kernel: pcieport 0000:02:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:06.148164 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.148580 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.148793 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.148974 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.149171 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.149344 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.149544 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.149804 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.149920 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.150032 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.150153 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.150265 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.150511 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.150621 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.150726 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.150830 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.150933 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151040 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151151 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151250 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151355 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151455 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151555 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151651 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151749 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151847 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.151942 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152036 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152130 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152227 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152323 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152415 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152504 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152591 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152677 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152762 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152847 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.152936 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153019 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153100 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153183 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153273 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153357 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153439 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153524 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153611 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153691 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153771 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153856 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.153936 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.154013 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.154152 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155146 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155227 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155300 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155372 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155445 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155515 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155582 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155650 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155720 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155787 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155853 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155919 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.155984 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.156050 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.156117 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157178 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157288 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157354 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157448 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157522 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157590 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157659 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157718 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157775 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157834 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.157964 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.278171 host kernel: pcieport 0000:00:07.0: AER: device recovery successful
+11月 16 09:28:06.282212 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x00000000-0x0fffffff 64bit pref]
+11月 16 09:28:06.285439 host kernel: pci 0000:03:00.0: BAR 1 [mem 0x2810000000-0x281fffffff 64bit pref]: assigned
+11月 16 09:28:06.289196 host kernel: pcieport 0000:02:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:06.289316 host kernel: pcieport 0000:02:02.0: pciehp: Slot #2 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:06.289431 host kernel: pcieport 0000:02:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+11月 16 09:28:06.289450 host egpu-bar1[1853]: 0000:03:00.0: BAR1 set to 256 MB, rescanned below 0000:00:07.0
+11月 16 09:28:06.351169 host kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 508
+11月 16 09:28:06.354238 host kernel: nvidia 0000:03:00.0: enabling device (0000 -> 0003)
+11月 16 09:28:06.354548 host kernel: nvidia 0000:03:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+11月 16 09:28:06.369452 host kernel: NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  595.99.02  Release Build  (dvs-builder@U22-I3-AF05-06-2)  Wed Aug 26 05:20:50 UTC 2026
+11月 16 09:28:06.378157 host kernel: nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for x86_64  595.99.02  Release Build  (dvs-builder@U22-I3-AF05-06-2)  Wed Aug 26 05:08:45 UTC 2026
+11月 16 09:28:06.381161 host kernel: [drm] [nvidia-drm] [GPU ID 0x00000300] Loading driver
+11月 16 09:28:07.994447 host kernel: [drm] Initialized nvidia-drm 0.0.0 for 0000:03:00.0 on minor 1
+11月 16 09:28:08.093174 host kernel: nvidia 0000:03:00.0: [drm] fb1: nvidia-drmdrmfb frame buffer device
+11月 16 09:28:08.146624 host systemd[1]: Starting nvidia-persistenced.service - NVIDIA Persistence Daemon...
+11月 16 09:28:08.157337 host nvidia-persistenced[2274]: Verbose syslog connection opened
+11月 16 09:28:08.157363 host nvidia-persistenced[2274]: Now running with user ID 112 and group ID 116
+11月 16 09:28:08.157381 host nvidia-persistenced[2274]: Started (2274)
+11月 16 09:28:08.158356 host nvidia-persistenced[2274]: device 0000:03:00.0 - registered
+11月 16 09:28:08.158395 host nvidia-persistenced[2274]: Local RPC services initialized
+11月 16 09:28:08.159068 host systemd[1]: Started nvidia-persistenced.service - NVIDIA Persistence Daemon.
+11月 16 09:28:09.169068 host sddm-helper-start-wayland[2166]: "kwin_core: Failed to open /dev/dri/renderD129 device (No such device)\nkwin_wayland_drm: Failed to open drm device /dev/dri/renderD129\nkwin_wayland_drm: Received unexpected add udev event for: \"/dev/dri/card1\"\nkwin_wayland_drm: Failed to open drm device \n"
+11月 16 09:28:09.276442 host sddm-helper-start-wayland[2166]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 09:28:09.391428 host sddm-helper-start-wayland[2166]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 09:28:09.506175 host sddm-helper-start-wayland[2166]: "kwin_wayland_drm: Failed to open drm device \n"
+11月 16 09:28:54.441287 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:28:54.441744 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:28:54.441868 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:28:54.441959 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:28:54.442035 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:28:54.442112 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:28:54.442194 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:28:54.442283 host kernel: pcieport 0000:00:07.0: AER: Multiple Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:28:54.442353 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:28:54.442509 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:28:54.442591 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:28:54.442669 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:28:54.442745 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:28:54.442805 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:28:56.270409 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:28:56.270763 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:28:56.270953 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:28:56.271123 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:28:56.271378 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:28:56.271703 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:28:56.271947 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:28:57.144757 host kernel: pcieport 0000:00:07.0: AER: Uncorrectable (Non-Fatal) error message received from 0000:03:00.0
+11月 16 09:28:57.145233 host kernel: nvidia 0000:03:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal), type=Transaction Layer, (Requester ID)
+11月 16 09:28:57.145464 host kernel: nvidia 0000:03:00.0:   device [10de:2c18] error status/mask=00004000/00400000
+11月 16 09:28:57.145650 host kernel: nvidia 0000:03:00.0:    [14] CmpltTO                (First)
+11月 16 09:28:57.145854 host kernel: nvidia 0000:03:00.0: AER: can't recover (no error_detected callback)
+11月 16 09:28:57.146009 host kernel: snd_hda_intel 0000:03:00.1: AER: can't recover (no error_detected callback)
+11月 16 09:28:57.146218 host kernel: pcieport 0000:02:00.0: AER: device recovery failed
+11月 16 09:29:03.052198 host kernel: NVRM: GPU0 _kgspIsHeartbeatTimedOut: Heartbeat timed out, currentTimeMs 3791180365 heartbeat 56768 heartbeatWithOffsetMs 3791174364 diff 6001 timeout 5200
+11月 16 09:29:03.052378 host kernel: NVRM: GPU0 _kgspIsHeartbeatTimedOut: Heartbeat timed out, currentTimeMs 3791180365 heartbeat 56788 heartbeatWithOffsetMs 3791174384 diff 5981 timeout 5200
+11月 16 09:29:07.052292 host kernel: NVRM: GPU0 _threadNodeCheckTimeout: _threadNodeCheckTimeout: currentTime: f4209f65ba580 >= f4209f65ba580
+11月 16 09:29:07.052324 host kernel: NVRM: GPU0 _threadNodeCheckTimeout: _threadNodeCheckTimeout: Timeout was set to: 4000 msecs!
+11月 16 09:29:07.052339 host kernel: NVRM: GPU0 kbusSendSysmembarSingle_GH100: - timeout error waiting for startToken = 0x1f cnt=1170017
+11月 16 09:29:07.052345 host kernel: NVRM: GPU0 kgmmuCheckMemSubsysError_IMPL: Memory Subsystem Error detected. kbusSendSysmembarSingle failed.
+11月 16 09:29:07.052360 host kernel: NVRM: GPU0 _kgspCheckIfMemsysError: Unexpected error when checking for memory subsystem error: 0x72 
+11月 16 09:29:07.052372 host kernel: NVRM: GPU0 _kgspLogRpcTimeout: ********************************* GSP Timeout **********************************
+11月 16 09:29:07.052384 host kernel: NVRM: GPU0 _kgspLogRpcTimeout: Note: Please also check logs above.
+11月 16 09:29:07.052395 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: !pKernelGsp->bPollingForRpcResponse @ kernel_gsp.c:2727
+11月 16 09:29:07.052401 host kernel: NVRM: GPU0 _issueRpcAndWait: rpcRecvPoll failed with status 0x00000040 for fn 76 sequence 2155!
+11月 16 09:29:07.052410 host kernel: NVRM: GPU0 nvCheckOkFailedNoLog: Check failed: Generic Error: Invalid state [NV_ERR_INVALID_STATE] (0x00000040) returned from pRmApi->Control(pRmApi, pGpu->hInternalClient, pGpu->hInternalSubdevice, NV2080_CTRL_CMD_INTERNAL_LOG_OOB_XID, &params, sizeof(params)) @ gpu.c:7450
+11月 16 09:29:07.052426 host kernel: NVRM: GPU at PCI:0000:03:00: GPU-<uuid>
+11月 16 09:29:07.052438 host kernel: NVRM: GPU Board Serial Number: 0
+11月 16 09:29:07.052444 host kernel: NVRM: Xid (PCI:0000:03:00): 175, pid=3198, name=kwin_wayland, Timeout after 10s of waiting for RPC response from GPU0 GSP! Expected function 76 (GSP_RM_CONTROL) sequence 2154 (0x20800a9a 0x8).
+11月 16 09:29:07.453257 host kernel: NVRM: GPU0 _kgspDumpRmState: Failed to get RM state, timeout
+11月 16 09:29:07.453298 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: Gsp Trace Crash Buffer
+11月 16 09:29:07.453308 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768354816,8192,0,64366,3,2
+11月 16 09:29:07.453315 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768355488,4096,0,64367,3,4
+11月 16 09:29:07.453324 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768358752,8192,0,64368,3,0
+11月 16 09:29:07.453333 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768359520,4096,0,64369,3,5
+11月 16 09:29:07.453341 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56774726784,512,0,64370,3,14
+11月 16 09:29:07.453348 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56774823488,1024,0,64371,3,14
+11月 16 09:29:07.453354 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56776733280,512,0,64372,3,14
+11月 16 09:29:07.453361 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56776940800,1024,0,64373,3,14
+11月 16 09:29:07.453367 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56777020768,512,0,64374,3,14
+11月 16 09:29:07.453373 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56777098944,1024,0,64375,3,14
+11月 16 09:29:07.453380 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767124832,8192,0,64326,3,2
+11月 16 09:29:07.453387 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767125440,4096,0,64327,3,4
+11月 16 09:29:07.453396 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767128608,8192,0,64328,3,0
+11月 16 09:29:07.453402 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767129248,4096,0,64329,3,5
+11月 16 09:29:07.453409 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767650944,8192,0,64330,3,5
+11月 16 09:29:07.453416 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767659200,4096,0,64331,3,1
+11月 16 09:29:07.453422 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767660672,8192,0,64332,3,0
+11月 16 09:29:07.453428 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767663360,4096,0,64333,3,6
+11月 16 09:29:07.453435 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767666144,8192,0,64334,3,0
+11月 16 09:29:07.453442 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767667392,4096,0,64335,3,4
+11月 16 09:29:07.453449 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767669888,8192,0,64336,3,0
+11月 16 09:29:07.453456 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767670592,4096,0,64337,3,5
+11月 16 09:29:07.453462 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767684320,8192,0,64338,3,0
+11月 16 09:29:07.453469 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767686880,34359738368,0,64339,3,0
+11月 16 09:29:07.453476 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767850336,68719476736,0,64340,3,1
+11月 16 09:29:07.453483 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767853344,4096,0,64341,3,1
+11月 16 09:29:07.453489 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767854880,8192,0,64342,3,0
+11月 16 09:29:07.453495 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767857056,4096,0,64343,3,6
+11月 16 09:29:07.453502 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767860896,8192,0,64344,3,0
+11月 16 09:29:07.453509 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767861760,4096,0,64345,3,2
+11月 16 09:29:07.453515 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767941376,8192,0,64346,3,2
+11月 16 09:29:07.453521 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767942016,4096,0,64347,3,4
+11月 16 09:29:07.453527 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767945120,8192,0,64348,3,0
+11月 16 09:29:07.453530 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56767945824,4096,0,64349,3,5
+11月 16 09:29:07.453536 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768094368,8192,0,64350,3,5
+11月 16 09:29:07.453543 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768100064,4096,0,64351,3,1
+11月 16 09:29:07.453549 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768101280,8192,0,64352,3,0
+11月 16 09:29:07.453555 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768104224,4096,0,64353,3,6
+11月 16 09:29:07.453561 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768106144,8192,0,64354,3,0
+11月 16 09:29:07.453566 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768107392,4096,0,64355,3,4
+11月 16 09:29:07.453572 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768110272,8192,0,64356,3,0
+11月 16 09:29:07.453578 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768110976,4096,0,64357,3,5
+11月 16 09:29:07.453584 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768123616,8192,0,64358,3,0
+11月 16 09:29:07.453589 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768125216,34359738368,0,64359,3,0
+11月 16 09:29:07.453623 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768274528,68719476736,0,64360,3,1
+11月 16 09:29:07.453629 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768276864,4096,0,64361,3,1
+11月 16 09:29:07.453635 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768278272,8192,0,64362,3,0
+11月 16 09:29:07.453640 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768280640,4096,0,64363,3,6
+11月 16 09:29:07.453646 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768284544,8192,0,64364,3,0
+11月 16 09:29:07.453652 host kernel: NVRM: GPU0 _kgspLogGspTraceCrashBuffer: 56768285440,4096,0,64365,3,2
+11月 16 09:29:07.453659 host kernel: NVRM: GPU0 gpuHandleSanityCheckRegReadError_GH100: Possible bad register read: addr: 0x110624,  regvalue: 0xbadf5720,  error code: Unknown SYS_PRI_ERROR_CODE
+11月 16 09:29:07.453665 host kernel: NVRM: GPU0 gpuHandleSanityCheckRegReadError_GH100: Possible bad register read: addr: 0x11062c,  regvalue: 0xbadf5720,  error code: Unknown SYS_PRI_ERROR_CODE
+11月 16 09:29:07.453671 host kernel: NVRM: GPU0 gpuHandleSanityCheckRegReadError_GH100: Possible bad register read: addr: 0x111404,  regvalue: 0xbadf5720,  error code: Unknown SYS_PRI_ERROR_CODE
+11月 16 09:29:07.453677 host kernel: NVRM: GPU0 gpuHandleSanityCheckRegReadError_GH100: Possible bad register read: addr: 0x111408,  regvalue: 0xbadf5720,  error code: Unknown SYS_PRI_ERROR_CODE
+11月 16 09:29:07.453684 host kernel: NVRM: GPU0 kflcnDumpTracepc_GA102: Trace buffer blocked, skipping.
+11月 16 09:29:07.453691 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: riscvPc               : 01a26e5a
+11月 16 09:29:07.453697 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: riscvCpuctl           : 00000180
+11月 16 09:29:07.453700 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: riscvIrqmask          : 810490d2
+11月 16 09:29:07.453706 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: riscvIrqdest          : 010800d0
+11月 16 09:29:07.453710 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: riscvPrivErrStat      : 00000000
+11月 16 09:29:07.453716 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: riscvPrivErrInfo      : badf5041
+11月 16 09:29:07.453720 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: riscvPrivErrAddr      : 0000000000000000
+11月 16 09:29:07.453725 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: riscvHubErrStat       : 00000000
+11月 16 09:29:07.453730 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: falconMailbox         : 0:00000000 1:00000000
+11月 16 09:29:07.453736 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: falconIrqstat         : 00000000
+11月 16 09:29:07.453739 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: falconIrqmode         : ffacfc24
+11月 16 09:29:07.453744 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: fbifInstblk           : 00000000
+11月 16 09:29:07.453748 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: fbifCtl               : badf5720
+11月 16 09:29:07.453754 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: fbifThrottle          : badf5720
+11月 16 09:29:07.453758 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: fbifAchkBlk           : 0:00000000 1:00000000
+11月 16 09:29:07.453764 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: fbifAchkCtl           : 0:00000000 1:00000000
+11月 16 09:29:07.453767 host kernel: NVRM: GPU0 kflcnCoreDumpNondestructive_IMPL: PRI: fbifCg1               : 0000000f
+11月 16 09:29:07.453770 host kernel: NVRM: GPU0 kgspDumpMailbox_TU102: GSP: MAILBOX(0) = 0x0000DDC0
+11月 16 09:29:07.453776 host kernel: NVRM: GPU0 kgspDumpMailbox_TU102: GSP: MAILBOX(1) = 0x0000DDD4
+11月 16 09:29:07.453781 host kernel: NVRM: GPU0 kgspDumpMailbox_TU102: GSP: MAILBOX(2) = 0x00000000
+11月 16 09:29:07.453786 host kernel: NVRM: GPU0 kgspDumpMailbox_TU102: GSP: MAILBOX(3) = 0x00000000
+11月 16 09:29:07.453791 host kernel: NVRM: GPU0 kflcnCoreDumpDestructive_IMPL: ICD: Core is booted.
+11月 16 09:29:07.453797 host kernel: NVRM: GPU0 kflcnCoreDumpDestructive_IMPL: ICD: RSTAT0 0x0000000000000000
+11月 16 09:29:07.453802 host kernel: NVRM: GPU0 kflcnCoreDumpDestructive_IMPL: ICD: RSTAT3 0x0000000000000000
+11月 16 09:29:07.453808 host kernel: NVRM: GPU0 kflcnCoreDumpDestructive_IMPL: ICD: RSTAT4 0x0000000000000000
+11月 16 09:29:08.714317 host kernel: NVRM: GPU0 kflcnCoreDumpDestructive_IMPL: ICD: [ERROR] ICD Halt command failed.
+11月 16 09:29:08.714348 host kernel: NVRM: GPU0 GSP RPC buffer contains function 76 (GSP_RM_CONTROL) sequence 2155 and data 0x0000000020800a56 0x000000000000005c.
+11月 16 09:29:08.714357 host kernel: NVRM: GPU0 RPC history (CPU -> GSP):
+11月 16 09:29:08.714366 host kernel: NVRM:     entry function                     sequence data0              data1              ts_start           ts_end             duration actively_polling
+11月 16 09:29:08.714375 host kernel: NVRM:      0    76   GSP_RM_CONTROL              2155 0x0000000020800a56 0x000000000000005c 0x0006605ab43666b9 0x0000000000000000          y
+11月 16 09:29:08.714380 host kernel: NVRM:     -1    76   GSP_RM_CONTROL              2154 0x0000000020800a9a 0x0000000000000008 0x0006605ab39dccd7 0x0000000000000000           
+11月 16 09:29:08.714389 host kernel: NVRM:     -2    76   GSP_RM_CONTROL              2153 0x00000000a06c010a 0x0000000000000058 0x0006605ab39dcb0a 0x0006605ab39dcc9f    405us  
+11月 16 09:29:08.714396 host kernel: NVRM:     -3    103  GSP_RM_ALLOC                2152 0x000000000000a06c 0x0000000000000014 0x0006605ab39dc801 0x0006605ab39dcae4    739us  
+11月 16 09:29:08.714404 host kernel: NVRM:     -4    76   GSP_RM_CONTROL              2151 0x0000000020802a08 0x0000000000000004 0x0006605ab39dc66d 0x0006605ab39dc7d1    356us  
+11月 16 09:29:08.714410 host kernel: NVRM:     -5    76   GSP_RM_CONTROL              2150 0x00000000a06c010a 0x0000000000000058 0x0006605ab39dc48e 0x0006605ab39dc631    419us  
+11月 16 09:29:08.714416 host kernel: NVRM:     -6    103  GSP_RM_ALLOC                2149 0x000000000000a06c 0x0000000000000014 0x0006605ab39dc001 0x0006605ab39dc466   1125us  
+11月 16 09:29:08.714422 host kernel: NVRM:     -7    76   GSP_RM_CONTROL              2148 0x0000000020802a08 0x0000000000000004 0x0006605ab39dbe48 0x0006605ab39dbfbb    371us  
+11月 16 09:29:08.714428 host kernel: NVRM: GPU0 RPC event history (CPU <- GSP):
+11月 16 09:29:08.714435 host kernel: NVRM:     entry function                     sequence data0              data1              ts_start           ts_end             duration during_incomplete_rpc
+11月 16 09:29:08.714440 host kernel: NVRM:      0    4099 POST_EVENT                     0 0x0000000000000001 0x0000000000000000 0x0006605ab0f63f4e 0x0006605ab0f63f54      6us  
+11月 16 09:29:08.714445 host kernel: NVRM:     -1    4099 POST_EVENT                     0 0x0000000000000001 0x0000000000000000 0x0006605ab0e9f6a2 0x0006605ab0e9f6d3     49us  
+11月 16 09:29:08.714452 host kernel: NVRM:     -2    4124 GSP_LOCKDOWN_NOTICE            0 0x0000000000000000 0x0000000000000000 0x0006605ab0a9f3f8 0x0006605ab0a9f3f8           
+11月 16 09:29:08.714458 host kernel: NVRM:     -3    4124 GSP_LOCKDOWN_NOTICE            0 0x0000000000000001 0x0000000000000000 0x0006605ab0a9e2f7 0x0006605ab0a9e2f7           
+11月 16 09:29:08.714465 host kernel: NVRM:     -4    4124 GSP_LOCKDOWN_NOTICE            0 0x0000000000000000 0x0000000000000000 0x0006605ab0a9e208 0x0006605ab0a9e208           
+11月 16 09:29:08.714471 host kernel: NVRM:     -5    4124 GSP_LOCKDOWN_NOTICE            0 0x0000000000000001 0x0000000000000000 0x0006605ab0a9dec9 0x0006605ab0a9dec9           
+11月 16 09:29:08.714476 host kernel: NVRM:     -6    4124 GSP_LOCKDOWN_NOTICE            0 0x0000000000000000 0x0000000000000000 0x0006605ab0a89874 0x0006605ab0a89874           
+11月 16 09:29:08.714482 host kernel: NVRM:     -7    4124 GSP_LOCKDOWN_NOTICE            0 0x0000000000000001 0x0000000000000000 0x0006605ab0a897e8 0x0006605ab0a897e8           
+11月 16 09:29:08.714544 host kernel:  os_dump_stack+0xe/0x20 [nvidia]
+11月 16 09:29:08.714551 host kernel:  _kgspRpcRecvPoll+0xdae/0x1220 [nvidia]
+11月 16 09:29:08.714557 host kernel:  ? os_get_system_time+0x3b/0x90 [nvidia]
+11月 16 09:29:08.714564 host kernel:  _issueRpcAndWait+0xd5/0x920 [nvidia]
+11月 16 09:29:08.714571 host kernel:  ? osGetCurrentThread+0x26/0x60 [nvidia]
+11月 16 09:29:08.714577 host kernel:  ? rmDeviceGpuLockIsOwner+0x29/0x90 [nvidia]
+11月 16 09:29:08.714584 host kernel:  ? os_mem_set+0x14/0x20 [nvidia]
+11月 16 09:29:08.714592 host kernel:  rpcRmApiControl_GSP+0x76f/0x940 [nvidia]
+11月 16 09:29:08.714599 host kernel:  kperfBoostSet_IMPL+0x69/0x70 [nvidia]
+11月 16 09:29:08.714606 host kernel:  resControl_IMPL+0x1b1/0x1c0 [nvidia]
+11月 16 09:29:08.714613 host kernel:  gpuresControl_IMPL+0x4c/0xa0 [nvidia]
+11月 16 09:29:08.714621 host kernel:  serverControl+0x47e/0x590 [nvidia]
+11月 16 09:29:08.714633 host kernel:  _rmapiRmControl+0x4f2/0x820 [nvidia]
+11月 16 09:29:08.714640 host kernel:  rmapiControlWithSecInfo+0x79/0x140 [nvidia]
+11月 16 09:29:08.714646 host kernel:  rmapiControlWithSecInfoTls+0x8f/0xf0 [nvidia]
+11月 16 09:29:08.714652 host kernel:  _nv04ControlWithSecInfo+0x8d/0xa0 [nvidia]
+11月 16 09:29:08.714671 host kernel:  RmIoctl+0x934/0xda0 [nvidia]
+11月 16 09:29:08.714677 host kernel:  ? portSyncSpinlockAcquire+0x18/0x30 [nvidia]
+11月 16 09:29:08.714685 host kernel:  ? os_release_spinlock+0x1a/0x30 [nvidia]
+11月 16 09:29:08.714693 host kernel:  rm_ioctl+0x66/0x4e0 [nvidia]
+11月 16 09:29:08.714699 host kernel:  nvidia_unlocked_ioctl+0x565/0xbf0 [nvidia]
+11月 16 09:29:08.714838 host kernel: NVRM: GPU0 _kgspLogRpcTimeout: ********************************************************************************
+11月 16 09:29:08.714844 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: GPU marked for reset @ kernel_gsp.c:2612
+11月 16 09:29:08.714850 host kernel: NVRM: GPU0 _kgspIsHeartbeatTimedOut: Heartbeat timed out, currentTimeMs 3791186028 heartbeat 56768 heartbeatWithOffsetMs 3791174364 diff 11664 timeout 5200
+11月 16 09:29:08.714857 host kernel: NVRM: GPU0 _kgspRpcRecvPoll: GSP RM heartbeat timed out
+11月 16 09:29:08.714864 host kernel: NVRM: GPU0 _kgspIsHeartbeatTimedOut: Heartbeat timed out, currentTimeMs 3791186028 heartbeat 56788 heartbeatWithOffsetMs 3791174384 diff 11644 timeout 5200
+11月 16 09:29:08.714871 host kernel: NVRM: GPU0 _kgspRpcRecvPoll: LibOS heartbeat timed out
+11月 16 09:29:08.714878 host kernel: NVRM: GPU0 _issueRpcAndWait: rpcRecvPoll timedout for fn 76 sequence 2154!
+11月 16 09:29:08.714884 host kernel: NVRM: Xid (PCI:0000:03:00): 154, GPU recovery action changed from 0x0 (None) to 0x1 (GPU Reset Required)
+11月 16 09:29:08.716164 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from pRmApi->Control(pRmApi, pGpu->hInternalClient, pGpu->hInternalSubdevice, NV2080_CTRL_CMD_CE_GET_PHYSICAL_CAPS, &physicalCaps, sizeof(physicalCaps)) @ kernel_ce.c:564
+11月 16 09:29:08.716191 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from status @ kernel_channel.c:2828
+11月 16 09:29:08.716199 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from kchannelBindToRunlist(pKernelChannel, localRmEngineType, engineDesc) @ kernel_channel.c:3172
+11月 16 09:29:08.716206 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 09:29:08.716212 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 09:29:08.716221 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 09:29:08.716225 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 09:29:08.716230 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_client.c:844
+11月 16 09:29:08.716236 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ rs_server.c:260
+11月 16 09:29:08.717195 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from pRmApi->Control(pRmApi, pGpu->hInternalClient, pGpu->hInternalSubdevice, NV2080_CTRL_CMD_CE_GET_FAULT_METHOD_BUFFER_SIZE, &params, sizeof(params)) @ kernel_ce.c:857
+11月 16 09:29:08.717223 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (bufSizeInBytes > 0) @ kernel_channel_group_gv100.c:78
+11月 16 09:29:08.717233 host kernel: NVRM: GPU0 kchangrpInit_IMPL:  Fault method buffer allocation failed for group ID 0x1 with status 0x1f
+11月 16 09:29:08.717241 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Invalid argument to call [NV_ERR_INVALID_ARGUMENT] (0x0000001F) returned from kchangrpInit(pGpu, pKernelChannelGroup, pVAS, gfid) @ kernel_channel_group_api.c:273
+11月 16 09:29:08.718205 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from pRmApi->Control(pRmApi, pGpu->hInternalClient, pGpu->hInternalSubdevice, NV2080_CTRL_CMD_CE_GET_PHYSICAL_CAPS, &physicalCaps, sizeof(physicalCaps)) @ kernel_ce.c:564
+11月 16 09:29:08.718229 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from pRmApi->Control(pRmApi, pGpu->hInternalClient, pGpu->hInternalSubdevice, NV2080_CTRL_CMD_CE_GET_FAULT_METHOD_BUFFER_SIZE, &params, sizeof(params)) @ kernel_ce.c:857
+11月 16 09:29:08.718237 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (bufSizeInBytes > 0) @ kernel_channel_group_gv100.c:78
+11月 16 09:29:08.718244 host kernel: NVRM: GPU0 kchangrpInit_IMPL:  Fault method buffer allocation failed for group ID 0x1 with status 0x1f
+11月 16 09:29:08.718248 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Invalid argument to call [NV_ERR_INVALID_ARGUMENT] (0x0000001F) returned from kchangrpInit(pGpu, pKernelChannelGroup, pVAS, gfid) @ kernel_channel_group_api.c:273
+11月 16 09:29:08.718255 host kernel: NVRM: GPU0 nvAssertOkFailedNoLog: Assertion failed: Invalid argument to call [NV_ERR_INVALID_ARGUMENT] (0x0000001F) returned from pRmApi->AllocWithSecInfo(pRmApi, hClient, hParent, &pChannelGpfifoParams->hPhysChannelGroup, KEPLER_CHANNEL_GROUP_A, NV_PTR_TO_NvP64(&tsgParams), sizeof(tsgParams), RMAPI_ALLOC_FLAGS_SKIP_RPC, NvP64_NULL, &pRmApi->defaultSecInfo) @ kernel_channel.c:379
+11月 16 09:29:08.748148 host kernel: [drm:nv_drm_semsurf_fence_create_ioctl [nvidia_drm]] *ERROR* [nvidia-drm] [GPU ID 0x00000300] Failed to lookup gem object for fence context: 0x00000000
+11月 16 09:29:09.491878 host systemd[2899]: Starting app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings...
+11月 16 09:29:09.509386 host systemd[2899]: Started app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings.
+11月 16 09:29:09.620184 host kernel: NVRM: nvCheckFailedNoLog: Check failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ gpu_user_shared_data.c:503
+11月 16 09:29:09.620239 host kernel: NVRM: nvCheckOkFailedNoLog: Check failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from _gpushareddataSendDataPollRpc(pGpu, polledDataMask, pollingIntervalMs) @ gpu_user_shared_data.c:618
+11月 16 09:29:09.620250 host kernel: NVRM: nvCheckOkFailedNoLog: Check failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from _handlePollMaskHelper(pGpu, NV_FALSE, NV_FALSE) @ gpu_user_shared_data.c:688
+11月 16 09:29:09.620261 host kernel: NVRM: nvCheckFailedNoLog: Check failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ gpu_user_shared_data.c:503
+11月 16 09:29:09.620272 host kernel: NVRM: nvCheckOkFailedNoLog: Check failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from _gpushareddataSendDataPollRpc(pGpu, polledDataMask, pollingIntervalMs) @ gpu_user_shared_data.c:618
+11月 16 09:29:09.620278 host kernel: NVRM: nvCheckOkFailedNoLog: Check failed: Reset required [NV_ERR_RESET_REQUIRED] (0x00000062) returned from _handlePollMaskHelper(pGpu, NV_FALSE, NV_FALSE) @ gpu_user_shared_data.c:688
+11月 16 09:29:09.624993 host systemd[2899]: app-nvidia\x2dsettings\x2dautostart@autostart.service: Main process exited, code=exited, status=1/FAILURE
+11月 16 09:29:09.625053 host systemd[2899]: app-nvidia\x2dsettings\x2dautostart@autostart.service: Failed with result 'exit-code'.
+11月 16 09:29:09.800168 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:10.800264 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:11.800423 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:12.800492 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:13.800766 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:14.801108 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:15.801105 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:16.801236 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:17.801466 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:18.801569 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:19.801802 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:20.802081 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:21.802173 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:22.377304 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: atomic commit failed: Permission denied
+11月 16 09:29:22.607533 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD128
+11月 16 09:29:22.608931 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD129
+11月 16 09:29:22.802815 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Pageflip timed out! This is a bug in the nvidia-drm kernel driver
+11月 16 09:29:23.562641 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD129
+11月 16 09:29:23.570737 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD128
+11月 16 09:29:23.577153 host kernel: nvidia-modeset: ERROR: GPU:0: Failed detecting connected display devices
+11月 16 09:29:23.577202 host kernel: nvidia-modeset: ERROR: GPU:0: Failed detecting connected display devices
+11月 16 09:29:23.577213 host kernel: nvidia-modeset: ERROR: GPU:0: Failure reading maximum pixel clock value for display device HDMI-0.
+11月 16 09:29:23.577224 host kernel: nvidia-modeset: ERROR: GPU:0: Failed detecting connected display devices
+11月 16 09:29:23.577233 host kernel: nvidia-modeset: ERROR: GPU:0: Failed detecting connected display devices
+11月 16 09:29:27.580187 host kernel: NVRM: _threadNodeCheckTimeout: _threadNodeCheckTimeout: currentTime: f420ebdec1180 >= f420ebdec1180
+11月 16 09:29:27.580369 host kernel: NVRM: _threadNodeCheckTimeout: _threadNodeCheckTimeout: Timeout was set to: 4000 msecs!
+11月 16 09:29:27.580391 host kernel: NVRM: kbusSendSysmembarSingle_GH100: - timeout error waiting for startToken = 0x20 cnt=1166773
+11月 16 09:29:27.580419 host kernel: NVRM: _threadNodeCheckTimeout: _threadNodeCheckTimeout: currentTime: f420ebdec1180 >= f420ebdec1180
+11月 16 09:29:27.580448 host kernel: NVRM: _threadNodeCheckTimeout: _threadNodeCheckTimeout: Timeout was set to: 4000 msecs!
+11月 16 09:29:27.580466 host kernel: NVRM: kmemsysDoCacheOp_GH100: - timeout error waiting for reg 0x10f810 update cnt=1
+11月 16 09:29:27.580476 host kernel: NVRM: _threadNodeCheckTimeout: _threadNodeCheckTimeout: currentTime: f420ebdec1180 >= f420ebdec1180
+11月 16 09:29:27.580509 host kernel: NVRM: _threadNodeCheckTimeout: _threadNodeCheckTimeout: Timeout was set to: 4000 msecs!
+11月 16 09:29:27.580515 host kernel: NVRM: kmemsysDoCacheOp_GH100: - timeout error waiting for reg 0xf10 update cnt=1
+11月 16 09:29:27.583152 host kernel: NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: (status == NV_OK) || (status == NV_ERR_GPU_IN_FULLCHIP_RESET) @ mem.c:178
+11月 16 09:29:30.630292 host kernel: [drm:nv_drm_atomic_commit [nvidia_drm]] *ERROR* [nvidia-drm] [GPU ID 0x00000300] Flip event timeout on head 0
+11月 16 09:29:33.638484 host kernel: [drm:nv_drm_atomic_commit [nvidia_drm]] *ERROR* [nvidia-drm] [GPU ID 0x00000300] Flip event timeout on head 0
+11月 16 09:29:53.052838 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Failed to open drm device /dev/dri/card1
+11月 16 09:31:16.786345 host sudo[5608]: user : TTY=/dev/pts/2 ; PWD=~/work ; USER=root ; COMMAND=/usr/bin/bash /tmp/scratchpad/egpu-linux/install.sh
+11月 16 09:32:05.894272 host kernel: INFO: task systemd-logind:1016 blocked for more than 122 seconds.
+11月 16 09:32:05.894852 host kernel: INFO: task Xwayland:3283 blocked for more than 122 seconds.
+11月 16 09:32:05.895058 host kernel: INFO: task (sd-close):4221 blocked for more than 122 seconds.
+11月 16 09:34:08.774266 host kernel: INFO: task systemd-logind:1016 blocked for more than 245 seconds.
+11月 16 09:34:08.775114 host kernel: INFO: task Xwayland:3283 blocked for more than 245 seconds.
+11月 16 09:34:08.775427 host kernel: INFO: task (sd-close):4221 blocked for more than 245 seconds.
+11月 16 09:36:11.654262 host kernel: INFO: task systemd-logind:1016 blocked for more than 368 seconds.
+11月 16 09:36:11.655110 host kernel: INFO: task Xwayland:3283 blocked for more than 368 seconds.
+11月 16 09:36:11.655431 host kernel: INFO: task (sd-close):4221 blocked for more than 368 seconds.
+11月 16 09:38:14.534334 host kernel: INFO: task systemd-logind:1016 blocked for more than 491 seconds.
+11月 16 09:38:21.052754 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD129
+11月 16 09:38:46.053445 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Failed to open drm device /dev/dri/card1
+11月 16 09:39:11.053181 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD128
+11月 16 09:39:11.053706 host kwin_wayland_wrapper[3198]: kwin_wayland_drm: The main thread was hanging temporarily!
+11月 16 09:43:50.204655 host sudo[10547]: user : TTY=/dev/pts/2 ; PWD=~/work ; USER=root ; COMMAND=/usr/bin/bash /tmp/scratchpad/egpu-linux/egpu-fix.sh
+11月 16 09:49:44.179177 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Link Down
+11月 16 09:49:44.180970 host kernel: pcieport 0000:00:07.0: pciehp: Slot(6): Card not present
+11月 16 09:49:44.193161 host kernel: thunderbolt 0-0:1.1: retimer disconnected
+11月 16 09:49:44.196428 host kernel: thunderbolt 0-1: device disconnected
+11月 16 09:49:44.198199 host kernel: NVRM: Xid (PCI:0000:03:00): 79, GPU has fallen off the bus.
+11月 16 09:49:44.198222 host kernel: NVRM: GPU 0000:03:00.0: GPU has fallen off the bus.
+11月 16 09:49:44.198240 host kernel: NVRM: GPU 0000:03:00.0: GPU serial number is 0.
+11月 16 09:49:44.198256 host kernel: NVRM: krcRcAndNotifyAllChannels_IMPL: RC all channels for critical error 79.
+11月 16 09:49:44.198268 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 09:49:44.198285 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 09:49:44.198297 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 09:49:44.198349 host kernel: NVRM: _threadNodeCheckTimeout: API_GPU_ATTACHED_SANITY_CHECK failed!
+11月 16 09:49:44.198360 host kernel: NVRM: prbEncStartAlloc: Can't allocate memory for protocol buffers.
+11月 16 09:49:44.198375 host kernel: NVRM: A GPU crash dump has been created. If possible, please run
+                                            NVRM: nvidia-bug-report.sh as root to collect this data before
+                                            NVRM: the NVIDIA kernel module is unloaded.
+11月 16 09:49:44.198624 host kernel: NVRM: nvAssertFailedNoLog: Assertion failed: status == NV_OK @ journal.c:2239
+11月 16 09:49:44.309199 host kernel: NVRM: rm_power_source_change_event: rm_power_source_change_event: Failed to handle Power Source change event, status=0xf
+11月 16 09:49:44.627569 host kernel: [drm] [nvidia-drm] [GPU ID 0x00000300] Removing device

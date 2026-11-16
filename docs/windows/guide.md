@@ -1,6 +1,6 @@
 # egpu-tray 與 egpu-connect 使用指南
 
-這份指南寫給想知道 `egpu-tray.exe` 和 `egpu-connect` 每一步在做什麼、失敗時該看哪裡的人。只想快點用，看 [README](../README.md) 就夠了。
+這份指南寫給想知道 `egpu-tray.exe` 和 `egpu-connect` 每一步在做什麼、失敗時該看哪裡的人。只想快點用，看 [README](README.md) 就夠了。
 
 工具只是繞過問題。真正的根因是 GPU 開著 ReBAR 之後，要的位址空間比 BIOS 能預留的還大，細節見[分析報告](egpu-intermittent-detection-report.md)。
 
@@ -50,13 +50,14 @@
 
 ### 發行新版本
 
-你推送 `v` 開頭的 tag 時，`.github/workflows/release.yml` 會在 GitHub 的 Windows runner 上跑同一支 `build.cmd`，再建立同名的 Release，附上 `egpu-tray.exe` 讓人下載。
+你推送 `v` 開頭的 tag 時，`.github/workflows/release.yml` 會在 GitHub 的 Windows runner 上跑同一支 `build.cmd`，同時在 Linux runner 上把 `egpu-mode` 打包成 AppImage（見 [Linux guide](../linux/guide.md#打包成-appimage)）。兩邊都成功才會建立同名的 Release，附上 `egpu-tray.exe` 和 `egpu-mode-x86_64.AppImage` 讓人下載。
 
 ```text
-你推送 tag v1.0.0 ──► GitHub Actions 編譯 ──► 建立 Release v1.0.0，附上 egpu-tray.exe
+你推送 tag v1.0.0 ──┬─► Windows runner 編譯 egpu-tray.exe ────────┐
+                    └─► Linux runner 打包 egpu-mode-x86_64.AppImage ─┴─► 建立 Release v1.0.0，附上兩個檔案
 ```
 
-Release 說明由 GitHub 依 commit 自動產生（`gh release create --generate-notes`）。同一個 tag 已經有 Release 時，建立會失敗，要重發就換一個新的版本號。
+Release 說明由 GitHub 依 commit 自動產生（`gh release create --generate-notes`）。任何一邊失敗就不會建立 Release。同一個 tag 已經有 Release 時，建立會失敗，要重發就換一個新的版本號。
 
 ```bat
 git tag v1.0.0

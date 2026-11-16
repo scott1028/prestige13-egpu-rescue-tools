@@ -1,3 +1,5 @@
 # Execution transcripts contain user and machine names
 tools/egpu-connect/logs/*.log
 /dist/
+# Local handoff notes and scratch scripts
+/.tmp/

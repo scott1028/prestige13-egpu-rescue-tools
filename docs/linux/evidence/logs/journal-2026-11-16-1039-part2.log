@@ -1,0 +1,420 @@
+11月 16 10:39:31.217568 host systemd-logind[992]: New session '1' of user 'sddm' with class 'greeter' and type 'wayland'.
+11月 16 10:39:31.244882 host systemd[1]: Starting user@107.service - User Manager for UID 107...
+11月 16 10:39:31.267607 host systemd-logind[992]: New session '2' of user 'sddm' with class 'manager-early' and type 'unspecified'.
+11月 16 10:39:31.420895 host systemd[1]: Started user@107.service - User Manager for UID 107.
+11月 16 10:39:31.429008 host sddm-helper-start-wayland[2115]: Starting Wayland process "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1" "sddm"
+11月 16 10:39:31.429679 host sddm-helper-start-wayland[2115]: started succesfully "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1"
+11月 16 10:39:32.015221 host dbus-daemon[962]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.42' (uid=107 pid=2116 comm="/usr/bin/kwin_wayland --drm --no-lockscreen --no-g" label="unconfined")
+11月 16 10:39:37.961250 host systemd-logind[992]: New session '3' of user 'user' with class 'user' and type 'wayland'.
+11月 16 10:39:37.989261 host systemd[1]: Starting user@1000.service - User Manager for UID 1000...
+11月 16 10:39:38.014542 host systemd-logind[992]: New session '4' of user 'user' with class 'manager' and type 'unspecified'.
+11月 16 10:39:38.028116 host sddm-helper-start-wayland[2115]: Stopping... "kwin_wayland"
+11月 16 10:39:38.063431 host sddm-helper-start-wayland[2115]: "kwin_scene_opengl: Could not delete render time query because no context is current\n"
+11月 16 10:39:38.160443 host systemd-logind[992]: Removed session 1.
+11月 16 10:39:38.242781 host systemd[1]: Started user@1000.service - User Manager for UID 1000.
+11月 16 10:39:38.837770 host systemd[2330]: Starting plasma-kwin_wayland.service - KDE Wayland Compositor...
+11月 16 10:39:38.841319 host systemd[2330]: Starting xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries...
+11月 16 10:39:38.865389 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.13' (uid=1000 pid=2714 comm="/usr/libexec/xdg-desktop-portal-rewrite-launchers" label="unconfined")
+11月 16 10:39:38.871536 host systemd[2330]: Started plasma-kwin_wayland.service - KDE Wayland Compositor.
+11月 16 10:39:38.895277 host systemd[2330]: Finished xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries.
+11月 16 10:39:38.900613 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.16' (uid=1000 pid=2736 comm="/usr/bin/kcminit_startup" label="unconfined")
+11月 16 10:39:38.978346 host kwin_wayland_wrapper[2722]: No backend specified, automatically choosing drm
+11月 16 10:39:39.459111 host kwin_wayland_wrapper[2816]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+11月 16 10:39:39.459111 host kwin_wayland_wrapper[2816]: > Warning:          Unsupported maximum keycode 708, clipping.
+11月 16 10:39:39.459111 host kwin_wayland_wrapper[2816]: >                   X11 cannot support keycodes above 255.
+11月 16 10:39:39.459878 host kwin_wayland_wrapper[2816]: > Warning:          Virtual modifier Hyper multiply defined
+11月 16 10:39:39.459878 host kwin_wayland_wrapper[2816]: >                   Using 0, ignoring 0
+11月 16 10:39:39.459878 host kwin_wayland_wrapper[2816]: > Warning:          Virtual modifier ScrollLock multiply defined
+11月 16 10:39:39.459878 host kwin_wayland_wrapper[2816]: >                   Using 0, ignoring 0
+11月 16 10:39:39.460411 host kwin_wayland_wrapper[2816]: Errors from xkbcomp are not fatal to the X server
+11月 16 10:39:40.329766 host dbus-daemon[962]: [system] Activating service name='org.kde.powerdevil.discretegpuhelper' requested by ':1.69' (uid=1000 pid=2995 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev" label="unconfined") (using servicehelper)
+11月 16 10:39:40.337282 host org.kde.powerdevil.discretegpuhelper[3094]: Detected locale "C" with character encoding "ANSI_X3.4-1968", which is not UTF-8.
+11月 16 10:39:40.349808 host dbus-daemon[962]: [system] Successfully activated service 'org.kde.powerdevil.discretegpuhelper'
+11月 16 10:39:40.591716 host kwin_wayland_wrapper[3184]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+11月 16 10:39:40.592133 host kwin_wayland_wrapper[3184]: > Warning:          Unsupported maximum keycode 708, clipping.
+11月 16 10:39:40.592133 host kwin_wayland_wrapper[3184]: >                   X11 cannot support keycodes above 255.
+11月 16 10:39:40.592133 host kwin_wayland_wrapper[3184]: > Warning:          Virtual modifier Hyper multiply defined
+11月 16 10:39:40.592133 host kwin_wayland_wrapper[3184]: >                   Using 0, ignoring 0
+11月 16 10:39:40.592133 host kwin_wayland_wrapper[3184]: > Warning:          Virtual modifier ScrollLock multiply defined
+11月 16 10:39:40.592133 host kwin_wayland_wrapper[3184]: >                   Using 0, ignoring 0
+11月 16 10:39:40.594465 host kwin_wayland_wrapper[3184]: Errors from xkbcomp are not fatal to the X server
+11月 16 10:39:40.599633 host systemd[2330]: Starting xdg-desktop-portal.service - Portal service...
+11月 16 10:39:40.659316 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.52' (uid=1000 pid=3202 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 10:39:40.731151 host /usr/libexec/xdg-desktop-portal[3202]: Choosing gtk.portal for org.freedesktop.impl.portal.Lockdown as a last-resort fallback
+11月 16 10:39:40.732634 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.52' (uid=1000 pid=3202 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 10:39:40.734836 host systemd[2330]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+11月 16 10:39:40.832176 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.kde' unit='plasma-xdg-desktop-portal-kde.service' requested by ':1.52' (uid=1000 pid=3202 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 10:39:40.838519 host systemd[2330]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+11月 16 10:39:40.840740 host systemd[2330]: Starting plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE...
+11月 16 10:39:40.947417 host systemd[2330]: Started plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE.
+11月 16 10:39:41.015596 host systemd[2330]: Started xdg-desktop-portal.service - Portal service.
+11月 16 10:39:41.018553 host kwin_wayland_wrapper[2722]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Unable to open /proc/2722/root")
+11月 16 10:39:41.023171 host xdg-desktop-portal-kde[3336]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 10:39:41.023567 host xdg-desktop-portal-kde[3336]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 10:39:41.032778 host xdg-desktop-portal-kde[3336]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 10:39:41.032857 host xdg-desktop-portal-kde[3336]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 10:39:41.037709 host xdg-desktop-portal-kde[3336]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 10:39:41.037756 host xdg-desktop-portal-kde[3336]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 10:39:41.039651 host xdg-desktop-portal-kde[3336]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+11月 16 10:39:41.039760 host kwin_wayland_wrapper[2722]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Unable to open /proc/2722/root")
+11月 16 10:39:44.550260 host xdg-desktop-portal-kde[3336]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 10:39:48.287976 host systemd[1]: Stopping user@107.service - User Manager for UID 107...
+11月 16 10:39:48.356071 host systemd-logind[992]: Removed session 2.
+11月 16 10:39:48.357799 host systemd[1]: Stopped user@107.service - User Manager for UID 107.
+11月 16 10:42:04.170429 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.170429 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.171093 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.171093 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.171320 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.171320 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.171745 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.171745 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.172217 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.172217 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.172655 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.172655 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.173174 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.173174 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.173604 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.173604 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.174075 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.174075 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.174599 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.174599 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.174987 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.174987 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.175357 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:04.175357 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:04.193736 host kwin_wayland_wrapper[2722]: kwin_core: Failed to open /dev/input/event23 device (No such device)
+11月 16 10:42:04.200408 host kwin_wayland_wrapper[2722]: kwin_core: Failed to open /dev/input/event20 device (No such device)
+11月 16 10:42:04.200573 host kwin_wayland_wrapper[2722]: kwin_core: Failed to open /dev/input/event21 device (No such device)
+11月 16 10:42:04.201199 host kwin_wayland_wrapper[2722]: kwin_core: Failed to open /dev/input/event22 device (No such device)
+11月 16 10:42:04.448439 host kwin_wayland_wrapper[2722]: kwin_core: Failed to open /dev/dri/renderD129 device (No such device)
+11月 16 10:42:06.656693 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.656693 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657162 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657162 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657162 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657162 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657162 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657162 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657162 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657162 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657279 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657279 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657391 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657391 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657506 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657506 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657611 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657611 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657714 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657714 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657816 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657816 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:06.657919 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:42:06.657919 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:42:53.362176 host kwin_wayland_wrapper[2776]: Key repeat discarded, Wayland compositor doesn't seem to be processing events fast enough!
+11月 16 10:45:33.948350 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:45:33.948350 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:45:33.949116 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:45:33.949116 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:49:26.677872 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:49:26.677872 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:49:26.678764 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:49:26.678764 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:49:32.289731 host systemd[1]: Reload requested from client PID 8490 ('systemctl') (unit user@1000.service)...
+11月 16 10:49:56.128404 host kwin_wayland_wrapper[2722]: kwin_libinput: Libinput: event6  - PNP0C50:04 06CB:CEBD Touchpad: kernel bug: Touch jump detected and discarded.
+11月 16 10:49:56.128404 host kwin_wayland_wrapper[2722]: See https://wayland.freedesktop.org/libinput/doc/1.31.1/touchpad-jumping-cursors.html for details
+11月 16 10:56:39.103580 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:56:39.103580 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:56:39.103915 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:56:39.103915 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:56:48.757544 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:56:48.757544 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 10:56:48.758123 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 10:56:48.758123 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:04:12.673822 host systemd[2330]: Started app-nvidia\x2dsettings@220d0234860a4cf89b8a2f8dc6f512a2.service - NVIDIA X Server Settings.
+11月 16 11:04:12.813834 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.92' (uid=1000 pid=10975 comm="/usr/bin/nvidia-settings" label="unconfined")
+11月 16 11:04:12.864516 host nvidia-settings[10975]: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+11月 16 11:04:12.915852 host nvidia-settings[10975]: PRIME: No offloading required. Abort
+11月 16 11:04:12.915861 host nvidia-settings[10975]: PRIME: is it supported? no
+11月 16 11:04:21.525695 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 11:04:21.525695 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:04:21.526085 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 11:04:21.526085 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:04:58.610360 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.kde.spectacle' unit='app-org.kde.spectacle.service' requested by ':1.17' (uid=1000 pid=2722 comm="/usr/bin/kwin_wayland --wayland-fd 7 --socket wayl" label="unconfined")
+11月 16 11:07:19.391961 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 11:07:19.391961 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:07:19.392535 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 11:07:19.392535 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:10:31.406014 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 11:10:31.406014 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:10:31.406398 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 11:10:31.406398 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:20:09.842410 host systemd[2330]: app-nvidia\x2dsettings@220d0234860a4cf89b8a2f8dc6f512a2.service: Consumed 5.194s CPU time over 15min 57.168s wall clock time, 84.5M memory peak.
+11月 16 11:20:14.847578 host systemd[2330]: Stopping plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE...
+11月 16 11:20:14.847925 host systemd[2330]: Stopping xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+11月 16 11:20:14.849434 host systemd[2330]: Stopping xdg-desktop-portal.service - Portal service...
+11月 16 11:20:14.849549 host systemd[2330]: xdg-document-portal.service: Failed to kill control group /user.slice/user-1000.slice/user@1000.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+11月 16 11:20:14.859779 host systemd[2330]: Stopped xdg-desktop-portal.service - Portal service.
+11月 16 11:20:14.862149 host systemd[2330]: Stopped xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+11月 16 11:20:14.862482 host systemd[2330]: Stopped plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE.
+11月 16 11:20:14.882091 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 11:20:14.882091 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:20:14.882287 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: eglInitialize failed
+11月 16 11:20:14.882287 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Error during eglInitialize  "EGL_NOT_INITIALIZED"
+11月 16 11:20:15.075401 host systemd[2330]: Stopping plasma-kwin_wayland.service - KDE Wayland Compositor...
+11月 16 11:20:15.088953 host kwin_wayland_wrapper[2722]: Input Method crashed "/usr/libexec/fcitx5-wayland-launcher" QList("--reopen") 15 QProcess::CrashExit
+11月 16 11:20:15.110496 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Could not delete render time query because no context is current
+11月 16 11:20:15.110496 host kwin_wayland_wrapper[2722]: kwin_scene_opengl: Could not delete render time query because no context is current
+11月 16 11:20:15.413347 host systemd[2330]: Stopped plasma-kwin_wayland.service - KDE Wayland Compositor.
+11月 16 11:20:15.413373 host systemd[2330]: plasma-kwin_wayland.service: Consumed 10min 48.863s CPU time over 40min 36.575s wall clock time, 188.9M memory peak.
+11月 16 11:20:15.439542 host systemd-logind[992]: Removed session 3.
+11月 16 11:20:15.448481 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.117' (uid=1000 pid=21324 comm="/usr/bin/fcitx5" label="unconfined")
+11月 16 11:20:15.451900 host systemd[2330]: Starting xdg-desktop-portal.service - Portal service...
+11月 16 11:20:15.470469 host systemd-logind[992]: New session '6' of user 'sddm' with class 'greeter' and type 'wayland'.
+11月 16 11:20:15.472282 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.121' (uid=1000 pid=21390 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:20:15.484402 host systemd[1]: Starting user@107.service - User Manager for UID 107...
+11月 16 11:20:15.490463 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.121' (uid=1000 pid=21390 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:20:15.491751 host systemd-logind[992]: New session '7' of user 'sddm' with class 'manager-early' and type 'unspecified'.
+11月 16 11:20:15.516000 host /usr/libexec/xdg-desktop-portal[21390]: Choosing gtk.portal for org.freedesktop.impl.portal.Lockdown as a last-resort fallback
+11月 16 11:20:15.516359 host dbus-daemon[2503]: [session uid=1000 pid=2503 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.121' (uid=1000 pid=21390 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:20:15.517741 host systemd[2330]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+11月 16 11:20:15.532543 host xdg-desktop-portal-gtk[21522]: cannot open display: 
+11月 16 11:20:15.533599 host systemd[2330]: xdg-desktop-portal-gtk.service: Main process exited, code=exited, status=1/FAILURE
+11月 16 11:20:15.533679 host systemd[2330]: xdg-desktop-portal-gtk.service: Failed with result 'exit-code'.
+11月 16 11:20:15.533869 host systemd[2330]: Failed to start xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+11月 16 11:20:15.622897 host systemd[1]: Started user@107.service - User Manager for UID 107.
+11月 16 11:20:15.689852 host sddm-helper-start-wayland[21541]: Starting Wayland process "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1" "sddm"
+11月 16 11:20:15.690085 host sddm-helper-start-wayland[21541]: started succesfully "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1"
+11月 16 11:20:16.178481 host dbus-daemon[962]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.115' (uid=107 pid=21565 comm="/usr/bin/kwin_wayland --drm --no-lockscreen --no-g" label="unconfined")
+11月 16 11:20:25.568008 host systemd[1]: Stopping user@1000.service - User Manager for UID 1000...
+11月 16 11:20:25.571741 host systemd[2330]: xdg-document-portal.service: Failed to kill control group /user.slice/user-1000.slice/user@1000.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+11月 16 11:20:25.575377 host systemd[2330]: Stopped xdg-desktop-portal.service - Portal service.
+11月 16 11:20:25.665020 host systemd-logind[992]: Removed session 4.
+11月 16 11:20:25.667643 host systemd[1]: user@1000.service: Deactivated successfully.
+11月 16 11:20:25.668284 host systemd[1]: Stopped user@1000.service - User Manager for UID 1000.
+11月 16 11:20:25.668612 host systemd[1]: user@1000.service: Consumed 18min 38.783s CPU time over 40min 47.678s wall clock time, 3.9G memory peak.
+11月 16 11:20:26.998709 host systemd-logind[992]: New session '8' of user 'user' with class 'user' and type 'wayland'.
+11月 16 11:20:27.014426 host systemd[1]: Starting user@1000.service - User Manager for UID 1000...
+11月 16 11:20:27.022489 host systemd-logind[992]: New session '9' of user 'user' with class 'manager' and type 'unspecified'.
+11月 16 11:20:27.086820 host sddm-helper-start-wayland[21541]: Stopping... "kwin_wayland"
+11月 16 11:20:27.129207 host sddm-helper-start-wayland[21541]: "kwin_scene_opengl: Could not delete render time query because no context is current\nkwin_scene_opengl: Could not delete render time query because no context is current\n"
+11月 16 11:20:27.166608 host systemd[1]: Started user@1000.service - User Manager for UID 1000.
+11月 16 11:20:27.345563 host systemd-logind[992]: Removed session 6.
+11月 16 11:20:27.473879 host systemd[21838]: Starting plasma-kwin_wayland.service - KDE Wayland Compositor...
+11月 16 11:20:27.474957 host systemd[21838]: Starting xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries...
+11月 16 11:20:27.499994 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.12' (uid=1000 pid=22127 comm="/usr/libexec/xdg-desktop-portal-rewrite-launchers" label="unconfined")
+11月 16 11:20:27.505863 host systemd[21838]: Started plasma-kwin_wayland.service - KDE Wayland Compositor.
+11月 16 11:20:27.516952 host systemd[21838]: Finished xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries.
+11月 16 11:20:27.524798 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.15' (uid=1000 pid=22150 comm="/usr/bin/kcminit_startup" label="unconfined")
+11月 16 11:20:27.552276 host kwin_wayland_wrapper[22138]: No backend specified, automatically choosing drm
+11月 16 11:20:28.506379 host kwin_wayland_wrapper[22216]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+11月 16 11:20:28.506379 host kwin_wayland_wrapper[22216]: > Warning:          Unsupported maximum keycode 708, clipping.
+11月 16 11:20:28.506379 host kwin_wayland_wrapper[22216]: >                   X11 cannot support keycodes above 255.
+11月 16 11:20:28.506737 host kwin_wayland_wrapper[22216]: > Warning:          Virtual modifier Hyper multiply defined
+11月 16 11:20:28.506737 host kwin_wayland_wrapper[22216]: >                   Using 0, ignoring 0
+11月 16 11:20:28.506737 host kwin_wayland_wrapper[22216]: > Warning:          Virtual modifier ScrollLock multiply defined
+11月 16 11:20:28.506737 host kwin_wayland_wrapper[22216]: >                   Using 0, ignoring 0
+11月 16 11:20:28.507281 host kwin_wayland_wrapper[22216]: Errors from xkbcomp are not fatal to the X server
+11月 16 11:20:29.051762 host dbus-daemon[962]: [system] Activating service name='org.kde.powerdevil.discretegpuhelper' requested by ':1.143' (uid=1000 pid=22428 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev" label="unconfined") (using servicehelper)
+11月 16 11:20:29.058779 host org.kde.powerdevil.discretegpuhelper[22521]: Detected locale "C" with character encoding "ANSI_X3.4-1968", which is not UTF-8.
+11月 16 11:20:29.064758 host dbus-daemon[962]: [system] Successfully activated service 'org.kde.powerdevil.discretegpuhelper'
+11月 16 11:20:29.142696 host systemd[21838]: Starting app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings...
+11月 16 11:20:29.165725 host systemd[21838]: Starting xdg-desktop-portal.service - Portal service...
+11月 16 11:20:29.166280 host systemd[21838]: Started app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings.
+11月 16 11:20:29.190580 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.50' (uid=1000 pid=22621 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:20:29.211143 host /usr/libexec/xdg-desktop-portal[22621]: Choosing gtk.portal for org.freedesktop.impl.portal.Lockdown as a last-resort fallback
+11月 16 11:20:29.211793 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.50' (uid=1000 pid=22621 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:20:29.213514 host systemd[21838]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+11月 16 11:20:29.286137 host systemd[21838]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+11月 16 11:20:29.287213 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.kde' unit='plasma-xdg-desktop-portal-kde.service' requested by ':1.50' (uid=1000 pid=22621 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:20:29.288923 host systemd[21838]: Starting plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE...
+11月 16 11:20:29.371935 host systemd[21838]: Started plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE.
+11月 16 11:20:29.399647 host systemd[21838]: Started xdg-desktop-portal.service - Portal service.
+11月 16 11:20:29.400757 host kwin_wayland_wrapper[22138]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Unable to open /proc/22138/root")
+11月 16 11:20:29.403014 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:20:29.403168 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:20:29.407194 host xdg-desktop-portal-kde[22734]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+11月 16 11:20:29.407386 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:20:29.407422 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:20:29.408266 host kwin_wayland_wrapper[22138]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Unable to open /proc/22138/root")
+11月 16 11:20:29.565291 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:20:29.565331 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:20:29.566220 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:20:29.566243 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:20:29.571926 host kwin_wayland_wrapper[22790]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+11月 16 11:20:29.571926 host kwin_wayland_wrapper[22790]: > Warning:          Unsupported maximum keycode 708, clipping.
+11月 16 11:20:29.571926 host kwin_wayland_wrapper[22790]: >                   X11 cannot support keycodes above 255.
+11月 16 11:20:29.572257 host kwin_wayland_wrapper[22790]: > Warning:          Virtual modifier Hyper multiply defined
+11月 16 11:20:29.572257 host kwin_wayland_wrapper[22790]: >                   Using 0, ignoring 0
+11月 16 11:20:29.572257 host kwin_wayland_wrapper[22790]: > Warning:          Virtual modifier ScrollLock multiply defined
+11月 16 11:20:29.572257 host kwin_wayland_wrapper[22790]: >                   Using 0, ignoring 0
+11月 16 11:20:29.572602 host kwin_wayland_wrapper[22790]: Errors from xkbcomp are not fatal to the X server
+11月 16 11:20:37.567159 host systemd[1]: Stopping user@107.service - User Manager for UID 107...
+11月 16 11:20:37.651573 host systemd-logind[992]: Removed session 7.
+11月 16 11:20:37.654865 host systemd[1]: Stopped user@107.service - User Manager for UID 107.
+11月 16 11:20:54.297816 host systemd[21838]: Started app-nvidia\x2dsettings@23495190c8c64fc49500bc94e7226bcb.service - NVIDIA X Server Settings.
+11月 16 11:20:54.379910 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.77' (uid=1000 pid=23458 comm="/usr/bin/nvidia-settings" label="unconfined")
+11月 16 11:20:54.405821 host nvidia-settings[23458]: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+11月 16 11:20:54.447848 host nvidia-settings[23458]: PRIME: No offloading required. Abort
+11月 16 11:20:54.447853 host nvidia-settings[23458]: PRIME: is it supported? no
+11月 16 11:21:05.842373 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.kde.spectacle' unit='app-org.kde.spectacle.service' requested by ':1.17' (uid=1000 pid=22138 comm="/usr/bin/kwin_wayland --wayland-fd 7 --socket wayl" label="unconfined")
+11月 16 11:21:22.578099 host systemd[21838]: app-nvidia\x2dsettings@23495190c8c64fc49500bc94e7226bcb.service: Consumed 2.453s CPU time over 28.279s wall clock time, 60.8M memory peak.
+11月 16 11:21:25.108812 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:46:10.833238 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:46:21.633247 host systemd-logind[992]: New session '11' of user 'sddm' with class 'greeter' and type 'wayland'.
+11月 16 11:46:21.642497 host systemd[1]: Starting user@107.service - User Manager for UID 107...
+11月 16 11:46:21.658466 host systemd-logind[992]: New session '12' of user 'sddm' with class 'manager-early' and type 'unspecified'.
+11月 16 11:46:21.773053 host systemd[1]: Started user@107.service - User Manager for UID 107.
+11月 16 11:46:21.789426 host sddm-helper-start-wayland[32084]: Starting Wayland process "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1" "sddm"
+11月 16 11:46:21.790306 host sddm-helper-start-wayland[32084]: started succesfully "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1"
+11月 16 11:46:21.795480 host kwin_wayland_wrapper[22138]: kwin_wayland_drm: atomic commit failed: Permission denied
+11月 16 11:46:21.910163 host kwin_wayland_wrapper[22138]: kwin_core: Failed to open /dev/dri/renderD128 device (No such device)
+11月 16 11:46:21.910163 host kwin_wayland_wrapper[22138]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD128
+11月 16 11:46:21.912333 host kwin_wayland_wrapper[22138]: kwin_core: Failed to open /dev/dri/renderD129 device (No such device)
+11月 16 11:46:21.912333 host kwin_wayland_wrapper[22138]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD129
+11月 16 11:46:22.499755 host dbus-daemon[962]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.191' (uid=107 pid=32113 comm="/usr/bin/kwin_wayland --drm --no-lockscreen --no-g" label="unconfined")
+11月 16 11:46:28.957354 host sddm-helper-start-wayland[32084]: "kwin_core: Failed to find a working output layer configuration! Enabled layers:\nkwin_core: src KWin::RectF(0,0 2880x1800) -> dst KWin::Rect(0,0 2880x1800)\nkwin_wayland_drm: drmModeListLessees() failed: Permission denied\n"
+11月 16 11:46:29.110734 host sddm-helper-start-wayland[32084]: Stopping... "kwin_wayland"
+11月 16 11:46:29.110760 host sddm-helper-start-wayland[32084]: "kwin_wayland_drm: drmModeListLessees() failed: Permission denied\nkwin_wayland_drm: Atomic modeset test failed! Permission denied\nkwin_core: Applying output configuration failed!\nkwin_wayland_drm: atomic commit failed: Permission denied\n"
+11月 16 11:46:29.114321 host kwin_wayland_wrapper[22138]: kwin_core: Failed to open /dev/dri/renderD128 device (No such device)
+11月 16 11:46:29.114321 host kwin_wayland_wrapper[22138]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD128
+11月 16 11:46:29.114311 host sddm-helper-start-wayland[32084]: "kwin_core: Failed to open /dev/dri/renderD128 device (No such device)\nkwin_wayland_drm: Failed to open drm device /dev/dri/renderD128\n"
+11月 16 11:46:29.114887 host kwin_wayland_wrapper[22138]: kwin_core: Failed to open /dev/dri/renderD129 device (No such device)
+11月 16 11:46:29.114887 host kwin_wayland_wrapper[22138]: kwin_wayland_drm: Failed to open drm device /dev/dri/renderD129
+11月 16 11:46:29.114894 host sddm-helper-start-wayland[32084]: "kwin_core: Failed to open /dev/dri/renderD129 device (No such device)\nkwin_wayland_drm: Failed to open drm device /dev/dri/renderD129\n"
+11月 16 11:46:29.311170 host systemd-logind[992]: Removed session 11.
+11月 16 11:46:33.751715 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:46:39.317341 host systemd[1]: Stopping user@107.service - User Manager for UID 107...
+11月 16 11:46:39.400956 host systemd-logind[992]: Removed session 12.
+11月 16 11:46:39.403006 host systemd[1]: Stopped user@107.service - User Manager for UID 107.
+11月 16 11:47:24.692761 host kwin_wayland_wrapper[22138]: kwin_tabbox: Could not load window switcher package "org.kde.breeze.desktop" . Falling back to default
+11月 16 11:47:24.771390 host kwin_wayland_wrapper[22138]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Unable to open /proc/22138/root")
+11月 16 11:47:29.014742 host xdg-desktop-portal-kde[22734]: xdp-kde-settings: Namespace  "org.gnome.desktop.interface"  is not supported
+11月 16 11:47:54.735205 host systemd[21838]: Stopping plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE...
+11月 16 11:47:54.735360 host systemd[21838]: Stopping xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+11月 16 11:47:54.735518 host systemd[21838]: Stopping xdg-desktop-portal.service - Portal service...
+11月 16 11:47:54.735640 host systemd[21838]: xdg-document-portal.service: Failed to kill control group /user.slice/user-1000.slice/user@1000.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+11月 16 11:47:54.751504 host systemd[21838]: Stopped xdg-desktop-portal.service - Portal service.
+11月 16 11:47:54.753193 host systemd[21838]: Stopped xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+11月 16 11:47:54.753622 host systemd[21838]: Stopped plasma-xdg-desktop-portal-kde.service - Xdg Desktop Portal For KDE.
+11月 16 11:47:54.986656 host systemd[21838]: Stopping plasma-kwin_wayland.service - KDE Wayland Compositor...
+11月 16 11:47:54.987081 host kwin_wayland_wrapper[22138]: Input Method crashed "/usr/libexec/fcitx5-wayland-launcher" QList("--reopen") 15 QProcess::CrashExit
+11月 16 11:47:54.987397 host kwin_wayland_wrapper[22138]: kwin_xwl: The X11 connection broke (error 1)
+11月 16 11:47:55.033447 host kwin_wayland_wrapper[22138]: kwin_scene_opengl: Could not delete render time query because no context is current
+11月 16 11:47:55.033447 host kwin_wayland_wrapper[22138]: kwin_scene_opengl: Could not delete render time query because no context is current
+11月 16 11:47:55.033447 host kwin_wayland_wrapper[22138]: kwin_scene_opengl: Could not delete render time query because no context is current
+11月 16 11:47:55.457438 host systemd[21838]: Stopped plasma-kwin_wayland.service - KDE Wayland Compositor.
+11月 16 11:47:55.457450 host systemd[21838]: plasma-kwin_wayland.service: Consumed 51.914s CPU time over 27min 27.983s wall clock time, 261.6M memory peak.
+11月 16 11:47:55.463771 host systemd-logind[992]: Removed session 8.
+11月 16 11:47:55.487548 host systemd-logind[992]: New session '13' of user 'sddm' with class 'greeter' and type 'wayland'.
+11月 16 11:47:55.496095 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.131' (uid=1000 pid=34097 comm="/usr/bin/fcitx5" label="unconfined")
+11月 16 11:47:55.498635 host systemd[21838]: Starting xdg-desktop-portal.service - Portal service...
+11月 16 11:47:55.506757 host systemd[1]: Starting user@107.service - User Manager for UID 107...
+11月 16 11:47:55.513435 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.135' (uid=1000 pid=34203 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:47:55.517840 host systemd-logind[992]: New session '14' of user 'sddm' with class 'manager-early' and type 'unspecified'.
+11月 16 11:47:55.524812 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.135' (uid=1000 pid=34203 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:47:55.542368 host /usr/libexec/xdg-desktop-portal[34203]: Choosing gtk.portal for org.freedesktop.impl.portal.Lockdown as a last-resort fallback
+11月 16 11:47:55.542594 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.135' (uid=1000 pid=34203 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+11月 16 11:47:55.544079 host systemd[21838]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+11月 16 11:47:55.560987 host xdg-desktop-portal-gtk[34295]: cannot open display: 
+11月 16 11:47:55.561462 host systemd[21838]: xdg-desktop-portal-gtk.service: Main process exited, code=exited, status=1/FAILURE
+11月 16 11:47:55.561513 host systemd[21838]: xdg-desktop-portal-gtk.service: Failed with result 'exit-code'.
+11月 16 11:47:55.561638 host systemd[21838]: Failed to start xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+11月 16 11:47:55.645622 host systemd[1]: Started user@107.service - User Manager for UID 107.
+11月 16 11:47:55.651338 host sddm-helper-start-wayland[34313]: Starting Wayland process "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1" "sddm"
+11月 16 11:47:55.651525 host sddm-helper-start-wayland[34313]: started succesfully "kwin_wayland --drm --no-lockscreen --no-global-shortcuts --locale1"
+11月 16 11:47:56.136420 host dbus-daemon[962]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service' requested by ':1.208' (uid=107 pid=34314 comm="/usr/bin/kwin_wayland --drm --no-lockscreen --no-g" label="unconfined")
+11月 16 11:47:56.200670 host sddm-helper-start-wayland[34313]: "kwin_core: Failed to open /dev/dri/renderD129 device (No such device)\nkwin_wayland_drm: Failed to open drm device /dev/dri/renderD129\n"
+11月 16 11:48:05.088066 host systemd-logind[992]: New session '15' of user 'user' with class 'user' and type 'wayland'.
+11月 16 11:48:05.131593 host sddm-helper-start-wayland[34313]: "kwin_core: Failed to find a working output layer configuration! Enabled layers:\nkwin_core: src KWin::RectF(0,0 2880x1800) -> dst KWin::Rect(0,0 2880x1800)\n"
+11月 16 11:48:05.131609 host sddm-helper-start-wayland[34313]: "kwin_wayland_drm: drmModeListLessees() failed: Permission denied\n"
+11月 16 11:48:05.132710 host sddm-helper-start-wayland[34313]: "kwin_wayland_drm: drmModeListLessees() failed: Permission denied\n"
+11月 16 11:48:05.133656 host sddm-helper-start-wayland[34313]: "kwin_wayland_drm: atomic commit failed: Permission denied\n"
+11月 16 11:48:05.133845 host sddm-helper-start-wayland[34313]: "kwin_wayland_drm: Atomic modeset test failed! Permission denied\nkwin_core: Applying output configuration failed!\n"
+11月 16 11:48:05.164908 host sddm-helper-start-wayland[34313]: Stopping... "kwin_wayland"
+11月 16 11:48:05.262843 host systemd-logind[992]: Removed session 13.
+11月 16 11:48:05.405747 host systemd[21838]: Starting plasma-kwin_wayland.service - KDE Wayland Compositor...
+11月 16 11:48:05.406565 host systemd[21838]: Starting xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries...
+11月 16 11:48:05.418405 host dbus-daemon[21878]: [session uid=1000 pid=21878 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.141' (uid=1000 pid=34819 comm="/usr/libexec/xdg-desktop-portal-rewrite-launchers" label="unconfined")
+11月 16 11:48:05.421017 host systemd[21838]: Started plasma-kwin_wayland.service - KDE Wayland Compositor.
+11月 16 11:48:05.428795 host systemd[21838]: Finished xdg-desktop-portal-rewrite-launchers.service - Rewrite dynamic launcher portal entries.
+11月 16 11:48:05.464368 host kwin_wayland_wrapper[34829]: No backend specified, automatically choosing drm
+11月 16 11:48:06.767915 host kwin_wayland_wrapper[34891]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+11月 16 11:48:06.767915 host kwin_wayland_wrapper[34891]: > Warning:          Unsupported maximum keycode 708, clipping.
+11月 16 11:48:06.767915 host kwin_wayland_wrapper[34891]: >                   X11 cannot support keycodes above 255.
+11月 16 11:48:06.768821 host kwin_wayland_wrapper[34891]: > Warning:          Virtual modifier Hyper multiply defined
+11月 16 11:48:06.768821 host kwin_wayland_wrapper[34891]: >                   Using 0, ignoring 0
+11月 16 11:48:06.768821 host kwin_wayland_wrapper[34891]: > Warning:          Virtual modifier ScrollLock multiply defined
+11月 16 11:48:06.768821 host kwin_wayland_wrapper[34891]: >                   Using 0, ignoring 0
+11月 16 11:48:06.769650 host kwin_wayland_wrapper[34891]: Errors from xkbcomp are not fatal to the X server
+11月 16 11:48:07.075372 host kwin_wayland_wrapper[34946]: The XKEYBOARD keymap compiler (xkbcomp) reports:
+11月 16 11:48:07.075372 host kwin_wayland_wrapper[34946]: > Warning:          Unsupported maximum keycode 708, clipping.
+11月 16 11:48:07.075372 host kwin_wayland_wrapper[34946]: >                   X11 cannot support keycodes above 255.
+11月 16 11:48:07.075658 host kwin_wayland_wrapper[34946]: > Warning:          Virtual modifier Hyper multiply defined
+11月 16 11:48:07.075658 host kwin_wayland_wrapper[34946]: >                   Using 0, ignoring 0
+11月 16 11:48:07.075658 host kwin_wayland_wrapper[34946]: > Warning:          Virtual modifier ScrollLock multiply defined
+11月 16 11:48:07.075658 host kwin_wayland_wrapper[34946]: >                   Using 0, ignoring 0
+11月 16 11:48:07.075818 host kwin_wayland_wrapper[34946]: Errors from xkbcomp are not fatal to the X server
+11月 16 11:48:07.489569 host dbus-daemon[962]: [system] Activating service name='org.kde.powerdevil.discretegpuhelper' requested by ':1.234' (uid=1000 pid=35004 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev" label="unconfined") (using servicehelper)
+11月 16 11:48:07.497071 host org.kde.powerdevil.discretegpuhelper[35037]: Detected locale "C" with character encoding "ANSI_X3.4-1968", which is not UTF-8.
+11月 16 11:48:07.503182 host dbus-daemon[962]: [system] Successfully activated service 'org.kde.powerdevil.discretegpuhelper'
+11月 16 11:48:07.634070 host systemd[21838]: Starting app-egpu\x2dmode\x2dconfirm@autostart.service - eGPU mode confirm...
+11月 16 11:48:07.636062 host systemd[21838]: Starting app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings...
+11月 16 11:48:07.653513 host systemd[21838]: Started app-nvidia\x2dsettings\x2dautostart@autostart.service - NVIDIA X Server Settings.
+11月 16 11:48:07.653561 host systemd[21838]: Started app-egpu\x2dmode\x2dconfirm@autostart.service - eGPU mode confirm.
+11月 16 11:48:15.320387 host systemd[1]: Stopping user@107.service - User Manager for UID 107...
+11月 16 11:48:15.403748 host systemd-logind[992]: Removed session 14.
+11月 16 11:48:15.408128 host systemd[1]: Stopped user@107.service - User Manager for UID 107.
+11月 16 11:48:20.568306 host /usr/libexec/xdg-desktop-portal[34203]: Choosing gtk.portal for org.freedesktop.impl.portal.Access as a last-resort fallback
+11月 16 11:48:31.075094 host kwin_wayland_wrapper[34829]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:32.078030 host kactivitymanagerd[34961]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:32.078904 host kded6[34915]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:32.079196 host plasmashell[34983]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:32.085251 host org_kde_powerdevil[35004]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:32.099266 host ksmserver[34911]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:32.099825 host gmenudbusmenuproxy[35001]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:32.100116 host xembedsniproxy[35005]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:33.075626 host kaccess[35002]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:33.076215 host polkit-kde-authentication-agent-1[35003]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:33.078486 host DiscoverNotifier[35109]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:33.079131 host dolphin[35172]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:33.094610 host kdeconnectd[35089]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.NoReply", "Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.")
+11月 16 11:48:33.188489 host ghostty[35169]: warning(glib): WARNING: Gdk: Cannot get portal org.freedesktop.portal.Settings version: Timeout was reached
+11月 16 11:48:45.594656 host /usr/libexec/xdg-desktop-portal[34203]: The web-extensions portal requires an access impl
+11月 16 11:48:45.616619 host /usr/libexec/xdg-desktop-portal[34203]: Choosing gtk.portal for org.freedesktop.impl.portal.Settings as a last-resort fallback
+11月 16 11:48:53.655112 host ghostty[35311]: warning(glib): WARNING: Gdk: Cannot get portal org.freedesktop.portal.Settings version: Timeout was reached
+11月 16 11:49:10.634675 host /usr/libexec/xdg-desktop-portal[34203]: Failed to create settings proxy: Error calling StartServiceByName for org.freedesktop.impl.portal.desktop.gtk: Timeout was reached
+11月 16 11:49:10.634686 host /usr/libexec/xdg-desktop-portal[34203]: Not providing Settings portal: No working backend
+11月 16 11:49:10.634695 host /usr/libexec/xdg-desktop-portal[34203]: Choosing gtk.portal for org.freedesktop.impl.portal.FileChooser as a last-resort fallback
+11月 16 11:49:11.425004 host systemd[21838]: Requested transaction contradicts existing jobs: Transaction for graphical-session.target/stop is destructive (xdg-desktop-portal.service has 'start' job queued, but 'stop' is included in transaction).
+11月 16 11:49:11.468448 host nvidia-persistenced[4577]: Received signal 15
+11月 16 11:49:11.468467 host systemd[1]: Stopping nvidia-persistenced.service - NVIDIA Persistence Daemon...
+11月 16 11:49:11.469631 host nvidia-persistenced[4577]: Socket closed.
+11月 16 11:49:11.472476 host nvidia-persistenced[4577]: device 0000:03:00.0 - persistence mode disabled.
+11月 16 11:49:11.472515 host nvidia-persistenced[4577]: device 0000:03:00.0 - NUMA memory offlined.
+11月 16 11:49:11.472579 host nvidia-persistenced[4577]: PID file unlocked.
+11月 16 11:49:11.472584 host nvidia-persistenced[4577]: PID file closed.
+11月 16 11:49:11.472610 host nvidia-persistenced[4577]: The daemon no longer has permission to remove its runtime data directory /var/run/nvidia-persistenced
+11月 16 11:49:11.472613 host nvidia-persistenced[4577]: Shutdown (4577)
+11月 16 11:49:11.510474 host systemd[1]: nvidia-persistenced.service: Deactivated successfully.
+11月 16 11:49:11.510775 host systemd[1]: Stopped nvidia-persistenced.service - NVIDIA Persistence Daemon.
+11月 16 11:49:11.523436 host systemd[1]: Stopping user@1000.service - User Manager for UID 1000...
+11月 16 11:49:11.528312 host systemd[21838]: xdg-document-portal.service: Failed to kill control group /user.slice/user-1000.slice/user@1000.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+11月 16 11:49:11.539012 host systemd[21838]: Stopped xdg-desktop-portal.service - Portal service.
+11月 16 11:49:11.539292 host systemd[21838]: xdg-document-portal.service: Failed to kill control group /user.slice/user-1000.slice/user@1000.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+11月 16 11:49:11.539329 host systemd[21838]: xdg-document-portal.service: Failed to kill control group /user.slice/user-1000.slice/user@1000.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted
+11月 16 11:49:11.560122 host systemd-logind[992]: Removed session 15.
+11月 16 11:49:11.564447 host kwin_wayland_wrapper[34829]: kwin_wayland_drm: atomic commit failed: Permission denied
+11月 16 11:49:11.956418 host kwin_wayland_wrapper[34829]: kwin_wayland_drm: Atomic modeset test failed! Permission denied
+11月 16 11:49:11.956418 host kwin_wayland_wrapper[34829]: kwin_core: Applying output configuration failed!
+11月 16 11:49:11.957156 host kwin_wayland_wrapper[34829]: kwin_screencast: PipeWire remote error:  connection error
+11月 16 11:49:12.294523 host systemd[21838]: Stopping plasma-kwin_wayland.service - KDE Wayland Compositor...
+11月 16 11:49:12.453184 host systemd[21838]: Stopped plasma-kwin_wayland.service - KDE Wayland Compositor.
+11月 16 11:49:12.453209 host systemd[21838]: plasma-kwin_wayland.service: Consumed 7.949s CPU time over 1min 7.047s wall clock time, 201.3M memory peak.
+11月 16 11:49:12.497975 host systemd-logind[992]: Removed session 9.
+11月 16 11:49:12.500768 host systemd[1]: user@1000.service: Deactivated successfully.
+11月 16 11:49:12.501558 host systemd[1]: Stopped user@1000.service - User Manager for UID 1000.
+11月 16 11:49:12.502045 host systemd[1]: user@1000.service: Consumed 5min 17.455s CPU time over 28min 45.486s wall clock time, 2.2G memory peak.

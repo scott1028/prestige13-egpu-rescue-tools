@@ -1,0 +1,63 @@
+#!/bin/bash
+# Prepare the GC34X eGPU before the NVIDIA driver binds:
+#  1. Shrink BAR1 to 256 MB so it fits the BIOS Thunderbolt window.
+#  2. Cap the GPU link at Gen3 with no autonomous speed changes (unstable behind Barlow Ridge).
+# Called by /etc/udev/rules.d/70-egpu-bar1.rules with the PCI address, e.g. 0000:03:00.0.
+#
+# The kernel clears a BAR whose assignment failed, so resource1_resize returns EINVAL.
+# Instead, set the size in the Resizable BAR control register, then remove and rescan
+# the eGPU below its root port so the kernel sizes BAR1 again.
+set -eu
+
+addr=$1
+size_index=8 # 2^8 MB = 256 MB
+dev=$(readlink -f "/sys/bus/pci/devices/$addr")
+
+# BAR1 already has an address: nothing to do.
+bar1_start=$(sed -n 2p "$dev/resource" | cut -d' ' -f1)
+[ "$bar1_start" = 0x0000000000000000 ] || exit 0
+
+# Find the ReBAR control register that belongs to BAR1.
+nbars=$(( (0x$(setpci -s "$addr" ECAP_REBAR+8.L) >> 5) & 7 ))
+ctrl_reg=
+for ((i = 0; i < nbars; i++)); do
+  reg=$(printf 'ECAP_REBAR+%x.L' $((8 + 8 * i)))
+  if (( (0x$(setpci -s "$addr" "$reg") & 7) == 1 )); then
+    ctrl_reg=$reg
+  fi
+done
+if [ -z "$ctrl_reg" ]; then
+  logger -t egpu-bar1 "$addr: no Resizable BAR entry for BAR1"
+  exit 1
+fi
+
+# Already shrunk but still unassigned: another rescan would loop.
+if (( (0x$(setpci -s "$addr" "$ctrl_reg") >> 8 & 0x3f) == size_index )); then
+  logger -t egpu-bar1 "$addr: BAR1 is $((1 << size_index)) MB but still unassigned"
+  exit 1
+fi
+
+# Link to the GPU: target Gen3, hardware autonomous speed disable, then retrain.
+bridge=$(basename "$(dirname "$dev")")
+setpci -s "$bridge" CAP_EXP+30.w=0023:002f
+setpci -s "$bridge" CAP_EXP+10.w=0020:0020
+for _ in $(seq 50); do # wait up to 1 s for link training to finish
+  (( 0x$(setpci -s "$bridge" CAP_EXP+12.w) & 0x0800 )) || break
+  sleep 0.02
+done
+logger -t egpu-bar1 "$bridge: LnkSta=$(setpci -s "$bridge" CAP_EXP+12.w)"
+
+setpci -s "$addr" COMMAND=0000:0002 # stop memory decoding before resizing
+setpci -s "$addr" "$ctrl_reg=$(printf %08x $((size_index << 8))):00003f00"
+
+# sysfs path: /sys/devices/pci0000:00/<root port>/<eGPU upstream port>/...
+root_port=$(echo "$dev" | cut -d/ -f5)
+upstream=$(echo "$dev" | cut -d/ -f6)
+bus=$(ls "/sys/bus/pci/devices/$root_port/pci_bus")
+pm=/sys/bus/pci/devices/$root_port/power/control
+pm_saved=$(cat "$pm")
+echo on > "$pm" # keep the root port awake so rescanned devices get a sane runtime PM state
+echo 1 > "/sys/bus/pci/devices/$upstream/remove"
+echo 1 > "/sys/class/pci_bus/$bus/rescan"
+echo "$pm_saved" > "$pm"
+logger -t egpu-bar1 "$addr: BAR1 set to $((1 << size_index)) MB, rescanned below $root_port"

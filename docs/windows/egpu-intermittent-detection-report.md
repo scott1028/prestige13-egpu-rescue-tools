@@ -105,6 +105,8 @@ Services     |                | 有人否決 → 失敗 ✘       |             
 就算解鎖隱藏選單，把這兩個選項調到上限，還是放不下。
 如果 BAR1 維持 256 MB，GPU 總共只要約 64 MB + 288 MB。Windows 是在顯示卡驅動程式啟動時，才把 BAR1 放大到最大值（reference06）。
 
+> 2026-11-16 在 Linux 上看到不同的結果：GPU 一出現、還沒有任何驅動時，BAR1 就已經要 32 GB。用 `setpci` 把 BAR1 縮成 256 MB 後就放得下，見 [Linux guide 故障 1](../linux/guide.md#1-驅動載不起來bar1-放不下0841)。Windows 上沒有試過在驅動啟動前縮小 BAR1。
+
 驗證方式：WMI 和 `pnputil` 都不會顯示 4 GB 以上的大型位址區段，所以改用 `nvidia-smi -q -d MEMORY`，讀到 BAR1 Total = 32768 MiB。
 
 ### 試過關閉 eGPU 的 ReBAR：沒有效果
