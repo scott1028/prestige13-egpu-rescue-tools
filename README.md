@@ -11,6 +11,8 @@
 | Windows 11 | `egpu-tray.exe` 常駐工作列、`egpu-connect` 救援腳本 | eGPU 時有時無、Code 12、Code 22 | [docs/windows/README.md](docs/windows/README.md) |
 | Ubuntu 26.04 + KDE Plasma | udev 自動修正、`egpu-mode` 切換合成桌面的 GPU | 驅動載不起來、白色花點和 GPU 掉線、100Hz 卡頓或只剩 50 fps | [docs/linux/README.md](docs/linux/README.md) |
 
+升級 NVIDIA 驅動或 kernel 之前，先看 [docs/versions.md](docs/versions.md)：本專案用的版本、為什麼用這些版本、升級前後要做什麼。
+
 ## 兩邊共同的根因
 
 RTX 5090 Laptop 開著 ReBAR 時，BAR1 要 32 GB，BIOS 替 Thunderbolt port 預留的位址區段放不下它。
@@ -55,8 +57,9 @@ tools/
 └─ egpu-linux/     Linux udev 修正、安裝腳本、egpu-mode
    └─ appimage/    把 egpu-mode 打包成 AppImage
 docs/
-├─ windows/   README、guide、分析報告、事件時間軸
-└─ linux/     README、guide、evidence/（去掉個人資訊的原始 log 和量測）
+├─ versions.md  用到的版本、升級驅動和 kernel 的步驟和注意事項
+├─ windows/     README、guide、分析報告、事件時間軸
+└─ linux/       README、guide、evidence/（去掉個人資訊的原始 log 和量測）
 ```
 
 ## 授權

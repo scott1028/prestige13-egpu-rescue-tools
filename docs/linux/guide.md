@@ -71,7 +71,7 @@
 | `install-cstate.sh` | 裝好 C-state 規則，依 eGPU 目前有沒有接上，馬上套用 `limit` 或 `restore` |
 | `install-clocks.sh` | 裝好時脈鎖定，先解除現有鎖定，再模擬一次 bind 事件，確認自動流程有效 |
 
-驅動版本是 595.99.02，09:22:44 由 `install.sh` 安裝。
+驅動版本是 595.99.02，09:22:44 由 `install.sh` 安裝。為什麼用這個版本、以後怎麼升級，見[版本和升級指引](../versions.md)。
 
 ### 插上 eGPU 時自動發生什麼
 

@@ -19,6 +19,7 @@ eGPU 像是走廊另一頭的辦公室：畫面資料要先經過 Thunderbolt �
 - Ubuntu 26.04.1 LTS，kernel `7.0.0-43-generic`，KDE Plasma 6.6.6 Wayland
 - Secure Boot 關閉：當天是在關閉的狀態下安裝和測試，開啟 Secure Boot 時沒有試過
 - 安裝時 eGPU 要接著，`install.sh` 找不到 GPU 會直接停止
+- 升級 NVIDIA 驅動或 kernel 之前，先看[版本和升級指引](../versions.md)。這台機器開著自動更新
 
 ## 安裝
 
