@@ -60,7 +60,7 @@
 | AppImage 裡的 Python | 3.12 | 同上，`--python-version 3.12` |
 | AppImage 裡的 PyQt6 | 6.12.1（內含 Qt 6.12.0） | `tools/egpu-linux/appimage/egpu-mode/requirements.txt` |
 | appimagetool | `continuous`，沒有固定 | python-appimage 打包時自己下載 |
-| Linux runner | `ubuntu-24.04`，Python 3.12（`actions/setup-python@v5`） | `.github/workflows/release.yml` |
+| Linux runner | `ubuntu-24.04`，Python 3.12（`actions/setup-python@v5`，`v0.2.0` 那次裝到 3.12.16） | `.github/workflows/release.yml` |
 | Windows runner | `windows-latest` | 同上 |
 | 其他 actions | `actions/checkout@v4`、`actions/upload-artifact@v4`、`actions/download-artifact@v4` | 同上 |
 
@@ -104,6 +104,7 @@
 - Python 3.12：當天打包和測試用的版本，選它的原因當時沒有記錄。
 - appimagetool 沒有固定：python-appimage 每次都下載 `continuous` 版，本專案管不到。它的行為一改，GitHub Actions 的 `linux` job 最可能先壞。
 - runner 和 actions 的版本：寫 workflow 時選的，原因沒有記錄。
+- 2026-11-16 發行 `v0.2.0` 時，GitHub 警告 `actions/checkout@v4`、`actions/setup-python@v5`、`actions/upload-artifact@v4`、`actions/download-artifact@v4` 是給 Node.js 20 用的，已經被強制改用 Node.js 24 執行。這次三個 job 都成功；之後 Node.js 20 完全停用時，要換成支援 Node.js 24 的新版。
 
 ### Windows
 

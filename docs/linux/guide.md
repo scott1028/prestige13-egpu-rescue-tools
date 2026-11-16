@@ -216,6 +216,7 @@ tools/egpu-linux/appimage/build-appimage.sh    # 輸出 dist/egpu-mode-x86_64.Ap
 - 在 Wayland 上正常載入 Qt 的 `wayland` plugin，畫面和系統的 PyQt6 一樣。
 - B 開的程式拿不到 AppImage 的變數。直接執行原始碼時，使用者自己設的 `SSL_CERT_FILE` 會保留。
 - 沒有 FUSE 時，設 `APPIMAGE_EXTRACT_AND_RUN=1` 也能執行。
+- 推送 `v0.2.0` 時，GitHub Actions 第一次打包和發行成功。下載 Release 裡的 AppImage，在這台機器上執行 `status`，輸出和直接執行原始碼相同。
 
 ### 桌面卡住時
 
@@ -375,7 +376,7 @@ Xwayland 卡住，依賴它的 fcitx5 輸入法就失效。Chrome 啟動時會�
 - 拔掉 eGPU 時的 `egpu-cstate restore`。熱拔會卡死，所以沒機會跑到；不過重開機後 C2/C3 本來就是開啟的。
 - 先在顯示設定關掉 eGPU 輸出再熱拔，是否就不會卡死。
 - 用四支安裝腳本從頭整套重裝。
-- GitHub Actions 打包 AppImage 和發行 Release 還沒實際跑過，第一次推送 tag 時要確認。AppImage 也只在這台機器上測過。
+- AppImage 只在這台機器上測過，別台機器上能不能跑還沒驗證。
 
 如果還是不穩，可以試的方向：
 
